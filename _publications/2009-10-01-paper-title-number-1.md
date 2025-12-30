@@ -1,8 +1,8 @@
 ---
 title: "Internet of Things (IoT) and Big Data for Industry 4.0"
 collection: publications
-category: conferences
-permalink: /publication/iot-big-data-industry-4
+category: Journal
+permalink: [/publication/iot-big-data-industry-4](https://einj.net/index.php/INJ/article/view/277/224](https://einj.net/index.php/INJ/article/view/277/224)
 excerpt: "This paper discusses the integration of IoT and Big Data technologies to enable Industry 4.0 applications."
 date: 2022-01-01
 venue: "International Conference / Journal (update if known)"
