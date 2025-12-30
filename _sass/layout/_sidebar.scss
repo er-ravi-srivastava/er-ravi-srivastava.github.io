@@ -284,3 +284,22 @@
     }
   }
 }
+
+/* ===== FORCE PERFECT CIRCLE AVATAR ===== */
+
+.sidebar .author__avatar,
+.author__avatar {
+  width: 140px !important;
+  height: 140px !important;
+  border-radius: 50% !important;
+  overflow: hidden !important;
+}
+
+.sidebar .author__avatar img,
+.author__avatar img {
+  width: 140px !important;
+  height: 140px !important;
+  object-fit: cover !important;
+  border-radius: 50% !important;
+}
+
