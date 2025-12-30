@@ -1,8 +1,9 @@
----
-title: "About Me"
-permalink: /about/
+permalink: /
+title: Ravi Prakash Srivastava
 author_profile: true
----
+redirect_from:
+  - /about/
+  - /about.html
 
 ## About Me
 
