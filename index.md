@@ -5,8 +5,6 @@ permalink: /
 author_profile: true
 ---
 
-<br>
-
 I am a researcher in **Natural Language Processing (NLP)** focused on building reliable and trustworthy language models. My work studies how AI systems interact with real users and information, aiming to develop evaluation methods that better reflect diverse users and real-world applications.
 
 My master’s thesis on **robust multilingual text summarization for Indian languages in low-resource settings**, focusing on transformer-based models and their generalization and reliability under data scarcity and distribution shift.
