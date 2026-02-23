@@ -11,7 +11,7 @@ I am a researcher and currently working on **Natural Language Processing (NLP)**
 
 My master’s thesis on **robust multilingual text summarization for Indian languages in low-resource settings**, focusing on transformer-based models and their generalization and reliability under data scarcity and distribution shift.
 
-One of our paper accepted in  International Conference on Advanced Computing and Applications (ICACA-2026) named "Deepfake Video Detection Using Face-Centric Processing and Frame Sampling" at  To be Published in One Volume of proceeding in our book series “Lecture Notes in Networks and System”
+One of our papers has been accepted at the International Conference on Advanced Computing and Applications (ICACA-2026) titled “Deepfake Video Detection Using Face-Centric Processing and Frame Sampling.” The paper will be published in a volume of the conference proceedings in the book series Lecture Notes in Networks and Systems.
 
 **I am seeking PhD opportunities in NLP groups working on  human-centered AI, with an interest in developing reliable and trustworthy language technologies**.
 
