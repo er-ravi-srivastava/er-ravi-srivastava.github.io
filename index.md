@@ -5,10 +5,10 @@ permalink: /
 author_profile: true
 ---
 
-I am a researcher in *Artificial intelligence, Deep Learing , LLM security* focused on building reliable and trustworthy language models.  I’m currently learning Large Language Models, Retrieval Augmented Generation and LLM Fine Tuning
+I am a researcher in Artificial Intelligence and Natural Language Processing,  focused on building secure, robust, and trustworthy language models. My work spans LLM security, adversarial robustness, and multilingual NLP for  low-resource Indian language settings.
 
 
-**Research Interests - NLP, Privacy-Preserving Machine Learning, Generative AI Safety, Adversarial Machine Learning, Trustworthy AI , LLM**
+**Research Interests - NLP · LLM Security · Generative AI Safety · Privacy-Preserving Machine Learning · Trustworthy AI · Multilingual & Low-Resource NLP**
 
 *I am seeking PhD opportunities in Deep Learning , Computer Vision and also on  human-centered AI, with an interest in developing reliable and trustworthy language technologies*.
 
