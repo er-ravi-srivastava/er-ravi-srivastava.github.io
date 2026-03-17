@@ -11,5 +11,3 @@ My research has been published in the IETE Journal of Research (Taylor & Francis
 
 **Research Interests - NLP · LLM Security · Generative AI Safety · Privacy-Preserving Machine Learning · Trustworthy AI · Multilingual & Low-Resource NLP**
 
-*I am seeking PhD opportunities in Deep Learning , Computer Vision and also on  human-centered AI, with an interest in developing reliable and trustworthy language technologies*.
-
