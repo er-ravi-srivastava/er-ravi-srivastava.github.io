@@ -5,6 +5,8 @@ permalink: /
 author_profile: true
 ---
 
-I am a researcher in Artificial Intelligence and Natural Language Processing,  focused on building secure, robust, and trustworthy language models. 
- 
-My research has been published in the IETE Journal of Research (Taylor & Francis / Scopus indexed) and presented at international conferences, with a Best Paper Award at ICACA-2026 for work on adversarial prompt injection attacks on large language models.
+My background is in *Data Science and AI* and worked with Generative AI , Large-Language Models , IoT , Medical Image Analysis. Now I am currently working on Natural Language Processing (NLP) on text summarization problem for Low-resource languages where my foundation in transformer architectures and attention mechanisms directly informs my approach.
+
+My research has been published in the IETE Journal of Research (Taylor & Francis / Scopus indexed) and presented at international conferences, with a Best Paper Award at ICACA-2026 for work on *Adversarial prompt injection attacks on large language models*.
+
+
