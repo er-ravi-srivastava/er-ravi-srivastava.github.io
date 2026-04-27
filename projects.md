@@ -106,7 +106,7 @@ author_profile: true
   <!-- Adversarial Prompt Injection -->
   <div class="project-card">
     <div class="project-img-container">
-      <img src="/images/llm_security.png" alt="LLM Security Research" />
+      <img src="/images/llm_security.jpg" alt="LLM Security Research" />
     </div>
     <div class="project-content">
       <div class="project-title">Adversarial Prompt Injection Attacks on LLMs: Cryptographic Key Leakage and Defense Strategies</div>
@@ -124,7 +124,7 @@ author_profile: true
   <!-- IoT-HITS -->
   <div class="project-card">
     <div class="project-img-container">
-      <img src="/images/iot_border.png" alt="IoT Border Security" />
+      <img src="/images/iot_border.jpg" alt="IoT Border Security" />
     </div>
     <div class="project-content">
       <div class="project-title">IoT-HITS: IoT-based Human Intrusion Detection System for Border Regions Using Deep Learning</div>
@@ -141,7 +141,7 @@ author_profile: true
   <!-- Master's Thesis -->
   <div class="project-card">
     <div class="project-img-container">
-      <img src="/images/multilingual_nlp.png" alt="Multilingual NLP Research" />
+      <img src="/images/multilingual_nlp.jpg" alt="Multilingual NLP Research" />
     </div>
     <div class="project-content">
       <div class="project-title">Robust Multilingual Text Summarization for Indian Languages</div>
