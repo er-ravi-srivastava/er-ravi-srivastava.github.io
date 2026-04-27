@@ -5,7 +5,7 @@ site_theme: "default"  # Options: default, air, sunrise, mint, dirt, contrast
 title: "Ravi's Homepage"
 title_separator: "-"
 name: &name "Ravi Prakash Srivastava"
-description: &description "ML Engineer & Researcher | NLP | LLM Security | Multilingual AI | Best Paper Award @ ICACA 2026"
+description: &description "AI Researcher & Software Engineer | M.Tech (DS & AI) @ IIIT Ranchi | LLM Security & Deepfake Detection | Best Paper @ ICACA 2026"
 
 url: "https://er-ravi-srivastava.github.io"  # Your site URL
 baseurl: ""  # Empty for user sites
@@ -14,7 +14,7 @@ repository: "er-ravi-srivastava/er-ravi-srivastava.github.io"
 author:
   avatar: "picture_resized.png"
   name: "Ravi Prakash Srivastava"
-  bio: "Researcher in robust & fairness-aware NLP | Multilingual & low-resource settings"
+  bio: "Software Engineer @ SS Software Solutions | M.Tech Researcher in AI/ML & Cybersecurity | Specializing in LLM security, Deepfake Detection, and Robust NLP"
   location: "India"
   email: "raviprakashshrivastav7@gmail.com"
   github: "er-ravi-srivastava"

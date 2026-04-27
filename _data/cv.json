@@ -1,152 +1,113 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
-    "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "name": "Ravi Prakash Srivastava",
+    "email": "raviprakashshrivastav7@gmail.com",
+    "phone": "+91-9431334691",
+    "website": "https://er-ravi-srivastava.github.io",
+    "summary": "Software Engineer & AI Researcher specializing in LLM Security, Deepfake Detection, and Robust NLP. M.Tech in Data Science & AI from IIIT Ranchi.",
     "location": {
-      "address": "",
-      "postalCode": "",
-      "city": "Earth",
-      "countryCode": "US",
-      "region": ""
+      "city": "Hyderabad",
+      "countryCode": "IN",
+      "region": "Telangana"
     },
     "profiles": [
       {
-        "network": "Google Scholar",
-        "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-      },
-      {
-        "network": "ORCID",
-        "username": "",
-        "url": "https://orcid.org/yourorcidurl"
+        "network": "LinkedIn",
+        "username": "ravi-prakash-sri",
+        "url": "https://www.linkedin.com/in/ravi-prakash-sri"
       },
       {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "er-ravi-srivastava",
+        "url": "https://github.com/er-ravi-srivastava"
+      },
+      {
+        "network": "Google Scholar",
+        "username": "Ravi Prakash Srivastava",
+        "url": "https://scholar.google.com/citations?user=sElDRIMAAAAJ"
       }
     ]
   },
-  "work": [],
+  "work": [
+    {
+      "company": "SS Software Solutions LLC",
+      "position": "Software Engineer",
+      "website": "",
+      "startDate": "2026-03-01",
+      "endDate": "",
+      "summary": "Defined and enforced ML pipeline standards including versioning, logging, and monitoring. Automated security testing under DevSecOps by integrating tools into CI/CD pipelines.",
+      "highlights": [
+        "Currently learning and applying Threat Modeling to proactively identify design-level risks.",
+        "Automated security testing under DevSecOps by integrating tools into CI/CD pipelines."
+      ]
+    },
+    {
+      "company": "Pantech e-learning",
+      "position": "Research Data Scientist",
+      "website": "",
+      "startDate": "2023-02-01",
+      "endDate": "2024-09-30",
+      "summary": "Designed and deployed ML-based intrusion and anomaly detection models on real-world datasets.",
+      "highlights": [
+        "Improved threat detection accuracy by 15–20% under noisy and incomplete data conditions.",
+        "Conducted web application penetration testing and vulnerability assessments."
+      ]
+    },
+    {
+      "company": "C-DAC (Govt. of India)",
+      "position": "Machine Learning Intern",
+      "website": "",
+      "startDate": "2022-08-01",
+      "endDate": "2023-02-28",
+      "summary": "Performed large-scale data preprocessing and feature engineering on student activity logs.",
+      "highlights": [
+        "Implemented and benchmarked multiple machine learning models including Random Forests and SVMs."
+      ]
+    }
+  ],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
-      "gpa": null,
+      "institution": "Indian Institute of Information Technology Ranchi (IIIT Ranchi)",
+      "area": "Data Science & AI",
+      "studyType": "M.Tech",
+      "startDate": "2024-08-01",
+      "endDate": "2026-04-30",
+      "gpa": "8.45/10 (ongoing)",
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
-      "courses": []
-    },
-    {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
-      "gpa": null,
+      "institution": "North Eastern Hill University (NEHU), Shillong",
+      "area": "Information Technology",
+      "studyType": "B.Tech",
+      "startDate": "2018-08-01",
+      "endDate": "2022-06-30",
+      "gpa": "7.85/10",
       "courses": []
     }
   ],
-  "skills": [],
-  "languages": [],
-  "interests": [],
-  "references": [],
-  "publications": [
+  "skills": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "https://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
+      "name": "AI",
+      "level": "Advanced",
+      "keywords": ["Deep Learning", "Transformer Models", "Adversarial Machine Learning", "Prompt Injection", "Deepfake Detection"]
     },
     {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "https://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
+      "name": "Cybersecurity",
+      "level": "Intermediate",
+      "keywords": ["Threat Modeling", "Vulnerability Assessment", "Web Security", "OWASP Top 10", "Network Security"]
     },
     {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
+      "name": "Programming",
+      "level": "Advanced",
+      "keywords": ["Python", "C++", "SQL", "Bash"]
     }
   ],
-  "presentations": [
+  "awards": [
     {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
-    }
-  ],
-  "teaching": [
-    {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
-    },
-    {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
-    }
-  ],
-  "portfolio": [
-    {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
-      "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+      "title": "Best Paper Award",
+      "date": "2026-01-01",
+      "awarder": "ICACA 2026",
+      "summary": "For the paper 'Adversarial Prompt Injection Attacks on Large Language Models'."
     }
   ]
 }
