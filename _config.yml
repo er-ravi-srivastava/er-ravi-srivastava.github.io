@@ -5,7 +5,7 @@ site_theme: "default"  # Options: default, air, sunrise, mint, dirt, contrast
 title: "Ravi's Homepage"
 title_separator: "-"
 name: &name "Ravi Prakash Srivastava"
-description: &description "AI Researcher & Software Engineer | M.Tech (DS & AI) @ IIIT Ranchi | LLM Security & Deepfake Detection | Best Paper @ ICACA 2026"
+description: &description "AI Researcher | M.Tech in Data Science & AI | LLM Security · Deepfake Detection · Robust NLP | Seeking PhD in CS"
 
 url: "https://er-ravi-srivastava.github.io"  # Your site URL
 baseurl: ""  # Empty for user sites
@@ -14,7 +14,7 @@ repository: "er-ravi-srivastava/er-ravi-srivastava.github.io"
 author:
   avatar: "picture_resized.png"
   name: "Ravi Prakash Srivastava"
-  bio: "Software Engineer @ SS Software Solutions | M.Tech Researcher in AI/ML & Cybersecurity | Specializing in LLM security, Deepfake Detection, and Robust NLP"
+  bio: "AI Researcher · LLM Security · Deepfake Detection · Robust NLP"
   location: "India"
   email: "raviprakashshrivastav7@gmail.com"
   github: "er-ravi-srivastava"
@@ -54,16 +54,7 @@ google_site_verification: ""
 
 # Collections (enable publications/portfolio)
 collections:
-  teaching:
-    output: true
-    permalink: /:collection/:path/
   publications:
-    output: true
-    permalink: /:collection/:path/
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
-  talks:
     output: true
     permalink: /:collection/:path/
 
@@ -84,12 +75,6 @@ defaults:
   - scope:
       path: ""
       type: publications
-    values:
-      layout: single
-      author_profile: true
-  - scope:
-      path: ""
-      type: portfolio
     values:
       layout: single
       author_profile: true

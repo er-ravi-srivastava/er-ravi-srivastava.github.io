@@ -1,11 +1,9 @@
 main:
-  - title: ""
-    url: /    # or /cv/ if publications are in CV page
   - title: "Publications"
-    url: /publications/    # or /cv/ if publications are in CV page
+    url: /publications/
   - title: "Projects"
-    url: /projects/    # or /cv/ if publications are in CV page
+    url: /projects/
   - title: "Experience"
-    url: /experience/    # or /cv/ if publications are in CV page
+    url: /experience/
   - title: "CV"
     url: /cv/

@@ -6,62 +6,65 @@ author_profile: true
 ---
 
 <style>
-/* ===== Homepage Styles ===== */
+/* ===== Hero Banner ===== */
+.hero-banner {
+  background: linear-gradient(135deg, #0d9488 0%, #0891b2 50%, #6366f1 100%);
+  color: #fff;
+  border-radius: 14px;
+  padding: 32px 36px;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  box-shadow: 0 6px 24px rgba(13, 148, 136, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-banner::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.06) 0%, transparent 70%);
+  animation: shimmer 8s linear infinite;
+}
+
+@keyframes shimmer {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.hero-text {
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 0.01em;
+  position: relative;
+  z-index: 1;
+  line-height: 1.5;
+}
+
+.hero-sub {
+  font-size: 0.95rem;
+  font-weight: 400;
+  opacity: 0.9;
+  margin-top: 8px;
+  position: relative;
+  z-index: 1;
+}
+
+/* ===== Homepage Content ===== */
 .home-intro {
   font-size: 1.05rem;
-  line-height: 1.8;
+  line-height: 1.85;
   color: var(--global-text-color);
-  margin-bottom: 2rem;
-  font-family: 'Inter', sans-serif;
-}
-
-.highlight-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
   margin-bottom: 2.5rem;
-}
-
-.highlight-card {
-  background: var(--global-bg-color);
-  border: 1px solid var(--global-border-color);
-  border-radius: 12px;
-  padding: 24px 20px;
-  text-align: center;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.highlight-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-}
-
-.highlight-icon {
-  font-size: 2rem;
-  margin-bottom: 10px;
-  display: block;
-}
-
-.highlight-number {
-  font-size: 1.6rem;
-  font-weight: 800;
-  color: var(--global-link-color);
   font-family: 'Inter', sans-serif;
-  display: block;
-  margin-bottom: 4px;
-}
-
-.highlight-label {
-  font-size: 0.85rem;
-  color: var(--global-text-color-light);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  font-weight: 600;
 }
 
 .section-title {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: var(--global-text-color);
   margin-bottom: 1rem;
@@ -81,17 +84,20 @@ author_profile: true
 .interest-tag {
   background: var(--global-link-color);
   color: #fff;
-  padding: 8px 18px;
-  border-radius: 25px;
-  font-size: 0.88rem;
+  padding: 7px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
   font-weight: 600;
   font-family: 'Inter', sans-serif;
   transition: transform 0.2s ease, opacity 0.2s ease;
+  text-decoration: none;
 }
 
 .interest-tag:hover {
   transform: scale(1.05);
-  opacity: 0.9;
+  opacity: 0.88;
+  color: #fff;
+  text-decoration: none;
 }
 
 .news-list {
@@ -104,7 +110,7 @@ author_profile: true
   display: flex;
   align-items: flex-start;
   gap: 16px;
-  padding: 14px 0;
+  padding: 12px 0;
   border-bottom: 1px solid var(--global-border-color);
 }
 
@@ -113,55 +119,36 @@ author_profile: true
 }
 
 .news-date {
-  flex: 0 0 100px;
-  font-size: 0.85rem;
+  flex: 0 0 90px;
+  font-size: 0.82rem;
   font-weight: 700;
   color: var(--global-link-color);
   font-family: 'Inter', sans-serif;
 }
 
 .news-text {
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   line-height: 1.5;
   color: var(--global-text-color);
 }
 
 @media (max-width: 768px) {
-  .highlight-grid {
-    grid-template-columns: 1fr;
-    gap: 15px;
-  }
-  .news-item {
-    flex-direction: column;
-    gap: 4px;
-  }
-  .news-date {
-    flex: none;
-  }
+  .hero-banner { padding: 24px 20px; }
+  .hero-text { font-size: 1.1rem; }
+  .news-item { flex-direction: column; gap: 4px; }
+  .news-date { flex: none; }
 }
 </style>
 
-<div class="home-intro">
-  I am a Software Engineer and AI Researcher with a strong focus on <strong>LLM Security</strong>, <strong>Deepfake Detection</strong>, and <strong>Robust NLP</strong>. I hold an M.Tech in Data Science & AI from <a href="https://www.iiitranchi.ac.in/">IIIT Ranchi</a>, and my research has been published in the <a href="https://www.tandfonline.com/journals/tijr20">IETE Journal of Research</a> (Taylor & Francis) and on <a href="https://arxiv.org/abs/2512.04967v1">arXiv</a>. Two papers are currently under publication in Springer's <a href="https://www.springer.com/series/15179">Lecture Notes in Networks and Systems</a>.
+<!-- Hero Banner -->
+<div class="hero-banner">
+  <div class="hero-text">🎯 Actively seeking PhD opportunities in Computer Science</div>
+  <div class="hero-sub">Research interests: LLM Security · Adversarial ML · Deepfake Detection · Robust NLP</div>
 </div>
 
-<!-- Highlight Cards -->
-<div class="highlight-grid">
-  <div class="highlight-card">
-    <span class="highlight-icon">🏆</span>
-    <span class="highlight-number">Best Paper</span>
-    <span class="highlight-label">Award — ICACA 2026</span>
-  </div>
-  <div class="highlight-card">
-    <span class="highlight-icon">📄</span>
-    <span class="highlight-number">5</span>
-    <span class="highlight-label">Research Papers</span>
-  </div>
-  <div class="highlight-card">
-    <span class="highlight-icon">🎓</span>
-    <span class="highlight-number">M.Tech</span>
-    <span class="highlight-label">DS & AI — IIIT Ranchi</span>
-  </div>
+<!-- Bio -->
+<div class="home-intro">
+  I am an AI Researcher with a strong focus on <strong>LLM Security</strong>, <strong>Deepfake Detection</strong>, and <strong>Robust NLP</strong>. I hold an M.Tech in Data Science & AI from <a href="https://www.iiitranchi.ac.in/">IIIT Ranchi</a> and have published in the <a href="https://www.tandfonline.com/journals/tijr20">IETE Journal of Research</a> (Taylor & Francis) and on <a href="https://arxiv.org/abs/2512.04967v1">arXiv</a>. Two papers are under publication in Springer's <a href="https://www.springer.com/series/15179">Lecture Notes in Networks and Systems</a>.
 </div>
 
 <!-- Research Interests -->
@@ -172,20 +159,15 @@ author_profile: true
   <span class="interest-tag">Deepfake Detection</span>
   <span class="interest-tag">Robust NLP</span>
   <span class="interest-tag">IoT Security</span>
-  <span class="interest-tag">DevSecOps</span>
   <span class="interest-tag">Multilingual AI</span>
 </div>
 
 <!-- News -->
-<div class="section-title">News & Updates</div>
+<div class="section-title">News</div>
 <ul class="news-list">
   <li class="news-item">
-    <span class="news-date">Mar 2026</span>
-    <span class="news-text">Joined <strong>SS Software Solutions LLC</strong> as a Software Engineer, working on ML pipelines and DevSecOps.</span>
-  </li>
-  <li class="news-item">
     <span class="news-date">Jan 2026</span>
-    <span class="news-text">🏆 Received the <strong>Best Paper Award</strong> at ICACA 2026 for research on adversarial prompt injection attacks on LLMs.</span>
+    <span class="news-text">🏆 <strong>Best Paper Award</strong> at ICACA 2026 for <em>Adversarial Prompt Injection Attacks on LLMs</em>.</span>
   </li>
   <li class="news-item">
     <span class="news-date">2025</span>
