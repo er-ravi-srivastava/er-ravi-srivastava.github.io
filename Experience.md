@@ -69,15 +69,15 @@ author_profile: true
 }
 
 .tl-role {
-  font-weight: 800;
-  font-size: 1.25rem;
+  font-weight: 700;
+  font-size: 1.15rem;
   color: var(--global-text-color);
   font-family: 'Inter', sans-serif;
   line-height: 1.3;
 }
 
 .tl-date {
-  font-size: 0.85rem;
+  font-size: 0.84rem;
   font-weight: 600;
   color: #fff;
   background: var(--global-link-color);
@@ -89,7 +89,7 @@ author_profile: true
 .tl-company {
   font-weight: 600;
   color: var(--global-link-color);
-  font-size: 1rem;
+  font-size: 0.95rem;
   margin-bottom: 12px;
   display: block;
 }
@@ -132,32 +132,32 @@ author_profile: true
 
 .edu-degree {
   font-weight: 700;
-  font-size: 1.05rem;
+  font-size: 1rem;
   color: var(--global-text-color);
   margin-bottom: 4px;
 }
 
 .edu-school {
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   color: var(--global-link-color);
   font-weight: 600;
   margin-bottom: 4px;
 }
 
 .edu-meta {
-  font-size: 0.82rem;
+  font-size: 0.84rem;
   color: var(--global-text-color-light);
   font-style: italic;
 }
 
 /* ===== Skills Section ===== */
 .section-divider {
-  font-size: 1.5rem;
-  font-weight: 800;
+  font-size: 1.25rem;
+  font-weight: 700;
   color: var(--global-text-color);
   font-family: 'Inter', sans-serif;
   margin: 3rem 0 1.5rem 0;
-  border-bottom: 3px solid var(--global-link-color);
+  border-bottom: 2px solid var(--global-link-color);
   padding-bottom: 10px;
 }
 
@@ -184,7 +184,7 @@ author_profile: true
 
 .skill-cat-title {
   font-weight: 700;
-  font-size: 1.05rem;
+  font-size: 0.95rem;
   color: var(--global-link-color);
   margin-bottom: 14px;
   font-family: 'Inter', sans-serif;
@@ -203,7 +203,7 @@ author_profile: true
   color: var(--global-text-color);
   padding: 6px 14px;
   border-radius: 20px;
-  font-size: 0.85rem;
+  font-size: 0.84rem;
   font-weight: 500;
   font-family: 'Inter', sans-serif;
   transition: background 0.2s ease, color 0.2s ease;

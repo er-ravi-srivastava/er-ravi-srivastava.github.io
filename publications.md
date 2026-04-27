@@ -56,7 +56,7 @@ author_profile: true
   color: var(--global-link-color) !important;
   width: 100px;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .pub-table tbody td:last-child {
@@ -87,15 +87,15 @@ author_profile: true
 .pub-venue {
   font-weight: 500;
   color: var(--global-link-color);
-  font-size: 0.95rem;
+  font-size: 0.88rem;
   margin-bottom: 8px;
   display: block;
 }
 
 .pub-excerpt {
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   color: var(--global-text-color-light);
-  line-height: 1.5;
+  line-height: 1.6;
   margin-top: 10px;
 }
 

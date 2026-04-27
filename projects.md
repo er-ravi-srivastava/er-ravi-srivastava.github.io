@@ -22,8 +22,8 @@ author_profile: true
 }
 
 .project-title {
-  font-weight: 800;
-  font-size: 1.3rem;
+  font-weight: 700;
+  font-size: 1.15rem;
   color: var(--global-text-color) !important;
   margin-bottom: 10px;
   line-height: 1.3;
@@ -33,7 +33,7 @@ author_profile: true
 .project-category {
   font-weight: 600;
   color: var(--global-link-color) !important;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   margin-bottom: 15px;
   text-transform: uppercase;
   letter-spacing: 0.05em;

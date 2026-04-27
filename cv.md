@@ -36,8 +36,8 @@ author_profile: true
 }
 
 .cv-section-title {
-  font-size: 1.3rem;
-  font-weight: 800;
+  font-size: 1.25rem;
+  font-weight: 700;
   color: var(--global-text-color);
   font-family: 'Inter', sans-serif;
   display: flex;
@@ -79,27 +79,27 @@ author_profile: true
 
 .cv-entry-title {
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   color: var(--global-text-color);
   font-family: 'Inter', sans-serif;
 }
 
 .cv-entry-date {
-  font-size: 0.82rem;
+  font-size: 0.84rem;
   font-weight: 600;
   color: var(--global-link-color);
   white-space: nowrap;
 }
 
 .cv-entry-sub {
-  font-size: 0.95rem;
+  font-size: 0.88rem;
   color: var(--global-link-color);
   font-weight: 600;
   margin-bottom: 8px;
 }
 
 .cv-entry-desc {
-  font-size: 0.92rem;
+  font-size: 0.95rem;
   color: var(--global-text-color);
   line-height: 1.6;
 }
@@ -172,7 +172,7 @@ author_profile: true
   color: var(--global-text-color);
   padding: 5px 12px;
   border-radius: 16px;
-  font-size: 0.82rem;
+  font-size: 0.84rem;
   font-weight: 500;
   font-family: 'Inter', sans-serif;
 }

@@ -36,7 +36,7 @@ author_profile: true
 }
 
 .hero-text {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-weight: 700;
   font-family: 'Inter', sans-serif;
   letter-spacing: 0.01em;
@@ -46,7 +46,7 @@ author_profile: true
 }
 
 .hero-sub {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: 400;
   opacity: 0.9;
   margin-top: 8px;
@@ -56,15 +56,15 @@ author_profile: true
 
 /* ===== Homepage Content ===== */
 .home-intro {
-  font-size: 1.05rem;
-  line-height: 1.85;
+  font-size: 0.95rem;
+  line-height: 1.7;
   color: var(--global-text-color);
   margin-bottom: 2.5rem;
   font-family: 'Inter', sans-serif;
 }
 
 .section-title {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   font-weight: 700;
   color: var(--global-text-color);
   margin-bottom: 1rem;
@@ -86,7 +86,7 @@ author_profile: true
   color: #fff;
   padding: 7px 16px;
   border-radius: 20px;
-  font-size: 0.85rem;
+  font-size: 0.84rem;
   font-weight: 600;
   font-family: 'Inter', sans-serif;
   transition: transform 0.2s ease, opacity 0.2s ease;
@@ -120,15 +120,15 @@ author_profile: true
 
 .news-date {
   flex: 0 0 90px;
-  font-size: 0.82rem;
+  font-size: 0.84rem;
   font-weight: 700;
   color: var(--global-link-color);
   font-family: 'Inter', sans-serif;
 }
 
 .news-text {
-  font-size: 0.92rem;
-  line-height: 1.5;
+  font-size: 0.95rem;
+  line-height: 1.6;
   color: var(--global-text-color);
 }
 
