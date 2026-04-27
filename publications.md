@@ -7,32 +7,37 @@ author_profile: true
 
 <div style="margin-top:2rem;"> <!-- noticeable space below the title -->
 
-<ul style="list-style:none; padding-left:0;">
-{% for post in site.publications reversed %}
-  <li style="margin-bottom:1.2rem;">
-    <!-- Paper title -->
-    <strong>
-      <a href="{{ post.url | relative_url }}" style="text-decoration:none; color:inherit;">
-        {{ post.title }}
-      </a>
-    </strong>
-    
-    <!-- Journal / venue -->
-    {% if post.venue or post.date %}
-    <div style="font-size:0.9rem; color:var(--color-fg-muted); margin-top:0.2rem;">
-      {% if post.venue %}{{ post.venue }}{% endif %}
-      {% if post.date %} ({{ post.date | date: "%Y" }}){% endif %}
-    </div>
-    {% endif %}
 
-    <!-- PDF / paper link -->
-    {% if post.paperurl %}
-    <div style="font-size:0.9rem; margin-top:0.1rem;">
-      <a href="{{ post.paperurl }}" target="_blank" style="color:var(--color-accent); text-decoration:underline;">
-        PDF / Link
-      </a>
-    </div>
-    {% endif %}
-  </li>
-{% endfor %}
-</ul>
+<table class="pub-table">
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>Publication Details</th>
+      <th>Links</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for post in site.publications reversed %}
+    <tr>
+      <td>{{ post.date | date: "%Y" }}</td>
+      <td>
+        <div class="pub-title">
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </div>
+        <span class="pub-venue">{{ post.venue }}</span>
+        {% if post.excerpt %}
+        <div class="pub-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</div>
+        {% endif %}
+      </td>
+      <td>
+        <div class="pub-links">
+          {% if post.paperurl %}
+          <a href="{{ post.paperurl }}" class="btn btn--primary btn--small" target="_blank">PDF</a>
+          {% endif %}
+          <a href="{{ post.url | relative_url }}" class="btn btn--info btn--small">Details</a>
+        </div>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
