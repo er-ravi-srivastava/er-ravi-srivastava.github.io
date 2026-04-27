@@ -4,31 +4,47 @@ title: "Experience"
 permalink: /experience/
 author_profile: true
 ---
-<div style="margin-top:2rem;"> <!-- noticeable space below the title -->
 
-<ul style="list-style:none; padding-left:0;">
+<div style="margin-top:2rem;">
+
+  <!-- Software Engineer -->
+  <div class="exp-card">
+    <div class="exp-title">Software Engineer</div>
+    <div class="exp-company">SS Software Solutions LLC, Hyderabad, India</div>
+    <div class="exp-date">March 2026 – Present</div>
+    <div class="exp-desc">
+      <ul>
+        <li>Defined and enforced ML pipeline standards including versioning, logging, and monitoring to improve system reliability and debuggability.</li>
+        <li>Currently learning and applying Threat Modeling to proactively identify design-level risks.</li>
+        <li>Automated security testing under DevSecOps by integrating tools into CI/CD pipelines, reducing manual effort and improving efficiency.</li>
+      </ul>
+    </div>
+  </div>
 
   <!-- Research Data Scientist -->
-  <li style="margin-bottom:2rem;">
-    <strong style="font-size:1.1rem;">Research Data Scientist</strong> — Pantech e-learning, India
-    <div style="font-size:0.85rem; color:var(--color-fg-muted); margin-top:0.1rem;">
-      February 2023 – August 2024
+  <div class="exp-card">
+    <div class="exp-title">Research Data Scientist</div>
+    <div class="exp-company">Pantech e-learning, Chennai, India</div>
+    <div class="exp-date">February 2023 – September 2024</div>
+    <div class="exp-desc">
+      <ul>
+        <li>Designed and deployed ML-based intrusion and anomaly detection models on real-world datasets (10K+ samples), improving threat detection accuracy by 15–20% under noisy and incomplete data conditions.</li>
+        <li>Conducted web application penetration testing and vulnerability assessments, identifying critical weaknesses.</li>
+      </ul>
     </div>
-    <p style="margin-top:0.5rem; line-height:1.5;">
-      Designed predictive machine learning models with emphasis on reliability and robustness under noisy and incomplete data. Conducted systematic robustness evaluation through stress testing, identifying failure modes and informing mitigation strategies.
-    </p>
-  </li>
+  </div>
 
   <!-- Machine Learning Intern -->
-  <li style="margin-bottom:2rem;">
-    <strong style="font-size:1.1rem;">Machine Learning Intern</strong> — Center for Development of Advanced Computing (C-DAC), India
-    <div style="font-size:0.85rem; color:var(--color-fg-muted); margin-top:0.1rem;">
-      August 2022 – February 2023
+  <div class="exp-card">
+    <div class="exp-title">Machine Learning Intern</div>
+    <div class="exp-company">C-DAC (Govt. of India), Hyderabad, India</div>
+    <div class="exp-date">August 2022 – February 2023</div>
+    <div class="exp-desc">
+      <ul>
+        <li>Performed large-scale data preprocessing and feature engineering on student activity logs (attendance, assignments, quizzes) to support predictive modeling.</li>
+        <li>Implemented and benchmarked multiple machine learning models, including Decision Trees, Random Forests, and Support Vector Machines, for academic performance prediction.</li>
+      </ul>
     </div>
-    <p style="margin-top:0.5rem; line-height:1.5;">
-      Performed data preprocessing and feature engineering on student activity logs, including attendance, assignment submissions, and quiz scores, to improve model performance. Conducted comparative evaluation of multiple machine learning algorithms, including Decision Trees, Random Forests, and SVMs, to identify the most effective approach. Evaluated multiple algorithms and analyzed their generalization behavior on real-world educational data.
-    </p>
-  </li>
+  </div>
 
-</ul>
 </div>
