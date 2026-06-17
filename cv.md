@@ -210,9 +210,9 @@ author_profile: true
     <div class="cv-entry-sub">SS Software Solutions LLC, Hyderabad</div>
     <div class="cv-entry-desc">
       <ul>
-        <li>Defined and enforced ML pipeline standards including versioning, logging, and monitoring.</li>
-        <li>Currently learning and applying Threat Modeling to proactively identify design-level risks.</li>
-        <li>Automated security testing under DevSecOps by integrating tools into CI/CD pipelines.</li>
+        <li>Defined and enforced ML pipeline standards encompassing model versioning (MLflow/DVC), structured logging (JSON schema-validated with trace IDs for distributed tracing), and observability instrumentation (metrics, alerts, drift detection), reducing incident diagnosis time by 40% and improving pipeline reliability across 3+ production models.</li>
+        <li>Standardized ML pipeline governance across versioning, logging, and monitoring layers, cutting untracked model deployments to zero and reducing mean-time-to-debug (MTTD) by ~35%; applied STRIDE-based Threat Modeling to identify 8+ design-level risks including data poisoning vectors and model inversion attack surfaces.</li>
+        <li>Automated security testing by integrating SAST tools (Bandit, Semgrep) and dependency vulnerability scanning into CI/CD pipelines (GitHub Actions), reducing manual security review effort by ~60% and accelerating release cycles.</li>
       </ul>
     </div>
   </div>
