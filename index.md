@@ -142,13 +142,13 @@ author_profile: true
 
 <!-- Hero Banner -->
 <div class="hero-banner">
-  <div class="hero-text">🎯 Actively seeking PhD opportunities in Computer Science</div>
-  <div class="hero-sub">Research interests: LLM Security · Adversarial ML · Deepfake Detection · Robust NLP</div>
+  <div class="hero-text">🎯 Software Engineer | Cybersecurity & MLOps</div>
+  <div class="hero-sub">Specializing in ML Pipeline Security · Threat Modeling · Robust AI Systems</div>
 </div>
 
 <!-- Bio -->
 <div class="home-intro">
-  I am an AI Researcher with a strong focus on <strong>LLM Security</strong>, <strong>Deepfake Detection</strong>, and <strong>Robust NLP</strong>. I hold an M.Tech in Data Science & AI from <a href="https://www.iiitranchi.ac.in/">IIIT Ranchi</a> and have published in the <a href="https://www.tandfonline.com/journals/tijr20">IETE Journal of Research</a> (Taylor & Francis) and on <a href="https://arxiv.org/abs/2512.04967v1">arXiv</a>. Two papers are under publication in Springer's <a href="https://www.springer.com/series/15179">Lecture Notes in Networks and Systems</a>.
+  I am a Software Engineer with a strong focus on <strong>Cybersecurity</strong>, <strong>MLOps</strong>, and <strong>AI Security</strong>. I hold a B.Tech in Information Technology from <a href="https://nehu.ac.in/">NEHU</a> and have published in the <a href="https://www.tandfonline.com/journals/tijr20">IETE Journal of Research</a> (Taylor & Francis) and on <a href="https://arxiv.org/abs/2512.04967v1">arXiv</a>. Two of my papers are under publication at the International Conference on Advanced Computing and Applications (ICACA-2026).
 </div>
 
 <!-- Research Interests -->
@@ -178,7 +178,7 @@ author_profile: true
     <span class="news-text"><em>Balanced Few-Shot Episodic Learning</em> preprint released on <strong>arXiv</strong>.</span>
   </li>
   <li class="news-item">
-    <span class="news-date">Aug 2024</span>
-    <span class="news-text">Started <strong>M.Tech in Data Science & AI</strong> at IIIT Ranchi with IETE Scholarship.</span>
+    <span class="news-date">Mar 2026</span>
+    <span class="news-text">Started a new position as a <strong>Software Engineer</strong> at SS Software Solutions LLC.</span>
   </li>
 </ul>

@@ -243,18 +243,18 @@ author_profile: true
     </div>
   </div>
 
-  <!-- Research Data Scientist -->
+  <!-- DevOps Engineer -->
   <div class="timeline-item">
     <div class="timeline-card">
       <div class="tl-header">
-        <span class="tl-role">Research Data Scientist</span>
-        <span class="tl-date">Feb 2023 – Sep 2024</span>
+        <span class="tl-role">DevOps Engineer</span>
+        <span class="tl-date">Apr 2023 – Feb 2026</span>
       </div>
-      <span class="tl-company"><i class="fas fa-flask"></i> Pantech e-learning, Chennai, India</span>
+      <span class="tl-company"><i class="fas fa-server"></i> Pantech e-learning, Chennai, India</span>
       <div class="tl-desc">
         <ul>
           <li>Designed and deployed ML-based intrusion and anomaly detection models on real-world datasets (10K+ samples), improving threat detection accuracy by 15–20% under noisy and incomplete data conditions.</li>
-          <li>Conducted web application penetration testing and vulnerability assessments, identifying critical weaknesses.</li>
+          <li>Assisted in identifying and documenting security misconfigurations across web applications and CI/CD pipelines, supporting remediation efforts and contributing to secure software development practices within a DevOps workflow.</li>
         </ul>
       </div>
     </div>
@@ -284,12 +284,7 @@ author_profile: true
         <span class="tl-role"><i class="fas fa-graduation-cap"></i> Education</span>
       </div>
       <div class="edu-grid">
-        <div class="edu-card">
-          <div class="edu-degree">M.Tech — Data Science & AI</div>
-          <div class="edu-school">IIIT Ranchi, India</div>
-          <div class="edu-meta">Aug 2024 – Apr 2026 · CGPA: 8.45/10</div>
-        </div>
-        <div class="edu-card">
+        <div class="edu-card" style="grid-column: span 2;">
           <div class="edu-degree">B.Tech — Information Technology</div>
           <div class="edu-school">NEHU, Shillong, India</div>
           <div class="edu-meta">Aug 2018 – Jun 2022 · CGPA: 7.85/10</div>

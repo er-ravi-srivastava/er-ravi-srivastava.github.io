@@ -191,14 +191,6 @@ author_profile: true
   <div class="cv-section-title"><i class="fas fa-graduation-cap"></i> Education</div>
   <div class="cv-entry">
     <div class="cv-entry-header">
-      <span class="cv-entry-title">M.Tech in Data Science & AI</span>
-      <span class="cv-entry-date">Aug 2024 – Apr 2026</span>
-    </div>
-    <div class="cv-entry-sub">Indian Institute of Information Technology Ranchi (IIIT Ranchi)</div>
-    <div class="cv-entry-desc">CGPA: 8.45/10 (ongoing)</div>
-  </div>
-  <div class="cv-entry">
-    <div class="cv-entry-header">
       <span class="cv-entry-title">B.Tech in Information Technology</span>
       <span class="cv-entry-date">Aug 2018 – Jun 2022</span>
     </div>
@@ -226,14 +218,14 @@ author_profile: true
   </div>
   <div class="cv-entry">
     <div class="cv-entry-header">
-      <span class="cv-entry-title">Research Data Scientist</span>
-      <span class="cv-entry-date">Feb 2023 – Sep 2024</span>
+      <span class="cv-entry-title">DevOps Engineer</span>
+      <span class="cv-entry-date">Apr 2023 – Feb 2026</span>
     </div>
     <div class="cv-entry-sub">Pantech e-learning, Chennai</div>
     <div class="cv-entry-desc">
       <ul>
         <li>Designed and deployed ML-based intrusion and anomaly detection models on real-world datasets (10K+ samples).</li>
-        <li>Conducted web application penetration testing and vulnerability assessments.</li>
+        <li>Assisted in identifying and documenting security misconfigurations across web applications and CI/CD pipelines.</li>
       </ul>
     </div>
   </div>
@@ -326,6 +318,6 @@ author_profile: true
   </div>
   <div class="cv-award-item">
     <span class="cv-award-icon">🎓</span>
-    <span class="cv-award-text"><strong>IETE Scholarship</strong> — Awarded by the Institution of Electronics and Telecommunication Engineers for academic excellence during M.Tech studies</span>
+    <span class="cv-award-text"><strong>IETE Scholarship</strong> — Awarded by the Institution of Electronics and Telecommunication Engineers for academic excellence</span>
   </div>
 </div>
