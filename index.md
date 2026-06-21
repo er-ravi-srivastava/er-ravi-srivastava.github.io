@@ -245,6 +245,10 @@ html[data-theme="dark"] .callout-box {
       <span class="news-date">Dec 2024</span>
       <span class="news-text"><em>Balanced Few-Shot Episodic Learning for Cross-Lingual NLP</em> preprint released on <a href="https://arxiv.org/abs/2512.04967v1" target="_blank">arXiv</a>.</span>
     </li>
+    <li class="news-item">
+      <span class="news-date">2024</span>
+      <span class="news-text">🎓 Received the <strong>IETE Scholarship</strong> from the <strong>Institution of Electronics and Telecommunication Engineers (IETE), New Delhi, India</strong> for academic excellence during M.Tech studies.</span>
+    </li>
   </ul>
 
 </div>
