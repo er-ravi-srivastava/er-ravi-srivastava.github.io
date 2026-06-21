@@ -75,6 +75,18 @@ author_profile: true
     </div>
   </div>
 
+  <!-- Vulnerability Management Platform -->
+  <div class="project-card">
+    <div class="project-title">AI-Powered Vulnerability Management Platform (SAST + DAST)</div>
+    <div class="project-category">Engineering Project &nbsp;·&nbsp; <a href="https://vulnerability-management-app.streamlit.app/" target="_blank" style="text-decoration: underline;"><i class="fas fa-external-link-alt fa-sm"></i> Live Demo</a></div>
+    <div class="project-desc">
+      <ul>
+        <li>Automated static analysis via Semgrep and dynamic testing (SQLi, XSS, CSRF) for live web applications; built an interactive Streamlit dashboard for real-time vulnerability visualisation and remediation guidance.</li>
+        <li>Dockerised, CI/CD-compatible DevSecOps architecture; integrated into GitHub Actions for continuous security coverage.</li>
+      </ul>
+    </div>
+  </div>
+
   <!-- IoT-HITS -->
   <div class="project-card">
     <div class="project-title">IoT-HITS: IoT-based Human Intrusion Detection System for Border Regions Using Deep Learning</div>
