@@ -238,7 +238,7 @@ html[data-theme="dark"] .callout-box {
       <span class="news-text">🏆 <strong>Best Paper Award</strong> at ICACA 2026 for <em>Adversarial Prompt Injection Attacks on Large Language Models: Cryptographic Key Leakage and Defense Strategies</em>.</span>
     </li>
     <li class="news-item">
-      <span class="news-date">2025</span>
+      <span class="news-date">July 2025</span>
       <span class="news-text"><em>IoT-HITS: IoT Hybrid Intrusion Detection System</em> published in the <strong>IETE Journal of Research</strong> (Taylor &amp; Francis).</span>
     </li>
     <li class="news-item">
@@ -246,8 +246,8 @@ html[data-theme="dark"] .callout-box {
       <span class="news-text"><em>Balanced Few-Shot Episodic Learning for Cross-Lingual NLP</em> preprint released on <a href="https://arxiv.org/abs/2512.04967v1" target="_blank">arXiv</a>.</span>
     </li>
     <li class="news-item">
-      <span class="news-date">2024</span>
-      <span class="news-text">🎓 Received the <strong>IETE Scholarship</strong> from the <strong>Institution of Electronics and Telecommunication Engineers (IETE), New Delhi, India</strong> for academic excellence during M.Tech studies.</span>
+      <span class="news-date">Sept 2024</span>
+      <span class="news-text">🎓 Received the <strong>IETE Scholarship</strong> from the <strong>Institution of Electronics and Telecommunication Engineers (IETE), New Delhi, India</strong> for academic excellence during M.Tech studies in Computer Science and Engineering.</span>
     </li>
   </ul>
 
