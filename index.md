@@ -183,7 +183,7 @@ html[data-theme="dark"] .callout-box {
     <p>
       I am a <strong>Software Engineer</strong> with a focused research interest in
       <strong>Cybersecurity</strong>, <strong>MLOps</strong>, and <strong>AI Security</strong>.
-      I hold an M.Tech in Data Science and AI from <a href="https://iiitranchi.ac.in/" target="_blank">IIIT Ranchi</a> and a B.Tech in Information Technology from
+      I hold a Masters in Data Science and AI from <a href="https://iiitranchi.ac.in/" target="_blank">IIIT Ranchi</a> and a B.Tech in Information Technology from
       <a href="https://nehu.ac.in/" target="_blank">NEHU</a> and have published work in the
       <a href="https://www.tandfonline.com/journals/tijr20" target="_blank">IETE Journal of Research</a>
       (Taylor &amp; Francis) and on <a href="https://arxiv.org/abs/2512.04967v1" target="_blank">arXiv</a>.
@@ -243,7 +243,7 @@ html[data-theme="dark"] .callout-box {
     </li>
     <li class="news-item">
       <span class="news-date">Dec 2024</span>
-      <span class="news-text"><em>Balanced Few-Shot Episodic Learning for Cross-Lingual NLP</em> preprint released on <a href="https://arxiv.org/abs/2512.04967v1" target="_blank">arXiv</a>.</span>
+      <span class="news-text"><em>Balanced Few-Shot Episodic Learning for Accurate Retinal Disease Diagnosis</em> preprint released on <a href="https://arxiv.org/abs/2512.04967v1" target="_blank">arXiv</a>.</span>
     </li>
     <li class="news-item">
       <span class="news-date">Sept 2024</span>
