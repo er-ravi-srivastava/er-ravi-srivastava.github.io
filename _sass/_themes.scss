@@ -2,6 +2,9 @@
    SHARED THEME SETTINGS
    ========================================================================== */
 
+/* Google Fonts — Academic-style clean typography (inspired by cgiannoula.github.io) */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+
 /* ==========================================================================
    TYPOGRAPHY
    ========================================================================== */
@@ -15,7 +18,7 @@ $indent-var                 : 1.3em;
 
 /* System typefaces */
 $serif                      : Georgia, Times, serif;
-$sans-serif                 : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+$sans-serif                 : "Nunito", "Inter", -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 $monospace                  : Monaco, Consolas, "Lucida Console", monospace;
 
 /* Sans serif typefaces */
