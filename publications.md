@@ -144,8 +144,14 @@ author_profile: true
       </td>
       <td>
         <div class="pub-links">
-          {% if post.paperurl %}
-          <a href="{{ post.paperurl }}" class="btn btn--primary btn--small" target="_blank">PDF</a>
+          {% if post.paperurl and post.paperurl != '' %}
+          <a href="{{ post.paperurl }}" class="btn btn--primary btn--small" target="_blank" style="background: #3084de; border-color: #3084de;"><i class="fas fa-file-pdf"></i> PDF</a>
+          {% endif %}
+          {% if post.doi and post.doi != '' %}
+          <a href="{{ post.doi }}" class="btn btn--info btn--small" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
+          {% endif %}
+          {% if post.code and post.code != '' %}
+          <a href="{{ post.code }}" class="btn btn--info btn--small" target="_blank"><i class="fab fa-github"></i> Code</a>
           {% endif %}
           <a href="{{ post.url | relative_url }}" class="btn btn--info btn--small">Details</a>
         </div>

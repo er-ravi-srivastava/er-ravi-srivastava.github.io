@@ -41,6 +41,9 @@
       {% endif %}
 
       <!-- Academic websites -->
+      {% if author.orcid %}
+        <li><a href="https://orcid.org/{{ author.orcid }}"><i class="fab fa-fw fa-orcid icon-pad-right"></i>ORCID</a></li>
+      {% endif %}
       {% if author.academia %}
         <li><a href="{{ author.academia }}"><i class="ai ai-academia ai-fw icon-pad-right"></i>Academia</a></li>
       {% endif %}
