@@ -192,16 +192,13 @@ html[data-theme="dark"] .callout-box {
     </p>
 
     <p>
-      My work sits at the intersection of <strong>adversarial machine learning</strong>,
-      <strong>LLM robustness</strong>, and <strong>secure AI pipelines</strong>. I design and evaluate
-      defense mechanisms against prompt injection, deepfake-based attacks, and IoT network intrusions —
-      combining theoretical foundations with practical system-level implementation.
+      My research journey marks a deliberate transition from <strong>IoT security</strong> (focusing on anomaly detection and hardware-level monitoring) to <strong>NLP and LLM safety, privacy, and robustness</strong>. My current work sits at the intersection of <strong>adversarial machine learning</strong>, <strong>LLM security</strong>, and <strong>secure MLOps pipelines</strong> — combining theoretical foundations with practical system-level implementation to build robust defenses against prompt injection, model inversion, and data leakage.
     </p>
 
     <p>
       Currently, I work as a <strong>Software Engineer at SS Software Solutions LLC</strong>, where I apply
       security-first engineering principles to real-world software systems. I am actively seeking opportunities
-      to contribute to research and engineering teams working at the frontier of AI safety and security.
+      to contribute to research and engineering teams working at the frontier of AI safety, alignment, and security.
     </p>
   </div>
 
