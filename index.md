@@ -174,6 +174,82 @@ html[data-theme="dark"] .callout-box {
     font-size: 1.1rem;
   }
 }
+
+/* ===== Niche Focus Themes ===== */
+.niche-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 1rem;
+  margin-bottom: 2.2rem;
+}
+
+.niche-card {
+  background: var(--global-card-bg, #fcfcfc);
+  border: 1px solid var(--global-border-color, #e5e7eb);
+  border-radius: 8px;
+  padding: 18px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  font-family: 'Nunito', sans-serif;
+}
+
+.niche-card:hover {
+  transform: translateY(-3px);
+  border-color: #3084de;
+  box-shadow: 0 4px 20px rgba(48, 132, 222, 0.15);
+}
+
+.niche-card-title {
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: #3084de;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  line-height: 1.3;
+}
+
+.niche-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.niche-list li {
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  color: var(--global-text-color);
+  line-height: 1.4;
+}
+
+.niche-list li::before {
+  content: "•";
+  color: #3084de;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+html[data-theme="dark"] .niche-card {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+@media (max-width: 900px) {
+  .niche-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .niche-grid {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
 
 <div class="home-content">
@@ -192,7 +268,7 @@ html[data-theme="dark"] .callout-box {
     </p>
 
     <p>
-      My research journey marks a deliberate transition from <strong>IoT security</strong> (focusing on anomaly detection and hardware-level monitoring) to <strong>NLP and LLM safety, privacy, and robustness</strong>. My current work sits at the intersection of <strong>adversarial machine learning</strong>, <strong>LLM security</strong>, and <strong>secure MLOps pipelines</strong> — combining theoretical foundations with practical system-level implementation to build robust defenses against prompt injection, model inversion, and data leakage.
+      My research focuses on the design of <strong>intelligent, trustworthy, and scalable computational systems</strong>, spanning <strong>artificial intelligence</strong>, <strong>computer vision</strong>, <strong>language models</strong>, <strong>quantum computing</strong>, and <strong>hardware–software co-design</strong>. A central theme of my work is the integration of algorithmic intelligence with efficient and secure system architectures, ensuring that advanced AI techniques are both practically deployable and responsibly engineered.
     </p>
 
     <p>
@@ -212,15 +288,34 @@ html[data-theme="dark"] .callout-box {
 
   <!-- Research Interests -->
   <div class="section-heading">Research Interests</div>
-  <div class="interest-tags">
-    <span class="interest-tag">LLM Security</span>
-    <span class="interest-tag">Adversarial Machine Learning</span>
-    <span class="interest-tag">Deepfake Detection</span>
-    <span class="interest-tag">Robust NLP</span>
-    <span class="interest-tag">IoT Security</span>
-    <span class="interest-tag">Multilingual AI</span>
-    <span class="interest-tag">Prompt Injection Defense</span>
-    <span class="interest-tag">MLOps Security</span>
+  <div class="niche-grid">
+    <div class="niche-card">
+      <div class="niche-card-title">🛡️ Trustworthy AI &amp; LLM Security</div>
+      <ul class="niche-list">
+        <li>Prompt Injection</li>
+        <li>AI Agents</li>
+        <li>Red Teaming</li>
+        <li>Secure Code Generation</li>
+      </ul>
+    </div>
+    
+    <div class="niche-card">
+      <div class="niche-card-title">🧬 Biomedical AI</div>
+      <ul class="niche-list">
+        <li>Clinical NLP</li>
+        <li>Medical Foundation Models</li>
+        <li>Drug Discovery</li>
+      </ul>
+    </div>
+
+    <div class="niche-card">
+      <div class="niche-card-title">🔒 Privacy-Preserving &amp; Robust ML</div>
+      <ul class="niche-list">
+        <li>Federated Learning</li>
+        <li>Differential Privacy</li>
+        <li>Adversarial ML</li>
+      </ul>
+    </div>
   </div>
 
   <!-- News -->
