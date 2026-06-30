@@ -204,3 +204,6 @@ author_profile: true
 <a href="/files/Ravi_Prakash_Srivastava_CV.pdf" class="cv-download" target="_blank">
   <i class="fas fa-file-pdf"></i> Download Full CV (PDF)
 </a>
+<a href="/files/Reviewer_Ravi_Prakash_Srivastava.pdf" class="cv-download" style="background:#10b981; box-shadow: 0 4px 14px rgba(16,185,129,0.3);" target="_blank">
+  <i class="fas fa-certificate"></i> Reviewer Profile (PDF)
+</a>

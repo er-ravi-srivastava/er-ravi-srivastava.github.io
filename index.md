@@ -282,8 +282,8 @@ html[data-theme="dark"] .niche-card {
   <div class="callout-box">
     I am <strong>open to research collaborations and engineering opportunities</strong> in AI Security, LLM Robustness,
     and Cybersecurity. Feel free to reach out via
-    <a href="mailto:raviprakashshrivastav7@gmail.com">email</a> or view my
-    <a href="/cv/">CV</a>.
+    <a href="mailto:raviprakashshrivastav7@gmail.com">email</a>, view my
+    <a href="/cv/">CV</a>, or check my <a href="/files/Reviewer_Ravi_Prakash_Srivastava.pdf" target="_blank">Reviewer Profile</a>.
   </div>
 
   <!-- Research Interests -->
@@ -321,6 +321,10 @@ html[data-theme="dark"] .niche-card {
   <!-- News -->
   <div class="section-heading">News</div>
   <ul class="news-list">
+    <li class="news-item">
+      <span class="news-date">June 2026</span>
+      <span class="news-text">📄 Appointed as a Peer Reviewer — view my <a href="/files/Reviewer_Ravi_Prakash_Srivastava.pdf" target="_blank">Reviewer Profile</a>.</span>
+    </li>
     <li class="news-item">
       <span class="news-date">Mar 2026</span>
       <span class="news-text">Started a new position as a <strong>Software Engineer</strong> at SS Software Solutions LLC.</span>
