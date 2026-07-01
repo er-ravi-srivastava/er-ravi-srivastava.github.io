@@ -182,24 +182,11 @@ html[data-theme="dark"] .callout-box {
   <!-- About Me -->
   <div class="about-section">
     <p>
-      I am a <strong>Software Engineer</strong> with a focused research interest in
-      <strong>Cybersecurity</strong>, <strong>MLOps</strong>, and <strong>AI Security</strong>.
-      I hold a Masters in Data Science and AI from <a href="https://iiitranchi.ac.in/" target="_blank">IIIT Ranchi</a> and a B.Tech in Information Technology from
-      <a href="https://nehu.ac.in/" target="_blank">NEHU</a> and have published work in the
-      <a href="https://www.tandfonline.com/journals/tijr20" target="_blank">IETE Journal of Research</a>
-      (Taylor &amp; Francis) and on <a href="https://arxiv.org/abs/2512.04967v1" target="_blank">arXiv</a>.
-      Two of my papers are under publication at the
-      <strong>International Conference on Advanced Computing and Applications (ICACA-2026)</strong>.
+      Hello! I hold a master’s degree in <strong>Data Science and Artificial Intelligence</strong> from the <a href="https://iiitranchi.ac.in/" target="_blank">Indian Institute of Information Technology, Ranchi, India</a>. In 2024, I received a postgraduate fellowship from the <strong>Institution of Electronics and Telecommunication Engineers (IETE), New Delhi</strong>, which supported my master’s studies at IIIT Ranchi. My master’s thesis is on <em>“Cross-Domain Text Summarization using Transformer Models”</em>. I completed my B.Tech in Information Technology from <a href="https://nehu.ac.in/" target="_blank">NEHU</a>, where I completed my thesis on <em>“IoT-HITS: An IoT Based Human Intrusion Detection System for Border Region Using Deep Learning”</em>.
     </p>
 
     <p>
-      My research focuses on the design of <strong>intelligent, trustworthy, and scalable computational systems</strong>, spanning <strong>artificial intelligence</strong>, <strong>computer vision</strong>, <strong>language models</strong>, <strong>quantum computing</strong>, and <strong>hardware–software co-design</strong>. A central theme of my work is the integration of algorithmic intelligence with efficient and secure system architectures, ensuring that advanced AI techniques are both practically deployable and responsibly engineered.
-    </p>
-
-    <p>
-      Currently, I work as a <strong>Software Engineer at SS Software Solutions LLC</strong>, where I apply
-      security-first engineering principles to real-world software systems. I am actively seeking opportunities
-      to contribute to research and engineering teams working at the frontier of AI safety, alignment, and security.
+      My research focuses on <strong>Natural Language Processing (NLP)</strong>, <strong>AutoML &amp; Foundation Models</strong>, <strong>Trustworthy AI</strong>, and <strong>Multimodal Learning</strong>. I am particularly interested in designing foundation models that exhibit robust generalization, efficient adaptation, and reliable reasoning across diverse modalities. My research aims to integrate automated machine learning, self-supervised representation learning, parameter-efficient fine-tuning, multimodal fusion, and uncertainty-aware inference to develop scalable AI systems that remain interpretable, robust to distributional shifts and adversarial perturbations, and deployable in safety-critical, real-world applications.
     </p>
   </div>
 
