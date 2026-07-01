@@ -175,81 +175,6 @@ html[data-theme="dark"] .callout-box {
   }
 }
 
-/* ===== Niche Focus Themes ===== */
-.niche-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  margin-top: 1rem;
-  margin-bottom: 2.2rem;
-}
-
-.niche-card {
-  background: var(--global-card-bg, #fcfcfc);
-  border: 1px solid var(--global-border-color, #e5e7eb);
-  border-radius: 8px;
-  padding: 18px;
-  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
-  font-family: 'Nunito', sans-serif;
-}
-
-.niche-card:hover {
-  transform: translateY(-3px);
-  border-color: #3084de;
-  box-shadow: 0 4px 20px rgba(48, 132, 222, 0.15);
-}
-
-.niche-card-title {
-  font-size: 1.02rem;
-  font-weight: 700;
-  color: #3084de;
-  margin-bottom: 12px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  line-height: 1.3;
-}
-
-.niche-list {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
-
-.niche-list li {
-  position: relative;
-  padding-left: 15px;
-  margin-bottom: 8px;
-  font-size: 0.9rem;
-  color: var(--global-text-color);
-  line-height: 1.4;
-}
-
-.niche-list li::before {
-  content: "•";
-  color: #3084de;
-  font-weight: bold;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
-html[data-theme="dark"] .niche-card {
-  background: #1e293b;
-  border-color: #334155;
-}
-
-@media (max-width: 900px) {
-  .niche-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (max-width: 600px) {
-  .niche-grid {
-    grid-template-columns: 1fr;
-  }
-}
 </style>
 
 <div class="home-content">
@@ -286,37 +211,6 @@ html[data-theme="dark"] .niche-card {
     <a href="/cv/">CV</a>, or check my <a href="/files/Reviewer_Ravi_Prakash_Srivastava.pdf" target="_blank">Reviewer Profile</a>.
   </div>
 
-  <!-- Research Interests -->
-  <div class="section-heading">Research Interests</div>
-  <div class="niche-grid">
-    <div class="niche-card">
-      <div class="niche-card-title">🛡️ Trustworthy AI &amp; LLM Security</div>
-      <ul class="niche-list">
-        <li>Prompt Injection</li>
-        <li>AI Agents</li>
-        <li>Red Teaming</li>
-        <li>Secure Code Generation</li>
-      </ul>
-    </div>
-    
-    <div class="niche-card">
-      <div class="niche-card-title">🧬 Biomedical AI</div>
-      <ul class="niche-list">
-        <li>Clinical NLP</li>
-        <li>Medical Foundation Models</li>
-        <li>Drug Discovery</li>
-      </ul>
-    </div>
-
-    <div class="niche-card">
-      <div class="niche-card-title">🔒 Privacy-Preserving &amp; Robust ML</div>
-      <ul class="niche-list">
-        <li>Federated Learning</li>
-        <li>Differential Privacy</li>
-        <li>Adversarial ML</li>
-      </ul>
-    </div>
-  </div>
 
   <!-- News -->
   <div class="section-heading">News</div>
