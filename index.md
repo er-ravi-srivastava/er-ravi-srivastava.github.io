@@ -132,34 +132,6 @@ body, p, li, span, div {
   text-decoration: underline;
 }
 
-/* ===== Open to Opportunities Callout ===== */
-.callout-box {
-  background: #fff7ed;
-  border-left: 4px solid #f59e0b;
-  border-radius: 6px;
-  padding: 14px 18px;
-  margin-bottom: 2rem;
-  font-family: 'Nunito', sans-serif;
-  font-size: 0.93rem;
-  line-height: 1.65;
-  color: #78350f;
-}
-
-html[data-theme="dark"] .callout-box {
-  background: #2a2010;
-  color: #fcd34d;
-  border-left-color: #f59e0b;
-}
-
-.callout-box a {
-  color: #b45309;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.callout-box a:hover {
-  text-decoration: underline;
-}
 
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
@@ -190,13 +162,6 @@ html[data-theme="dark"] .callout-box {
     </p>
   </div>
 
-  <!-- Open to Opportunities Callout -->
-  <div class="callout-box">
-    I am <strong>open to research collaborations and engineering opportunities</strong> in AI Security, LLM Robustness,
-    and Cybersecurity. Feel free to reach out via
-    <a href="mailto:raviprakashshrivastav7@gmail.com">email</a>, view my
-    <a href="/cv/">CV</a>, or check my <a href="/files/Reviewer_Ravi_Prakash_Srivastava.pdf" target="_blank">Reviewer Profile</a>.
-  </div>
 
 
   <!-- News -->
