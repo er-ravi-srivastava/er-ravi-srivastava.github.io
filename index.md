@@ -160,6 +160,13 @@ body, p, li, span, div {
     <p>
       My research focuses on <strong>Natural Language Processing (NLP)</strong>, <strong>AutoML &amp; Foundation Models</strong>, <strong>Trustworthy AI</strong>, and <strong>Multimodal Learning</strong>. I am particularly interested in designing foundation models that exhibit robust generalization, efficient adaptation, and reliable reasoning across diverse modalities. My research aims to integrate automated machine learning, self-supervised representation learning, parameter-efficient fine-tuning, multimodal fusion, and uncertainty-aware inference to develop scalable AI systems that remain interpretable, robust to distributional shifts and adversarial perturbations, and deployable in safety-critical, real-world applications.
     </p>
+
+    <p style="margin-top: 1.2rem; font-size: 0.95rem;">
+      <strong>Connect with me:</strong> &nbsp;
+      <a href="https://www.linkedin.com/in/ravi-prakash-sri/" target="_blank" style="margin-right: 15px;"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="https://github.com/er-ravi-srivastava" target="_blank" style="margin-right: 15px;"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://scholar.google.com/citations?user=sElDRIMAAAAJ&hl=en" target="_blank"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+    </p>
   </div>
 
 
