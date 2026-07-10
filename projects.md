@@ -87,6 +87,18 @@ author_profile: true
     </div>
   </div>
 
+  <!-- LLM Semantic Cache -->
+  <div class="project-card">
+    <div class="project-title">LLM Semantic Cache &amp; Analytics Dashboard</div>
+    <div class="project-category">Engineering Project &nbsp;·&nbsp; <a href="https://llm-semantic-cache.streamlit.app/" target="_blank" style="text-decoration: underline;"><i class="fas fa-external-link-alt fa-sm"></i> Live Demo</a></div>
+    <div class="project-desc">
+      <ul>
+        <li>Designed a semantic caching layer for LLMs that retrieves responses based on semantic similarity rather than exact keyword matching, optimizing API costs and latency.</li>
+        <li>Integrated a web dashboard to track similarity thresholds, analyze query latency, and visualize real-time hit/miss metrics and system performance.</li>
+      </ul>
+    </div>
+  </div>
+
   <!-- IoT-HITS -->
   <div class="project-card">
     <div class="project-title">IoT-HITS: IoT-based Human Intrusion Detection System for Border Regions Using Deep Learning</div>
