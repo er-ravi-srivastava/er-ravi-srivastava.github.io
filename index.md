@@ -165,7 +165,8 @@ body, p, li, span, div {
       <strong>Connect with me:</strong> &nbsp;
       <a href="https://www.linkedin.com/in/ravi-prakash-sri/" target="_blank" style="margin-right: 15px;"><i class="fab fa-linkedin"></i> LinkedIn</a>
       <a href="https://github.com/er-ravi-srivastava" target="_blank" style="margin-right: 15px;"><i class="fab fa-github"></i> GitHub</a>
-      <a href="https://scholar.google.com/citations?user=sElDRIMAAAAJ&hl=en" target="_blank"><i class="ai ai-google-scholar"></i> Google Scholar</a>
+      <a href="https://scholar.google.com/citations?user=sElDRIMAAAAJ&hl=en" target="_blank" style="margin-right: 15px;"><i class="ai ai-google-scholar"></i> Google Scholar</a>
+      <a href="/files/Ravi_Prakash_Srivastava_CV.pdf" target="_blank"><i class="fas fa-file-pdf"></i> View CV</a>
     </p>
   </div>
 
