@@ -7,7 +7,5 @@ main:
     url: /experience/
   - title: "Coursework"
     url: /coursework/
-  - title: "CV"
-    url: /cv/
   - title: "Contact"
     url: /contact/
