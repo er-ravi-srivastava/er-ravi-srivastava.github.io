@@ -315,6 +315,30 @@ author_profile: true
     </div>
   </div>
 
+  <!-- Research Data Scientist -->
+  <div class="timeline-item">
+    <div class="timeline-card">
+      <div class="tl-header">
+        <span class="tl-role">Research Data Scientist</span>
+        <span class="tl-date">Feb 2023 – Aug 2024</span>
+      </div>
+      <span class="tl-company"><i class="fas fa-building fa-sm"></i>&nbsp; Pantech eLearning &mdash; Remote / India</span>
+      <div class="tl-desc">
+        <ul>
+          <li><strong>Robust Deep Learning.</strong> Built robust deep learning models for noisy, real-world datasets.</li>
+          <li><strong>Stress Testing.</strong> Performed distribution shift and stress testing to uncover and patch model failure modes.</li>
+          <li><strong>Pipeline Design.</strong> Designed end-to-end machine learning pipelines, improving model reliability and inference speed.</li>
+        </ul>
+      </div>
+      <div class="tl-tags">
+        <span class="tl-tag">Deep Learning</span>
+        <span class="tl-tag">Computer Vision</span>
+        <span class="tl-tag">Stress Testing</span>
+        <span class="tl-tag">ML Pipelines</span>
+      </div>
+    </div>
+  </div>
+
   <!-- ML Intern C-DAC -->
   <div class="timeline-item">
     <div class="timeline-card">
