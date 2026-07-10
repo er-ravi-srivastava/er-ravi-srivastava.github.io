@@ -113,12 +113,13 @@ author_profile: true
 
   <!-- Master's Thesis -->
   <div class="project-card">
-    <div class="project-title">Robust Multilingual Text Summarization for Indian Languages</div>
-    <div class="project-category">Master's Thesis (Ongoing)</div>
+    <div class="project-title">Cross-Domain Text Summarization Using Transformer Models</div>
+    <div class="project-category">Master's Thesis (Completed)</div>
     <div class="project-desc">
       <ul>
-        <li>Investigating transformer-based multilingual approaches (mT5, mBART-50, IndicBART) for low-resource Indian languages.</li>
-        <li>Focusing on cross-lingual transfer, robustness, and fair evaluation across Hindi, Gujarati, and Bengali.</li>
+        <li>Investigated the domain shift and catastrophic forgetting challenges in abstractive summarization, adapting news-trained models (BART-large-CNN) to structurally distinct domains like legal documents (BillSum).</li>
+        <li>Implemented and evaluated parameter-efficient fine-tuning (PEFT) using LoRA, combined with Elastic Weight Consolidation (EWC) regularization to preserve pre-trained knowledge.</li>
+        <li>Achieved superior cross-domain generalization while dramatically reducing GPU memory requirements by training only ~1-2% (2M out of 406M) of total parameters.</li>
       </ul>
     </div>
   </div>
