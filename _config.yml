@@ -5,7 +5,7 @@ site_theme: "default"  # Options: default, air, sunrise, mint, dirt, contrast
 title: "Ravi's Homepage"
 title_separator: "-"
 name: &name "Ravi Prakash Srivastava"
-description: &description "Software Engineer & Researcher | AI Security, MLOps, Adversarial Machine Learning | M.Tech Data Science & AI @ IIIT Ranchi"
+description: &description "Software Engineer @ SS Software Solutions LLC | AI Security & MLOps | M.Tech Data Science & AI (IIIT Ranchi)"
 
 url: "https://er-ravi-srivastava.github.io"  # Your site URL
 baseurl: ""  # Empty for user sites
@@ -14,7 +14,7 @@ repository: "er-ravi-srivastava/er-ravi-srivastava.github.io"
 author:
   avatar: "picture_resized.png"
   name: "Ravi Prakash Srivastava"
-  bio: "Software Engineer · AI Security · MLOps Researcher"
+  bio: "Software Engineer @ SS Software Solutions | AI Security & MLOps"
   location: "India"
   email: "raviprakashshrivastav7@gmail.com"
   orcid: "0009-0009-3255-8758"
