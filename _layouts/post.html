@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} — {{ site.title }}</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome & Academicons -->
+    <link rel="stylesheet" href="/assets/fontawesome-free-6.5.2-web/css/all.css">
+    <link rel="stylesheet" href="/assets/academicons-1.9.4/css/academicons.css">
+
+    <style>
+        /* --- Premium Design Variables --- */
+        :root {
+            --bg-base: #08090c;
+            --bg-surface: rgba(17, 22, 34, 0.7);
+            --bg-card: rgba(30, 41, 59, 0.4);
+            --border-color: rgba(255, 255, 255, 0.06);
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent-primary: #3b82f6;
+            --accent-secondary: #1d4ed8;
+            --accent-glow: rgba(59, 130, 246, 0.12);
+            --glass-blur: blur(12px);
+        }
+
+        html.light-mode {
+            --bg-base: #f8fafc;
+            --bg-surface: rgba(255, 255, 255, 0.85);
+            --bg-card: #ffffff;
+            --border-color: #e2e8f0;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --accent-primary: #2563eb;
+            --accent-secondary: #1d4ed8;
+            --accent-glow: rgba(37, 99, 235, 0.05);
+        }
+
+        /* --- Global Reset & Scrollbar --- */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-base);
+            background-image: radial-gradient(circle at 50% 0%, var(--accent-glow) 0%, transparent 60%);
+            color: var(--text-secondary);
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            line-height: 1.7;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+        }
+
+        /* --- Header & Navigation --- */
+        .masthead {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(var(--bg-base), 0.7);
+            backdrop-filter: var(--glass-blur);
+            border-bottom: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        .masthead__inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .site-title {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 800;
+            font-size: 1.25rem;
+            color: var(--text-primary);
+            text-decoration: none;
+            letter-spacing: -0.02em;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .site-title span {
+            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-list {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            gap: 20px;
+        }
+
+        .nav-list a {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 600;
+            font-size: 0.92rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .nav-list a:hover, .nav-list li.active a {
+            color: var(--text-primary);
+        }
+
+        .nav-icons {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            border-left: 1px solid var(--border-color);
+            padding-left: 20px;
+            margin-left: 10px;
+        }
+
+        .nav-icons a {
+            color: var(--text-secondary);
+            font-size: 1.15rem;
+            transition: color 0.2s ease, transform 0.2s ease;
+            cursor: pointer;
+        }
+
+        .nav-icons a:hover {
+            color: var(--text-primary);
+            transform: translateY(-2px);
+        }
+
+        /* --- Main Content Wrapper --- */
+        #main-wrapper {
+            flex: 1;
+            margin-top: 100px;
+            margin-bottom: 60px;
+            padding: 0 24px;
+            width: 100%;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        article {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 48px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            backdrop-filter: var(--glass-blur);
+            position: relative;
+        }
+
+        .entry-title {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 800;
+            font-size: 2.2rem;
+            color: var(--text-primary);
+            letter-spacing: -0.03em;
+            margin-bottom: 6px;
+        }
+
+        .entry-subtitle {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 500;
+            font-size: 1.1rem;
+            color: var(--accent-primary);
+            margin-bottom: 24px;
+        }
+
+        .entry-content {
+            margin-top: 32px;
+        }
+
+        /* --- CSS Customizations for Page Content --- */
+        h2 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 800;
+            font-size: 1.4rem;
+            color: var(--text-primary);
+            margin-top: 2.5rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 8px;
+            display: inline-block;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            font-size: 0.98rem;
+            color: var(--text-secondary);
+        }
+
+        a {
+            color: var(--accent-primary);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: var(--text-primary);
+        }
+
+        /* --- Experience Page timeline --- */
+        .timeline {
+            position: relative;
+            padding-left: 20px;
+            margin-top: 2rem;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--border-color);
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 2.5rem;
+            padding-left: 24px;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -25px;
+            top: 6px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--accent-primary);
+            border: 3px solid var(--bg-base);
+        }
+        .timeline-card, .edu-card, .skill-category, .project-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .timeline-card:hover, .edu-card:hover, .skill-category:hover, .project-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-primary);
+            box-shadow: 0 12px 24px var(--accent-glow);
+        }
+        .tl-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        .tl-role {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: var(--text-primary);
+        }
+        .tl-date {
+            font-size: 0.82rem;
+            font-weight: 600;
+            background: var(--accent-glow);
+            color: var(--accent-primary);
+            padding: 4px 12px;
+            border-radius: 20px;
+        }
+        .tl-company {
+            font-weight: 600;
+            color: var(--accent-primary);
+            margin-bottom: 12px;
+            display: block;
+        }
+        .tl-desc ul {
+            list-style: none;
+        }
+        .tl-desc ul li {
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 18px;
+            font-size: 0.94rem;
+        }
+        .tl-desc ul li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--accent-primary);
+        }
+        .tl-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 16px;
+            border-top: 1px solid var(--border-color);
+            padding-top: 12px;
+        }
+        .tl-tag {
+            font-size: 0.78rem;
+            font-weight: 600;
+            background: var(--bg-base);
+            color: var(--text-secondary);
+            padding: 4px 10px;
+            border-radius: 8px;
+        }
+
+        /* --- Education cards --- */
+        .edu-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-top: 1.5rem;
+        }
+        .edu-degree {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+        .edu-school {
+            color: var(--accent-primary);
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        /* --- Technical Skills --- */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-top: 1.5rem;
+        }
+        .skill-cat-title {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--accent-primary);
+            margin-bottom: 12px;
+        }
+        .skill-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .skill-pill {
+            background: var(--accent-glow);
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+        .skill-pill:hover {
+            background: var(--accent-primary);
+            color: #ffffff;
+            border-color: var(--accent-primary);
+        }
+
+        /* --- Publications Table --- */
+        .pub-table {
+            border-collapse: separate;
+            border-spacing: 0 12px;
+            margin-top: 1rem;
+        }
+        .pub-table thead {
+            display: none;
+        }
+        .pub-table tbody tr {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            transition: all 0.2s ease;
+        }
+        .pub-table tbody tr:hover {
+            transform: translateY(-2px);
+            background: var(--bg-surface);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+        }
+        .pub-table tbody td {
+            padding: 20px;
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+            vertical-align: top;
+        }
+        .pub-table tbody td:first-child {
+            border-left: 1px solid var(--border-color);
+            border-top-left-radius: 12px;
+            border-bottom-left-radius: 12px;
+            font-weight: 800;
+            color: var(--accent-primary);
+            width: 90px;
+            text-align: center;
+        }
+        .pub-table tbody td:last-child {
+            border-right: 1px solid var(--border-color);
+            border-top-right-radius: 12px;
+            border-bottom-right-radius: 12px;
+            text-align: right;
+            width: 140px;
+        }
+        .pub-title {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: var(--text-primary);
+            margin-bottom: 6px;
+        }
+        .pub-venue {
+            font-size: 0.88rem;
+            font-weight: 600;
+            color: var(--accent-primary);
+            display: block;
+            margin-bottom: 8px;
+        }
+        .pub-excerpt {
+            font-size: 0.88rem;
+            color: var(--text-secondary);
+        }
+
+        /* --- Modern Buttons --- */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 14px;
+            font-size: 0.82rem;
+            font-weight: 700;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .btn--primary {
+            background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+            color: #ffffff !important;
+            border: none;
+        }
+        .btn--primary:hover {
+            box-shadow: 0 4px 12px var(--accent-glow);
+        }
+        .btn--info {
+            background: var(--bg-base);
+            color: var(--text-primary) !important;
+            border: 1px solid var(--border-color);
+        }
+        .btn--info:hover {
+            background: var(--border-color);
+        }
+
+        /* --- Footer --- */
+        footer {
+            border-top: 1px solid var(--border-color);
+            padding: 30px 24px;
+            text-align: center;
+            font-size: 0.88rem;
+            color: var(--text-secondary);
+        }
+
+        footer a {
+            color: var(--text-primary);
+        }
+
+        /* --- Responsive Queries --- */
+        @media (max-width: 768px) {
+            .masthead__inner {
+                flex-direction: column;
+                gap: 12px;
+            }
+            .nav-icons {
+                border-left: none;
+                padding-left: 0;
+                margin-left: 0;
+            }
+            .edu-grid, .skills-grid {
+                grid-template-columns: 1fr;
+            }
+            article {
+                padding: 24px;
+            }
+            .pub-table tbody td {
+                display: block;
+                width: 100% !important;
+                border: none !important;
+            }
+            .pub-table tbody tr {
+                display: block;
+                border: 1px solid var(--border-color) !important;
+                border-radius: 12px !important;
+                margin-bottom: 16px;
+            }
+            .pub-table tbody td:first-child {
+                background: var(--accent-glow);
+                border-radius: 12px 12px 0 0 !important;
+                width: 100% !important;
+                text-align: left !important;
+            }
+            .pub-table tbody td:last-child {
+                text-align: left !important;
+                border-radius: 0 0 12px 12px !important;
+            }
+        }
+    </style>
+
+    <script>
+        // Self-invoking function to load and set the theme configuration immediately to avoid flash of dark/light theme
+        (function() {
+            const theme = localStorage.getItem('theme') || 'dark';
+            if (theme === 'light') {
+                document.documentElement.classList.add('light-mode');
+            }
+        })();
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggleBtn = document.getElementById('theme-toggle');
+            const themeIcon = document.getElementById('theme-icon');
+
+            const updateToggleIcon = () => {
+                if (document.documentElement.classList.contains('light-mode')) {
+                    themeIcon.className = 'fas fa-moon';
+                } else {
+                    themeIcon.className = 'fas fa-sun';
+                }
+            };
+
+            // Set initial icon based on theme
+            if (themeIcon) {
+                updateToggleIcon();
+            }
+
+            if (toggleBtn) {
+                toggleBtn.addEventListener('click', () => {
+                    document.documentElement.classList.toggle('light-mode');
+                    if (document.documentElement.classList.contains('light-mode')) {
+                        localStorage.setItem('theme', 'light');
+                    } else {
+                        localStorage.setItem('theme', 'dark');
+                    }
+                    updateToggleIcon();
+                });
+            }
+        });
+    </script>
+</head>
+<body>
+
+    <!-- Header / Nav -->
+    <header class="masthead">
+        <div class="masthead__inner">
+            <a href="/" class="site-title">
+                <span>Ravi's</span> Homepage
+            </a>
+            <nav>
+                <ul class="nav-list">
+                    {% for item in site.data.navigation %}
+                    <li class="{% if page.url == item.link %}active{% endif %}">
+                        <a href="{{ item.link }}">{{ item.name }}</a>
+                    </li>
+                    {% endfor %}
+                    <div class="nav-icons">
+                        <a href="https://scholar.google.com/citations?user=sElDRIMAAAAJ&hl=en" target="_blank"><i class="ai ai-google-scholar"></i></a>
+                        <a href="https://github.com/er-ravi-srivastava" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/ravi-prakash-sri/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:raviprakashshrivastav7@gmail.com"><i class="fas fa-envelope"></i></a>
+                        <a id="theme-toggle"><i id="theme-icon" class="fas fa-sun"></i></a>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Wrapper -->
+    <main id="main-wrapper">
+        <div class="container">
+            <article class="hentry">
+                <!-- Title Header -->
+                <h1 class="entry-title">{{ page.title }}</h1>
+                {% if page.subtitle and page.subtitle != "" and page.subtitle != page.title %}
+                <h3 class="entry-subtitle">{{ page.subtitle }}</h3>
+                {% endif %}
+                
+                <hr>
+
+                <!-- Page Content -->
+                <div class="entry-content">
+                    {{ content }}
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; {{ site.time | date: '%Y' }} {{ site.copyright }}. Powered by <a href="https://jekyllrb.com" target="_blank">Jekyll</a>. Designed with a custom Vercel-style portfolio theme.</p>
+    </footer>
+
+</body>
+</html>

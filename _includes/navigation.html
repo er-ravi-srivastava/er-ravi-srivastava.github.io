@@ -1,0 +1,23 @@
+<center>
+    <nav class="header-nav">
+        <ul class="navigation-bar">
+
+            {% for item in site.data.navigation %}
+            <li>
+                <a href="{{ item.link }}" {% if page.url==item.link %}style="color: white;" {% endif %}>
+                    {{ item.name }}
+                </a>
+            </li>
+
+            {% endfor %}
+
+            <br><br>
+            <li><a href="https://scholar.google.com/citations?user=sElDRIMAAAAJ&hl=en" target="_blank"><i
+                        class="ai ai-google-scholar  ai-2x"></i></a></li>
+            <li><a href="https://github.com/er-ravi-srivastava" target="_blank"><i class='fab fa-github-alt fa-2x'></i></a></li>
+            <li><a href="https://www.linkedin.com/in/ravi-prakash-sri/" target="_blank"><i class='fab fa-linkedin fa-2x'></i></a></li>
+            <li><a href="mailto:raviprakashshrivastav7@gmail.com"><i class='fas fa-envelope fa-2x'></i></a></li>
+            <li><a id="theme-toggle" style="cursor: pointer;"><i id="theme-icon" class="fas fa-sun fa-2x"></i></a></li>
+        </ul>
+    </nav>
+</center>

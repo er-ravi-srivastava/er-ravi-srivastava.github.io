@@ -1,8 +1,8 @@
 ---
-layout: archive
+layout: post
 title: "Projects"
+subtitle: "My Projects"
 permalink: /projects/
-author_profile: true
 ---
 
 <style>

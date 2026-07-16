@@ -1,24 +1,367 @@
-{% include base_path %}
-
 <meta charset="utf-8">
+<title>{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}</title>
+<meta name="description"
+    content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+{% if page.tags %}
+<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
 
-{% include seo.html %}
+<!-- MathJax -->
+<script type="text/javascript" async
+    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
-<link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
+{% if site.owner.twitter %}<!-- Twitter Cards -->
+{% if page.image.feature %}
+<meta name="twitter:card" content="summary_large_image">
 
+
+<meta name="twitter:image" content="{{ site.url }}/images/{{ page.image.feature }}">
+{% else %}
+<meta name="twitter:card" content="summary">
+
+<meta name="twitter:image"
+    content="{% if page.image.thumb %}{{ site.url }}/images/{{ page.image.thumb }}{% else %}{{ site.url }}/images/{{ site.logo }}{% endif %}">
+{% endif %}
+
+<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+<meta name="twitter:description"
+    content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<meta name="twitter:creator" content="@{{ site.owner.twitter }}">{% endif %}
+
+
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+<meta property="og:description"
+    content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:site_name" content="{{ site.title }}">
+
+{% if site.google_verify %}
+<meta name="google-site-verification" content="{{ site.google_verify }}">{% endif %}
+{% if site.bing_verify %}
+<meta name="msvalidate.01" content="{{ site.bing_verify }}">{% endif %}
+
+{% capture canonical %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url |
+remove:'index.html' | strip_slash }}{% endif %}{% endcapture %}
+<link rel="canonical" href="{{ canonical }}">
+<link href="{{ site.url }}/feed.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<script>
-  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
-</script>
-
 <!-- For all browsers -->
-<link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">
+<link rel="stylesheet" href="{{ site.url }}/assets/css/main.css">
+<!-- Webfonts -->
+<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
 
-<!-- Academicons -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons/css/academicons.min.css">
+<meta http-equiv="cleartype" content="on">
 
-<!-- Google Fonts: Inter -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+{% if page.image.background or site.background %}
+
+{% capture background %}{% if page.image.background %}{{ page.image.background }}{% else %}{{ site.background }}{% endif
+%}{% endcapture %}
+{% unless background contains 'http://' or background contains 'https://' %}{% capture background %}{{ site.url
+}}/images/{{ background }}{% endcapture %}{% endunless %}
+
+
+<style type="text/css">
+    body {
+        background-image:url({{ background }});
+    }
+</style>
+{% endif %}
+
+<link rel="stylesheet" href="/assets/fontawesome-free-6.5.2-web/css/all.css">
+
+<link rel="stylesheet" href="/assets/academicons-1.9.4/css/academicons.css">
+
+<!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* --- Base System Reset & Typography --- */
+body, p, li, td, span, div {
+    font-family: 'Inter', sans-serif !important;
+}
+h1, h2, h3, h4, h5, h6, .navigation-bar a {
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    font-weight: 700 !important;
+}
+
+/* --- Default Dark Mode Styles --- */
+body {
+    background-color: #0b0c10 !important;
+    background-image: radial-gradient(circle at 50% 0%, rgba(48, 132, 222, 0.12) 0%, transparent 50%) !important;
+    color: #94a3b8 !important;
+    transition: background-color 0.3s ease, color 0.3s ease !important;
+}
+
+#main article {
+    background: rgba(17, 22, 34, 0.75) !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    border-radius: 16px !important;
+    color: #cbd5e1 !important;
+    backdrop-filter: blur(12px) !important;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3) !important;
+    padding: 45px 50px !important;
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+#main article h1, #main article h2, #main article h3, #main article h4, #main article h5, #main article h6 {
+    color: #ffffff !important;
+    font-weight: 800 !important;
+}
+
+#main article a {
+    color: #3b82f6 !important;
+    transition: color 0.2s ease !important;
+}
+#main article a:hover {
+    color: #60a5fa !important;
+}
+
+.navigation-bar a {
+    color: #64748b !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.05em !important;
+    transition: color 0.2s ease !important;
+}
+.navigation-bar a:hover {
+    color: #ffffff !important;
+}
+
+hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-bottom: none !important;
+    margin: 2.2rem 0 !important;
+}
+
+/* Modern Card Layouts */
+.timeline-card, .edu-card, .skill-category, .project-card {
+    background: rgba(30, 41, 59, 0.4) !important;
+    border: 1px solid rgba(255, 255, 255, 0.06) !important;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.25s ease, box-shadow 0.25s ease !important;
+}
+
+.timeline-card:hover, .edu-card:hover, .skill-category:hover, .project-card:hover {
+    transform: translateY(-4px) !important;
+    border-color: rgba(59, 130, 246, 0.4) !important;
+    box-shadow: 0 12px 24px rgba(59, 130, 246, 0.08) !important;
+}
+
+.timeline-card .tl-role, .edu-card .edu-degree, .skill-category .skill-cat-title, .project-title {
+    color: #ffffff !important;
+    font-weight: 700 !important;
+}
+
+.timeline-card .tl-company, .edu-card .edu-school, .project-category {
+    color: #3b82f6 !important;
+    font-weight: 600 !important;
+}
+
+.skill-pill {
+    background: rgba(59, 130, 246, 0.08) !important;
+    color: #93c5fd !important;
+    border: 1px solid rgba(59, 130, 246, 0.2) !important;
+    border-radius: 20px !important;
+    font-weight: 600 !important;
+    transition: all 0.2s ease !important;
+}
+.skill-pill:hover {
+    background: #3b82f6 !important;
+    color: #ffffff !important;
+    border-color: #3b82f6 !important;
+    transform: scale(1.05) !important;
+}
+
+/* Publication Table Styling */
+.pub-table tbody tr {
+    background: rgba(30, 41, 59, 0.3) !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    border-radius: 10px !important;
+    transition: all 0.25s ease !important;
+}
+.pub-table tbody tr:hover {
+    transform: translateY(-2px) !important;
+    background: rgba(30, 41, 59, 0.5) !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15) !important;
+}
+.pub-title a {
+    color: #ffffff !important;
+    font-weight: 700 !important;
+}
+.pub-title a:hover {
+    color: #3b82f6 !important;
+}
+.pub-venue {
+    color: #60a5fa !important;
+    font-weight: 600 !important;
+}
+
+/* Modern Gradient Buttons */
+.btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    padding: 8px 16px !important;
+    font-size: 0.82rem !important;
+    font-weight: 700 !important;
+    border-radius: 8px !important;
+    text-transform: none !important;
+    letter-spacing: 0.02em !important;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+}
+.btn--primary {
+    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%) !important;
+    color: #ffffff !important;
+    border: none !important;
+}
+.btn--primary:hover {
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3) !important;
+}
+.btn--info {
+    background: rgba(255, 255, 255, 0.06) !important;
+    color: #cbd5e1 !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+.btn--info:hover {
+    background: rgba(255, 255, 255, 0.12) !important;
+    color: #ffffff !important;
+    border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* --- Light Mode Overrides --- */
+html.light-mode body {
+    background-color: #f8fafc !important;
+    background-image: radial-gradient(circle at 50% 0%, rgba(37, 99, 235, 0.05) 0%, transparent 50%) !important;
+    color: #475569 !important;
+}
+
+html.light-mode #main article {
+    background-color: #ffffff !important;
+    border-color: #e2e8f0 !important;
+    color: #334155 !important;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.04) !important;
+}
+
+html.light-mode #main article h1, html.light-mode #main article h2, html.light-mode #main article h3, html.light-mode #main article h4, html.light-mode #main article h5, html.light-mode #main article h6 {
+    color: #0f172a !important;
+}
+
+html.light-mode #main article a {
+    color: #2563eb !important;
+}
+html.light-mode #main article a:hover {
+    color: #1d4ed8 !important;
+}
+
+html.light-mode .navigation-bar a {
+    color: #64748b !important;
+}
+html.light-mode .navigation-bar a:hover {
+    color: #0f172a !important;
+}
+
+html.light-mode hr {
+    border-top: 1px solid #e2e8f0 !important;
+}
+
+html.light-mode .timeline-card, html.light-mode .edu-card, html.light-mode .skill-category, html.light-mode .project-card {
+    background: #ffffff !important;
+    border-color: #e2e8f0 !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.02) !important;
+}
+html.light-mode .timeline-card:hover, html.light-mode .edu-card:hover, html.light-mode .skill-category:hover, html.light-mode .project-card:hover {
+    border-color: rgba(37, 99, 235, 0.3) !important;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.04) !important;
+}
+
+html.light-mode .timeline-card .tl-role, html.light-mode .edu-card .edu-degree, html.light-mode .skill-category .skill-cat-title, html.light-mode .project-title {
+    color: #0f172a !important;
+}
+
+html.light-mode .timeline-card .tl-company, html.light-mode .edu-card .edu-school, html.light-mode .project-category {
+    color: #2563eb !important;
+}
+
+html.light-mode .skill-pill {
+    background: rgba(37, 99, 235, 0.05) !important;
+    color: #1d4ed8 !important;
+    border-color: rgba(37, 99, 235, 0.15) !important;
+}
+
+html.light-mode .pub-table tbody tr {
+    background: #ffffff !important;
+    border-color: #e2e8f0 !important;
+}
+html.light-mode .pub-table tbody tr:hover {
+    background: #f8fafc !important;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.04) !important;
+}
+html.light-mode .pub-title a {
+    color: #0f172a !important;
+}
+html.light-mode .pub-venue {
+    color: #2563eb !important;
+}
+
+html.light-mode .btn--info {
+    background: #f1f5f9 !important;
+    color: #475569 !important;
+    border-color: #e2e8f0 !important;
+}
+html.light-mode .btn--info:hover {
+    background: #e2e8f0 !important;
+    color: #0f172a !important;
+}
+</style>
+
+<script>
+    // Self-invoking function to load and set the theme configuration immediately to avoid flash of dark/light theme
+    (function() {
+        const theme = localStorage.getItem('theme') || 'dark';
+        if (theme === 'light') {
+            document.documentElement.classList.add('light-mode');
+        }
+    })();
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const toggleBtn = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+
+        const updateToggleIcon = () => {
+            if (document.documentElement.classList.contains('light-mode')) {
+                themeIcon.className = 'fas fa-moon fa-2x';
+            } else {
+                themeIcon.className = 'fas fa-sun fa-2x';
+            }
+        };
+
+        // Set initial icon based on theme
+        if (themeIcon) {
+            updateToggleIcon();
+        }
+
+        if (toggleBtn) {
+            toggleBtn.addEventListener('click', () => {
+                document.documentElement.classList.toggle('light-mode');
+                if (document.documentElement.classList.contains('light-mode')) {
+                    localStorage.setItem('theme', 'light');
+                } else {
+                    localStorage.setItem('theme', 'dark');
+                }
+                updateToggleIcon();
+            });
+        }
+    });
+</script>

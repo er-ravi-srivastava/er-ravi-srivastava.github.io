@@ -1,8 +1,8 @@
 ---
-layout: archive
-title: "About Me"
+layout: post
+title: "Ravi Prakash Srivastava"
+subtitle: "About me"
 permalink: /
-author_profile: true
 ---
 
 <style>
@@ -153,21 +153,28 @@ body, p, li, span, div {
 
   <!-- About Me -->
   <div class="about-section">
-    <p>
-      Hello! I hold a master’s degree in <strong>Data Science and Artificial Intelligence</strong> from the <a href="https://iiitranchi.ac.in/" target="_blank">Indian Institute of Information Technology, Ranchi, India</a>. In 2024, I received a postgraduate fellowship from the <strong>Institution of Electronics and Telecommunication Engineers (IETE), New Delhi</strong>, which supported my master’s studies at IIIT Ranchi. My master’s thesis is on <em>“Cross-Domain Text Summarization using Transformer Models”</em>. I completed my B.Tech in Information Technology from <a href="https://nehu.ac.in/" target="_blank">NEHU</a>, where I completed my thesis on <em>“IoT-HITS: An IoT Based Human Intrusion Detection System for Border Region Using Deep Learning”</em>.
-    </p>
+    <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 20px; align-items: start;">
+      <div>
+        <p>
+          Hello! I hold a master’s degree in <strong>Data Science and Artificial Intelligence</strong> from the <a href="https://iiitranchi.ac.in/" target="_blank">Indian Institute of Information Technology, Ranchi, India</a>. In 2024, I received a postgraduate fellowship from the <strong>Institution of Electronics and Telecommunication Engineers (IETE), New Delhi</strong>, which supported my master’s studies at IIIT Ranchi. My master’s thesis is on <em>“Cross-Domain Text Summarization using Transformer Models”</em>. I completed my B.Tech in Information Technology from <a href="https://nehu.ac.in/" target="_blank">NEHU</a>, where I completed my thesis on <em>“IoT-HITS: An IoT Based Human Intrusion Detection System for Border Region Using Deep Learning”</em>.
+        </p>
 
-    <p>
-      My research focuses on <strong>Natural Language Processing (NLP)</strong>, <strong>AutoML &amp; Foundation Models</strong>, <strong>Trustworthy AI</strong>, and <strong>Multimodal Learning</strong>. I am particularly interested in designing foundation models that exhibit robust generalization, efficient adaptation, and reliable reasoning across diverse modalities. My research aims to integrate automated machine learning, self-supervised representation learning, parameter-efficient fine-tuning, multimodal fusion, and uncertainty-aware inference to develop scalable AI systems that remain interpretable, robust to distributional shifts and adversarial perturbations, and deployable in safety-critical, real-world applications.
-    </p>
+        <p>
+          My research focuses on <strong>Natural Language Processing (NLP)</strong>, <strong>AutoML &amp; Foundation Models</strong>, <strong>Trustworthy AI</strong>, and <strong>Multimodal Learning</strong>. I am particularly interested in designing foundation models that exhibit robust generalization, efficient adaptation, and reliable reasoning across diverse modalities. My research aims to integrate automated machine learning, self-supervised representation learning, parameter-efficient fine-tuning, multimodal fusion, and uncertainty-aware inference to develop scalable AI systems that remain interpretable, robust to distributional shifts and adversarial perturbations, and deployable in safety-critical, real-world applications.
+        </p>
 
-    <p style="margin-top: 1.2rem; font-size: 0.95rem;">
-      <strong>Connect with me:</strong> &nbsp;
-      <a href="https://www.linkedin.com/in/ravi-prakash-sri/" target="_blank" style="margin-right: 15px;"><i class="fab fa-linkedin"></i> LinkedIn</a>
-      <a href="https://github.com/er-ravi-srivastava" target="_blank" style="margin-right: 15px;"><i class="fab fa-github"></i> GitHub</a>
-      <a href="https://scholar.google.com/citations?user=sElDRIMAAAAJ&hl=en" target="_blank" style="margin-right: 15px;"><i class="ai ai-google-scholar"></i> Google Scholar</a>
-      <a href="/files/Ravi_Prakash_Srivastava_CV.pdf" target="_blank"><i class="fas fa-file-pdf"></i> View CV</a>
-    </p>
+        <p style="margin-top: 1.2rem; font-size: 0.95rem;">
+          <strong>Connect with me:</strong> &nbsp;
+          <a href="https://www.linkedin.com/in/ravi-prakash-sri/" target="_blank" style="margin-right: 15px;"><i class="fab fa-linkedin"></i> LinkedIn</a>
+          <a href="https://github.com/er-ravi-srivastava" target="_blank" style="margin-right: 15px;"><i class="fab fa-github"></i> GitHub</a>
+          <a href="https://scholar.google.com/citations?user=sElDRIMAAAAJ&hl=en" target="_blank" style="margin-right: 15px;"><i class="ai ai-google-scholar"></i> Google Scholar</a>
+          <a href="/files/Ravi_Prakash_Srivastava_CV.pdf" target="_blank"><i class="fas fa-file-pdf"></i> View CV</a>
+        </p>
+      </div>
+      <div style="text-align: center;">
+        <img src="/images/picture_resized.png" alt="Ravi Prakash Srivastava" style="border-radius: 8px; width: 100%; max-width: 220px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+      </div>
+    </div>
   </div>
 
 

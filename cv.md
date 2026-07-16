@@ -1,8 +1,8 @@
 ---
-layout: single
+layout: post
 title: "Curriculum Vitae"
+subtitle: "Curriculum Vitae"
 permalink: /cv/
-author_profile: true
 ---
 
 <style>

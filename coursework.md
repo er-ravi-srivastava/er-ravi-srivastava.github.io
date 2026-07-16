@@ -1,8 +1,8 @@
 ---
-layout: archive
+layout: post
 title: "Key Coursework"
+subtitle: "Master's & Bachelor's Courses"
 permalink: /coursework/
-author_profile: true
 ---
 
 <style>

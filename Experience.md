@@ -1,8 +1,8 @@
 ---
-layout: archive
+layout: post
 title: "Experience"
+subtitle: "Experience & Education"
 permalink: /experience/
-author_profile: true
 ---
 
 <style>

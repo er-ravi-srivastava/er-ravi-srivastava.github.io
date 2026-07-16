@@ -1,8 +1,8 @@
 ---
-layout: archive
+layout: post
 title: "Contact"
+subtitle: "Get in Touch"
 permalink: /contact/
-author_profile: true
 ---
 
 <div style="margin-top: 2rem; font-size: 1.15rem; font-family: 'Nunito', sans-serif;">
