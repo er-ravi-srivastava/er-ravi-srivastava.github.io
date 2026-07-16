@@ -196,7 +196,7 @@ body, p, li, span, div {
     </li>
     <li class="news-item">
       <span class="news-date">July 2025</span>
-      <span class="news-text"><em>IoT-HITS: IoT Hybrid Intrusion Detection System</em> published in the <strong>IETE Journal of Research</strong> (Taylor &amp; Francis).</span>
+      <span class="news-text"><em>IoT-HITS: An IoT Based Human Intrusion Detection System for Border Region Using Deep Learning</em> published in the <strong>IETE Journal of Research</strong> (Taylor &amp; Francis).</span>
     </li>
     <li class="news-item">
       <span class="news-date">Dec 2024</span>
