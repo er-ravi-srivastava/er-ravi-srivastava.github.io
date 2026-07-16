@@ -83,7 +83,7 @@ permalink: /projects/
       <ul>
         <li>Conducted security analysis of LLM systems by designing prompt injection attack scenarios to exploit context leakage and unauthorized data exposure.</li>
         <li>Developed and evaluated mitigation strategies including prompt sanitization, input/output filtering, and instruction hierarchy enforcement to defend against injection-based attacks.</li>
-        <li><strong>🏆 Best Paper Award — ICACA 2026</strong></li>
+        <li><strong>🏆 <a href="/files/Best_Paper_Award.pdf" target="_blank">Best Paper Award — ICACA 2026</a></strong></li>
       </ul>
     </div>
   </div>

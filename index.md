@@ -163,16 +163,16 @@ body, p, li, span, div {
           My research focuses on <strong>Natural Language Processing (NLP)</strong>, <strong>AutoML &amp; Foundation Models</strong>, <strong>Trustworthy AI</strong>, and <strong>Multimodal Learning</strong>. I am particularly interested in designing foundation models that exhibit robust generalization, efficient adaptation, and reliable reasoning across diverse modalities. My research aims to integrate automated machine learning, self-supervised representation learning, parameter-efficient fine-tuning, multimodal fusion, and uncertainty-aware inference to develop scalable AI systems that remain interpretable, robust to distributional shifts and adversarial perturbations, and deployable in safety-critical, real-world applications.
         </p>
 
-        <p style="margin-top: 1.2rem; font-size: 0.95rem;">
-          <strong>Connect with me:</strong> &nbsp;
-          <a href="https://www.linkedin.com/in/ravi-prakash-sri/" target="_blank" style="margin-right: 15px;"><i class="fab fa-linkedin"></i> LinkedIn</a>
-          <a href="https://github.com/er-ravi-srivastava" target="_blank" style="margin-right: 15px;"><i class="fab fa-github"></i> GitHub</a>
-          <a href="https://scholar.google.com/citations?user=sElDRIMAAAAJ&hl=en" target="_blank" style="margin-right: 15px;"><i class="ai ai-google-scholar"></i> Google Scholar</a>
-          <a href="/files/Ravi_Prakash_Srivastava_CV.pdf" target="_blank"><i class="fas fa-file-pdf"></i> View CV</a>
-        </p>
       </div>
       <div style="text-align: center;">
         <img src="/images/picture_resized.png" alt="Ravi Prakash Srivastava" style="border-radius: 8px; width: 100%; max-width: 220px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+        <div style="margin-top: 18px; font-size: 0.9rem; text-align: left; display: inline-block; width: 100%; max-width: 220px; box-shadow: 0 4px 12px rgba(0,0,0,0.02); border: 1px solid var(--border-color); padding: 14px; border-radius: 8px; background: var(--bg-card);">
+          <div style="font-weight: 700; margin-bottom: 10px; color: var(--text-primary); font-size: 0.95rem;">Connect with me:</div>
+          <div style="margin-bottom: 8px;"><a href="https://www.linkedin.com/in/ravi-prakash-sri/" target="_blank"><i class="fab fa-linkedin" style="width: 16px;"></i> LinkedIn</a></div>
+          <div style="margin-bottom: 8px;"><a href="https://github.com/er-ravi-srivastava" target="_blank"><i class="fab fa-github" style="width: 16px;"></i> GitHub</a></div>
+          <div style="margin-bottom: 8px;"><a href="https://scholar.google.com/citations?user=sElDRIMAAAAJ&hl=en" target="_blank"><i class="ai ai-google-scholar" style="width: 16px;"></i> Scholar</a></div>
+          <div><a href="/files/Ravi_Prakash_Srivastava_CV.pdf" target="_blank"><i class="fas fa-file-pdf" style="width: 16px;"></i> View CV</a></div>
+        </div>
       </div>
     </div>
   </div>
@@ -192,7 +192,7 @@ body, p, li, span, div {
     </li>
     <li class="news-item">
       <span class="news-date">Jan 2026</span>
-      <span class="news-text">🏆 <strong>Best Paper Award</strong> at ICACA 2026 for <em>Adversarial Prompt Injection Attacks on Large Language Models: Cryptographic Key Leakage and Defense Strategies</em>.</span>
+      <span class="news-text">🏆 <a href="/files/Best_Paper_Award.pdf" target="_blank"><strong>Best Paper Award</strong></a> at ICACA 2026 for <em>Adversarial Prompt Injection Attacks on Large Language Models: Cryptographic Key Leakage and Defense Strategies</em>.</span>
     </li>
     <li class="news-item">
       <span class="news-date">July 2025</span>
