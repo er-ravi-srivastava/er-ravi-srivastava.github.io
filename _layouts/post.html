@@ -486,22 +486,50 @@
             .masthead__inner {
                 flex-direction: column;
                 gap: 12px;
+                padding: 12px 16px;
+            }
+            .nav-list {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 12px !important;
+            }
+            .nav-list a {
+                font-size: 0.85rem !important;
             }
             .nav-icons {
-                border-left: none;
-                padding-left: 0;
-                margin-left: 0;
+                border-left: none !important;
+                padding-left: 0 !important;
+                margin-left: 5px !important;
+            }
+            .nav-icons a:not(#theme-toggle) {
+                display: none !important;
             }
             .edu-grid, .skills-grid {
                 grid-template-columns: 1fr;
             }
             article {
-                padding: 24px;
+                padding: 20px 16px !important;
+            }
+            .entry-title {
+                font-size: 1.7rem !important;
+            }
+            .timeline {
+                padding-left: 10px !important;
+            }
+            .timeline-item {
+                padding-left: 16px !important;
+            }
+            .timeline-item::before {
+                left: -16px !important;
+            }
+            .timeline-card {
+                padding: 16px !important;
             }
             .pub-table tbody td {
                 display: block;
                 width: 100% !important;
                 border: none !important;
+                padding: 12px 16px !important;
             }
             .pub-table tbody tr {
                 display: block;
@@ -514,10 +542,12 @@
                 border-radius: 12px 12px 0 0 !important;
                 width: 100% !important;
                 text-align: left !important;
+                padding: 8px 16px !important;
             }
             .pub-table tbody td:last-child {
                 text-align: left !important;
                 border-radius: 0 0 12px 12px !important;
+                padding-bottom: 16px !important;
             }
             .about-grid {
                 grid-template-columns: 1fr !important;
