@@ -460,6 +460,14 @@
             background: var(--border-color);
         }
 
+        /* --- About Grid System --- */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+            align-items: start;
+        }
+
         /* --- Footer --- */
         footer {
             border-top: 1px solid var(--border-color);
@@ -510,6 +518,16 @@
             .pub-table tbody td:last-child {
                 text-align: left !important;
                 border-radius: 0 0 12px 12px !important;
+            }
+            .about-grid {
+                grid-template-columns: 1fr !important;
+                gap: 24px !important;
+            }
+            .about-grid > div:last-child {
+                order: -1 !important;
+                display: flex !important;
+                flex-direction: column !important;
+                align-items: center !important;
             }
         }
     </style>

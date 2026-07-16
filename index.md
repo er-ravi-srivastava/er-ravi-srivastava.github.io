@@ -153,7 +153,7 @@ body, p, li, span, div {
 
   <!-- About Me -->
   <div class="about-section">
-    <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 20px; align-items: start;">
+    <div class="about-grid">
       <div style="text-align: justify;">
         <p>
           Hello! I hold a master’s degree in <strong>Data Science and Artificial Intelligence</strong> from the <a href="https://iiitranchi.ac.in/" target="_blank">Indian Institute of Information Technology, Ranchi, India</a>. In 2024, I received a postgraduate fellowship from the <strong>Institution of Electronics and Telecommunication Engineers (IETE), New Delhi</strong>, which supported my master’s studies at IIIT Ranchi. My master’s thesis is on <em>“Cross-Domain Text Summarization using Transformer Models”</em>. I completed my B.Tech in Information Technology from <a href="https://nehu.ac.in/" target="_blank">NEHU</a>, where I completed my thesis on <em>“IoT-HITS: An IoT Based Human Intrusion Detection System for Border Region Using Deep Learning”</em>.
