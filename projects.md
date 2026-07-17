@@ -114,8 +114,8 @@ permalink: /projects/
 
   <!-- IoT-HITS -->
   <div class="project-card">
-    <div class="project-title">IoT-HITS: IoT-based Human Intrusion Detection System for Border Regions Using Deep Learning</div>
-    <div class="project-category">Bachelor's Thesis Project</div>
+    <div class="project-title">IoT-HITS: An IoT Based Human Intrusion Detection System for Border Region Using Deep Learning</div>
+    <div class="project-category">Bachelor's Thesis Project &nbsp;·&nbsp; <a href="https://www.tandfonline.com/eprint/KMYKUN9WRSCAQRTRTTE5/full?target=10.1080/03772063.2025.2521688#d1e165" target="_blank" style="text-decoration: underline;"><i class="fas fa-external-link-alt fa-sm"></i> Publisher Link</a></div>
     <div class="project-desc">
       <ul>
         <li>Developed an IoT-based border security system using deep learning for real-time human intrusion detection, aligned with threat modeling (STRIDE) principles.</li>
