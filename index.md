@@ -160,7 +160,7 @@ body, p, li, span, div {
         </p>
 
         <p>
-          My research focuses on <strong>Natural Language Processing (NLP)</strong>, <strong>AutoML &amp; Foundation Models</strong>, <strong>Trustworthy AI</strong>, and <strong>Multimodal Learning</strong>. I am particularly interested in designing foundation models that exhibit robust generalization, efficient adaptation, and reliable reasoning across diverse modalities. My research aims to integrate automated machine learning, self-supervised representation learning, parameter-efficient fine-tuning, multimodal fusion, and uncertainty-aware inference to develop scalable AI systems that remain interpretable, robust to distributional shifts and adversarial perturbations, and deployable in safety-critical, real-world applications.
+          My research focuses on <strong>Natural Language Processing (NLP)</strong>, <strong>AutoML &amp; Foundation Models</strong>, <strong>Trustworthy AI</strong>, and <strong>Multimodal Learning</strong>. I am particularly interested in designing foundation models that exhibit robust generalization, efficient adaptation, and reliable reasoning across diverse modalities. My research aims to integrate automated machine learning, self-supervised representation learning, parameter-efficient fine-tuning, multimodal fusion, and uncertainty-aware inference to develop scalable AI systems that remain interpretable, robust to distributional shifts and adversarial perturbations, and deployable in safety-critical, real-world applications. Recently, my work on adversarial prompt injection attacks in LLMs, deepfake video detection, and AI-powered code review has been accepted for publication in <strong>Springer Nature</strong> (Lecture Notes in Networks and Systems) through ICACA 2026 and ICNSBT 2026.
         </p>
 
       </div>
@@ -195,11 +195,19 @@ body, p, li, span, div {
       <span class="news-text">🏆 <a href="/files/Best_Paper_Award.pdf" target="_blank"><strong>Best Paper Award</strong></a> at ICACA 2026 for <em>Adversarial Prompt Injection Attacks on Large Language Models: Cryptographic Key Leakage and Defense Strategies</em>.</span>
     </li>
     <li class="news-item">
+      <span class="news-date">2026</span>
+      <span class="news-text">📄 <em>Deepfake Video Detection using Face-Centric Processing and Frame Sampling</em> accepted at <strong>ICACA 2026</strong>, Ranchi, India. Springer Nature, Lecture Notes in Networks and Systems [In press].</span>
+    </li>
+    <li class="news-item">
+      <span class="news-date">2026</span>
+      <span class="news-text">📄 <em>AI-Powered Code Review Assistant: Eliminating LLM Pipeline using AST-Enhanced Hallucination to Analyze Pull Requests Automatically</em> accepted at <strong>ICNSBT 2026</strong>, Kolkata, India. Springer Nature, Lecture Notes in Networks and Systems [Accepted].</span>
+    </li>
+    <li class="news-item">
       <span class="news-date">July 2025</span>
       <span class="news-text"><em>IoT-HITS: An IoT Based Human Intrusion Detection System for Border Region Using Deep Learning</em> published in the <strong>IETE Journal of Research</strong> (Taylor &amp; Francis).</span>
     </li>
     <li class="news-item">
-      <span class="news-date">Dec 2024</span>
+      <span class="news-date">Dec 2025</span>
       <span class="news-text"><em>Balanced Few-Shot Episodic Learning for Accurate Retinal Disease Diagnosis</em> preprint released on <a href="https://arxiv.org/abs/2512.04967v1" target="_blank">arXiv</a>.</span>
     </li>
     <li class="news-item">
