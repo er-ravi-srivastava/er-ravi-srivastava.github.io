@@ -165,7 +165,7 @@ body, p, li, span, div {
 
       </div>
       <div style="text-align: center;">
-        <img src="/images/picture_resized.png" alt="Ravi Prakash Srivastava" style="border-radius: 8px; width: 100%; max-width: 220px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+        <img src="/images/picture_resized.png?v=2" alt="Ravi Prakash Srivastava" style="border-radius: 8px; width: 100%; max-width: 220px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
         <div style="margin-top: 18px; font-size: 0.9rem; text-align: left; display: inline-block; width: 100%; max-width: 220px; box-shadow: 0 4px 12px rgba(0,0,0,0.02); border: 1px solid var(--border-color); padding: 14px; border-radius: 8px; background: var(--bg-card);">
           <div style="font-weight: 700; margin-bottom: 10px; color: var(--text-primary); font-size: 0.95rem;">Connect with me:</div>
           <div style="margin-bottom: 8px;"><a href="https://www.linkedin.com/in/ravi-prakash-sri/" target="_blank"><i class="fab fa-linkedin" style="width: 16px;"></i> LinkedIn</a></div>
