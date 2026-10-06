@@ -1,0 +1,1126 @@
+---
+layout: null
+permalink: /
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ravi Prakash Srivastava — Software Engineer & AI Researcher</title>
+  <meta name="description" content="Ravi Prakash Srivastava — Software Engineer & AI Researcher specializing in Trustworthy AI, Adversarial Prompt Injection, and Production MLOps/DevSecOps.">
+  <meta name="author" content="Ravi Prakash Srivastava">
+  <link rel="canonical" href="https://er-ravi-srivastava.github.io/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ravi Prakash Srivastava — Software Engineer & AI Researcher">
+  <meta property="og:description" content="Researching foundation model security, adversarial robustness, and production MLOps at SS Software Solutions & IIIT Ranchi.">
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://er-ravi-srivastava.github.io/">
+  <meta property="og:image" content="https://er-ravi-srivastava.github.io/images/picture_resized.png">
+
+  <!-- Editorial Google Fonts: Newsreader (Serif Body) + Plus Jakarta Sans & Inter (Headings/Sans) + JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       Design System Tokens (Editorial & Academic Minimalism)
+       Inspired by srijansaket.com, Stripe Press, & Substack
+       ========================================================================== */
+    :root {
+      --bg: #FAFAF7;
+      --bg-surface: #FFFFFF;
+      --bg-subtle: #F2F2EC;
+      --text-primary: #1A1A1A;
+      --text-secondary: #52524E;
+      --text-muted: #787873;
+      --hairline: #E5E5DE;
+      --hairline-strong: #D6D6CE;
+      
+      --accent: #0A5C38;            /* Academic Forest Emerald */
+      --accent-hover: #07452A;
+      --accent-soft: rgba(10, 92, 56, 0.08);
+      --accent-badge: #E8F3ED;
+
+      --font-body: "Newsreader", Georgia, serif;
+      --font-sans: "Plus Jakarta Sans", "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+      --max-width: 1140px;
+      --sidebar-width: 270px;
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-full: 9999px;
+      --transition: 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    html.dark-theme {
+      --bg: #111215;
+      --bg-surface: #18191E;
+      --bg-subtle: #202228;
+      --text-primary: #EDEDEA;
+      --text-secondary: #A6A69F;
+      --text-muted: #74746E;
+      --hairline: #292A30;
+      --hairline-strong: #383A42;
+
+      --accent: #34D399;            /* Bright emerald for high dark-mode contrast */
+      --accent-hover: #6EE7B7;
+      --accent-soft: rgba(52, 211, 153, 0.12);
+      --accent-badge: rgba(52, 211, 153, 0.14);
+    }
+
+    /* Reset & Base */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      text-size-adjust: 100%;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text-primary);
+      font-family: var(--font-body);
+      font-size: 19px;
+      line-height: 1.72;
+      font-feature-settings: "kern", "liga", "onum";
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      transition: background-color 0.25s ease, color 0.25s ease;
+    }
+
+    /* Links */
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      transition: color var(--transition), opacity var(--transition);
+    }
+    a:hover {
+      color: var(--accent-hover);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    /* Selection */
+    ::selection {
+      background: var(--accent-soft);
+      color: var(--accent);
+    }
+
+    /* Layout Grid */
+    .site-wrapper {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 3.5rem 1.75rem 6rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+
+    @media (min-width: 960px) {
+      .site-wrapper {
+        grid-template-columns: var(--sidebar-width) 1fr;
+        gap: 5rem;
+        padding: 4.5rem 2.25rem 7rem;
+      }
+    }
+
+    /* ==========================================================================
+       Sticky Left Sidebar
+       ========================================================================== */
+    .sidebar {
+      font-family: var(--font-sans);
+    }
+
+    @media (min-width: 960px) {
+      .sidebar {
+        position: sticky;
+        top: 3.5rem;
+        align-self: start;
+        max-height: calc(100vh - 5rem);
+        overflow-y: auto;
+        padding-right: 0.5rem;
+        scrollbar-width: none;
+      }
+      .sidebar::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    .avatar-wrapper {
+      display: inline-block;
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 1px solid var(--hairline-strong);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+      margin-bottom: 1.25rem;
+      background: var(--bg-subtle);
+      transition: transform var(--transition);
+    }
+    .avatar-wrapper:hover {
+      transform: scale(1.02);
+    }
+
+    .avatar-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .sidebar-name {
+      font-size: 1.4rem;
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      line-height: 1.2;
+      color: var(--text-primary);
+      margin-bottom: 0.4rem;
+    }
+
+    .sidebar-role {
+      font-size: 0.92rem;
+      line-height: 1.45;
+      color: var(--text-secondary);
+      margin-bottom: 0.3rem;
+    }
+    .sidebar-role strong {
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+
+    .sidebar-keywords {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+      margin-bottom: 0.75rem;
+    }
+
+    .sidebar-location {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Sidebar Navigation */
+    .sidebar-nav {
+      border-top: 1px solid var(--hairline);
+      padding-top: 1.25rem;
+      margin-bottom: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.15rem;
+    }
+
+    .sidebar-nav a {
+      display: block;
+      padding: 0.35rem 0.6rem;
+      font-size: 0.92rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      border-radius: var(--radius-sm);
+      transition: background var(--transition), color var(--transition);
+      text-decoration: none;
+    }
+    .sidebar-nav a:hover,
+    .sidebar-nav a.active {
+      background: var(--accent-soft);
+      color: var(--accent);
+    }
+
+    /* Sidebar Social Links */
+    .sidebar-links {
+      border-top: 1px solid var(--hairline);
+      padding-top: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+
+    .sidebar-links a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.65rem;
+      padding: 0.35rem 0.6rem;
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      transition: color var(--transition), background var(--transition);
+    }
+    .sidebar-links a:hover {
+      background: var(--bg-subtle);
+      color: var(--text-primary);
+      text-decoration: none;
+    }
+
+    .sidebar-links svg {
+      width: 16px;
+      height: 16px;
+      fill: currentColor;
+      flex-shrink: 0;
+    }
+
+    /* Theme Switcher Button */
+    .theme-toggle-btn {
+      margin-top: 1.5rem;
+      padding: 0.45rem 0.8rem;
+      font-family: var(--font-sans);
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      background: var(--bg-subtle);
+      border: 1px solid var(--hairline);
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all var(--transition);
+    }
+    .theme-toggle-btn:hover {
+      background: var(--hairline);
+      color: var(--text-primary);
+    }
+
+    /* ==========================================================================
+       Main Column Content
+       ========================================================================== */
+    .main-content {
+      min-width: 0;
+    }
+
+    /* Section Spacing */
+    .section {
+      margin-bottom: 4.5rem;
+    }
+
+    /* Section Headings */
+    .section-title {
+      font-family: var(--font-sans);
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: -0.015em;
+      color: var(--text-primary);
+      text-transform: uppercase;
+      font-size: 0.85rem;
+      letter-spacing: 0.08em;
+      margin-bottom: 1.75rem;
+      padding-bottom: 0.65rem;
+      border-bottom: 1px solid var(--hairline);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* Hero Lede / Thesis Statement */
+    .hero-thesis {
+      font-family: var(--font-sans);
+      font-size: 2.15rem;
+      font-weight: 800;
+      letter-spacing: -0.035em;
+      line-height: 1.22;
+      color: var(--text-primary);
+      margin-bottom: 1.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .hero-thesis {
+        font-size: 2.5rem;
+      }
+    }
+
+    .hero-bio {
+      font-size: 1.12rem;
+      line-height: 1.75;
+      color: var(--text-secondary);
+      margin-bottom: 1.35rem;
+    }
+
+    .hero-bio strong {
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+
+    /* Badges & Tags */
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-family: var(--font-mono);
+      font-size: 0.76rem;
+      font-weight: 600;
+      padding: 0.18rem 0.55rem;
+      border-radius: var(--radius-sm);
+      background: var(--bg-subtle);
+      color: var(--text-secondary);
+      border: 1px solid var(--hairline);
+      vertical-align: middle;
+      text-decoration: none !important;
+    }
+
+    .badge--award {
+      background: #FEF3C7;
+      color: #92400E;
+      border-color: #FDE68A;
+    }
+    html.dark-theme .badge--award {
+      background: rgba(245, 158, 11, 0.16);
+      color: #FCD34D;
+      border-color: rgba(245, 158, 11, 0.3);
+    }
+
+    .badge--venue {
+      background: var(--accent-badge);
+      color: var(--accent);
+      border-color: transparent;
+      font-weight: 600;
+    }
+
+    /* ==========================================================================
+       Publications & Research Items
+       ========================================================================== */
+    .pub-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2.25rem;
+    }
+
+    .pub-item {
+      position: relative;
+    }
+
+    .pub-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.6rem;
+      margin-bottom: 0.45rem;
+    }
+
+    .pub-year {
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .pub-title {
+      font-family: var(--font-sans);
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: -0.015em;
+      line-height: 1.35;
+      color: var(--text-primary);
+      margin-bottom: 0.4rem;
+    }
+
+    .pub-title a {
+      color: var(--text-primary);
+      text-decoration: none;
+    }
+    .pub-title a:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    .pub-authors {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      margin-bottom: 0.45rem;
+      line-height: 1.5;
+    }
+    .pub-authors strong {
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+
+    .pub-summary {
+      font-size: 0.98rem;
+      color: var(--text-secondary);
+      line-height: 1.65;
+      margin-bottom: 0.65rem;
+    }
+
+    .pub-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.85rem;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    .pub-links a {
+      color: var(--accent);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
+    /* ==========================================================================
+       Systems & Projects Grid
+       ========================================================================== */
+    .systems-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.75rem;
+    }
+
+    @media (min-width: 680px) {
+      .systems-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .system-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--hairline);
+      border-radius: var(--radius-md);
+      padding: 1.4rem;
+      transition: border-color var(--transition), transform var(--transition);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .system-card:hover {
+      border-color: var(--hairline-strong);
+      transform: translateY(-2px);
+    }
+
+    .system-card-title {
+      font-family: var(--font-sans);
+      font-size: 1.05rem;
+      font-weight: 700;
+      letter-spacing: -0.015em;
+      color: var(--text-primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .system-card-desc {
+      font-size: 0.94rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      margin-bottom: 1.2rem;
+    }
+
+    .system-tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: auto;
+    }
+
+    .tech-pill {
+      font-family: var(--font-mono);
+      font-size: 0.74rem;
+      color: var(--text-muted);
+      background: var(--bg-subtle);
+      padding: 0.15rem 0.45rem;
+      border-radius: var(--radius-sm);
+    }
+
+    /* ==========================================================================
+       Experience & Trajectory
+       ========================================================================== */
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .timeline-node {
+      border-left: 2px solid var(--hairline);
+      padding-left: 1.5rem;
+      position: relative;
+    }
+    .timeline-node::before {
+      content: "";
+      position: absolute;
+      left: -5px;
+      top: 6px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    .timeline-role {
+      font-family: var(--font-sans);
+      font-size: 1.08rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    .timeline-meta {
+      font-family: var(--font-sans);
+      font-size: 0.88rem;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .timeline-bullets {
+      list-style: none;
+      font-size: 0.96rem;
+      color: var(--text-secondary);
+    }
+    .timeline-bullets li {
+      margin-bottom: 0.45rem;
+      position: relative;
+      padding-left: 1.1rem;
+    }
+    .timeline-bullets li::before {
+      content: "—";
+      position: absolute;
+      left: 0;
+      color: var(--text-muted);
+    }
+
+    /* ==========================================================================
+       Education & Honors
+       ========================================================================== */
+    .edu-node {
+      border-left: 2px solid var(--hairline);
+      padding-left: 1.5rem;
+      position: relative;
+      margin-bottom: 2rem;
+    }
+    .edu-node::before {
+      content: "";
+      position: absolute;
+      left: -5px;
+      top: 6px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    /* ==========================================================================
+       News & Micro-Feed
+       ========================================================================== */
+    .news-feed {
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+    }
+
+    .news-row {
+      display: grid;
+      grid-template-columns: 88px 1fr;
+      gap: 1.2rem;
+      font-size: 0.96rem;
+      align-items: baseline;
+    }
+
+    .news-date {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .news-text {
+      color: var(--text-secondary);
+      line-height: 1.55;
+    }
+    .news-text strong {
+      color: var(--text-primary);
+    }
+
+    /* ==========================================================================
+       Footer
+       ========================================================================== */
+    footer {
+      border-top: 1px solid var(--hairline);
+      padding-top: 2.5rem;
+      margin-top: 5rem;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    footer a {
+      color: var(--text-secondary);
+    }
+
+    /* ==========================================================================
+       Mobile Responsive Adjustments
+       ========================================================================== */
+    @media (max-width: 640px) {
+      .hero-thesis {
+        font-size: 1.85rem;
+      }
+      .news-row {
+        grid-template-columns: 1fr;
+        gap: 0.2rem;
+      }
+    }
+  </style>
+
+  <script>
+    // Theme toggle init before render to avoid flash
+    (function() {
+      const savedTheme = localStorage.getItem('site-theme');
+      if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark-theme');
+      }
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- SVG Icon Library -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;" aria-hidden="true">
+    <!-- Google Scholar -->
+    <symbol id="icon-scholar" viewBox="0 0 24 24">
+      <path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/>
+    </symbol>
+    <!-- GitHub -->
+    <symbol id="icon-github" viewBox="0 0 24 24">
+      <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+    </symbol>
+    <!-- LinkedIn -->
+    <symbol id="icon-linkedin" viewBox="0 0 24 24">
+      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+    </symbol>
+    <!-- Email -->
+    <symbol id="icon-email" viewBox="0 0 24 24">
+      <path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z"/>
+      <path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z"/>
+    </symbol>
+  </svg>
+
+  <div class="site-wrapper">
+
+    <!-- ==================== STICKY SIDEBAR ==================== -->
+    <aside class="sidebar">
+      <div class="avatar-wrapper">
+        <img class="avatar-img" src="/images/picture_resized.png?v=4" alt="Ravi Prakash Srivastava" onerror="this.src='/images/picture.png'">
+      </div>
+
+      <h1 class="sidebar-name">Ravi Prakash Srivastava</h1>
+      <p class="sidebar-role">Software Engineer at <strong>SS Software Solutions</strong></p>
+      <p class="sidebar-keywords">Trustworthy AI · Adversarial ML · DevSecOps</p>
+      <p class="sidebar-location">
+        <span>📍</span> Hyderabad, India
+      </p>
+
+      <!-- Section Navigation -->
+      <nav class="sidebar-nav">
+        <a href="#overview" class="active">Overview</a>
+        <a href="#publications">Publications</a>
+        <a href="#systems">Applied Systems</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#news">News</a>
+        <a href="/files/Ravi_Prakash_Srivastava_CV.pdf" target="_blank">CV (PDF) ↗</a>
+      </nav>
+
+      <!-- Social and Academic Links -->
+      <nav class="sidebar-links">
+        <a href="https://scholar.google.com/citations?user=sElDRIMAAAAJ&hl=en" target="_blank" rel="noopener">
+          <svg><use href="#icon-scholar"/></svg>
+          <span>Google Scholar</span>
+        </a>
+        <a href="https://github.com/er-ravi-srivastava" target="_blank" rel="noopener">
+          <svg><use href="#icon-github"/></svg>
+          <span>GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/ravi-prakash-sri/" target="_blank" rel="noopener">
+          <svg><use href="#icon-linkedin"/></svg>
+          <span>LinkedIn</span>
+        </a>
+        <a href="mailto:raviprakashshrivastav7@gmail.com">
+          <svg><use href="#icon-email"/></svg>
+          <span>Email</span>
+        </a>
+      </nav>
+
+      <!-- Theme Switcher -->
+      <button class="theme-toggle-btn" id="theme-btn" aria-label="Toggle theme">
+        <span id="theme-btn-icon">☀️</span>
+        <span id="theme-btn-label">Toggle Mode</span>
+      </button>
+    </aside>
+
+    <!-- ==================== MAIN CONTENT COLUMN ==================== -->
+    <main class="main-content">
+
+      <!-- HERO / THESIS STATEMENT -->
+      <section class="section" id="overview">
+        <h2 class="hero-thesis">Securing foundation models against adversarial exploitation &amp; distributional shift.</h2>
+        
+        <p class="hero-bio">
+          I am a Software Engineer and AI Researcher working at the confluence of <strong>Trustworthy AI</strong>, <strong>Adversarial Machine Learning</strong>, and <strong>Production DevSecOps</strong>. Currently, I engineer ML infrastructure, model governance, and threat-modeling pipelines at <strong>SS Software Solutions</strong>.
+        </p>
+
+        <p class="hero-bio">
+          I earned my Master of Technology in <strong>Data Science &amp; Artificial Intelligence</strong> from the <strong>Indian Institute of Information Technology (IIIT), Ranchi</strong> with an 8.79/10 CGPA, supported by the national <strong>IETE Postgraduate Fellowship</strong>. My research investigates how parameter-efficient adaptation (LoRA + EWC regularization) and threat-modeling frameworks (STRIDE) can insulate large language models and vision architectures from context hijacking, cryptographic leakage, and domain shifts.
+        </p>
+      </section>
+
+      <!-- PUBLICATIONS & RESEARCH HIGHLIGHTS -->
+      <section class="section" id="publications">
+        <div class="section-title">
+          <span>Selected Publications</span>
+          <a href="https://scholar.google.com/citations?user=sElDRIMAAAAJ&hl=en" target="_blank" class="badge">Google Scholar ↗</a>
+        </div>
+
+        <div class="pub-list">
+
+          <!-- Paper 1 (Best Paper) -->
+          <article class="pub-item">
+            <div class="pub-header">
+              <span class="pub-year">2026</span>
+              <span class="badge badge--venue">Springer Nature · ICACA 2026</span>
+              <span class="badge badge--award">🏆 Best Paper Award</span>
+            </div>
+            <h3 class="pub-title">
+              Adversarial Prompt Injection Attacks on Large Language Models: Cryptographic Key Leakage and Defense Strategies
+            </h3>
+            <p class="pub-authors">
+              <strong>Ravi Prakash Srivastava</strong>, Sourabh Sah, Kirti Kumari, Pavan Vovveti, Md. Shah Fahad
+            </p>
+            <p class="pub-summary">
+              Demonstrates practical attack vectors exposing cryptographic secrets and system prompts via multi-turn context hijacking, proposing instruction hierarchy enforcement and input sanitization layers to mitigate exposure.
+            </p>
+            <div class="pub-links">
+              <a href="/files/Best_Paper_Award.pdf" target="_blank">Award Certificate ↗</a>
+              <span class="pub-year">Lecture Notes in Networks and Systems [In press]</span>
+            </div>
+          </article>
+
+          <!-- Paper 2 -->
+          <article class="pub-item">
+            <div class="pub-header">
+              <span class="pub-year">2026</span>
+              <span class="badge badge--venue">Springer Nature · ICACA 2026</span>
+            </div>
+            <h3 class="pub-title">
+              Deepfake Video Detection Using Face-Centric Processing and Frame Sampling
+            </h3>
+            <p class="pub-authors">
+              Sourabh Sah, <strong>Ravi Prakash Srivastava</strong>, Kirti Kumari, Md. Shah Fahad
+            </p>
+            <p class="pub-summary">
+              Introduces targeted facial landmark sampling and spatio-temporal frame reduction, cutting GPU inference overhead while maintaining high detection fidelity across synthesized video streams.
+            </p>
+            <div class="pub-links">
+              <span class="pub-year">Lecture Notes in Networks and Systems [In press]</span>
+            </div>
+          </article>
+
+          <!-- Paper 3 -->
+          <article class="pub-item">
+            <div class="pub-header">
+              <span class="pub-year">2026</span>
+              <span class="badge badge--venue">Springer Nature · ICNSBT 2026</span>
+            </div>
+            <h3 class="pub-title">
+              AI-Powered Code Review Assistant: Eliminating LLM Pipeline using AST-Enhanced Hallucination to Analyze Pull Requests Automatically
+            </h3>
+            <p class="pub-authors">
+              Sairamakrishna BuchiReddy Karri, <strong>Ravi Prakash Srivastava</strong>, Kiran Kumar Kadimi Chenchu, Ravina Marilyn Banze, Ryan Banze
+            </p>
+            <p class="pub-summary">
+              Leverages Abstract Syntax Tree (AST) validation layered on top of LLM outputs to automatically detect logical defects in pull requests while eliminating hallucinated bug flags.
+            </p>
+            <div class="pub-links">
+              <span class="pub-year">Accepted for Publication</span>
+            </div>
+          </article>
+
+          <!-- Paper 4 (Journal) -->
+          <article class="pub-item">
+            <div class="pub-header">
+              <span class="pub-year">2025</span>
+              <span class="badge badge--venue">Taylor &amp; Francis · IETE Journal of Research</span>
+            </div>
+            <h3 class="pub-title">
+              <a href="https://doi.org/10.1080/03772063.2025.2530182" target="_blank">IoT-HITS: An IoT Based Human Intrusion Detection System for Border Region Using Deep Learning</a>
+            </h3>
+            <p class="pub-authors">
+              <strong>Ravi Prakash Srivastava</strong>, Sanjay Dahiya, Aashish Nehra
+            </p>
+            <p class="pub-summary">
+              Engineered a multi-sensor perimeter intrusion system integrating real-time edge deep learning classification, evaluated against adversarial noise and environmental distribution shifts.
+            </p>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1080/03772063.2025.2530182" target="_blank">DOI: 10.1080/03772063.2025.2530182 ↗</a>
+              <a href="/files/Ravi_Prakash_Srivastava_CV.pdf" target="_blank">Paper PDF ↗</a>
+            </div>
+          </article>
+
+          <!-- Paper 5 (Preprint) -->
+          <article class="pub-item">
+            <div class="pub-header">
+              <span class="pub-year">2025</span>
+              <span class="badge badge--venue">arXiv Preprint</span>
+            </div>
+            <h3 class="pub-title">
+              <a href="https://arxiv.org/abs/2512.04967" target="_blank">Balanced Few-Shot Episodic Learning for Accurate Retinal Disease Diagnosis</a>
+            </h3>
+            <p class="pub-authors">
+              Jasmaine Khale, <strong>Ravi Prakash Srivastava</strong>
+            </p>
+            <p class="pub-summary">
+              Addresses extreme class imbalance in medical imaging with class-weighted episodic training, achieving high diagnostic sensitivity on rare retinal pathology subsets.
+            </p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2512.04967" target="_blank">arXiv:2512.04967 ↗</a>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- APPLIED SYSTEMS & PROJECTS -->
+      <section class="section" id="systems">
+        <div class="section-title">
+          <span>Engineering &amp; Systems</span>
+          <span class="pub-year">Production &amp; Prototypes</span>
+        </div>
+
+        <div class="systems-grid">
+
+          <div class="system-card">
+            <div>
+              <h3 class="system-card-title">LLM Semantic Cache &amp; Latency Router</h3>
+              <p class="system-card-desc">
+                Designed a high-throughput semantic caching layer that routes incoming natural language requests via vector embeddings rather than rigid exact matches, trimming API inference cost and latency by ~40%.
+              </p>
+            </div>
+            <div class="system-tech-stack">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">Vector Embeddings</span>
+              <span class="tech-pill">Redis</span>
+              <span class="tech-pill">FastAPI</span>
+            </div>
+          </div>
+
+          <div class="system-card">
+            <div>
+              <h3 class="system-card-title">ML DevSecOps &amp; Governance Pipeline</h3>
+              <p class="system-card-desc">
+                Integrated STRIDE threat modeling, Semgrep/Bandit static security analysis, and dependency CVE scanning into CI/CD workflows, eliminating unmonitored model deployments.
+              </p>
+            </div>
+            <div class="system-tech-stack">
+              <span class="tech-pill">MLflow</span>
+              <span class="tech-pill">DVC</span>
+              <span class="tech-pill">Semgrep</span>
+              <span class="tech-pill">GitHub Actions</span>
+            </div>
+          </div>
+
+          <div class="system-card">
+            <div>
+              <h3 class="system-card-title">Cross-Domain PEFT Summarizer</h3>
+              <p class="system-card-desc">
+                Master’s thesis system adapting BART-large-CNN from news to legal corpora (BillSum) using LoRA combined with Elastic Weight Consolidation (EWC) to prevent catastrophic forgetting while fine-tuning only 1.2% of model parameters.
+              </p>
+            </div>
+            <div class="system-tech-stack">
+              <span class="tech-pill">PyTorch</span>
+              <span class="tech-pill">Transformers</span>
+              <span class="tech-pill">LoRA</span>
+              <span class="tech-pill">Hugging Face</span>
+            </div>
+          </div>
+
+          <div class="system-card">
+            <div>
+              <h3 class="system-card-title">Automated SAST + DAST Triage Dashboard</h3>
+              <p class="system-card-desc">
+                Interactive real-time vulnerability platform automating continuous code scans and synthetic exploits (SQLi, XSS, CSRF), presenting structured remediation playbooks for developers.
+              </p>
+            </div>
+            <div class="system-tech-stack">
+              <span class="tech-pill">Streamlit</span>
+              <span class="tech-pill">Docker</span>
+              <span class="tech-pill">Bandit</span>
+              <span class="tech-pill">OWASP Top 10</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- EXPERIENCE & TRAJECTORY -->
+      <section class="section" id="experience">
+        <div class="section-title">
+          <span>Experience</span>
+          <span class="pub-year">Industry &amp; Research</span>
+        </div>
+
+        <div class="timeline">
+
+          <div class="timeline-node">
+            <h3 class="timeline-role">Software Engineer</h3>
+            <div class="timeline-meta">SS Software Solutions LLC · Hyderabad, India · Mar 2026 – Present</div>
+            <ul class="timeline-bullets">
+              <li>Architected and standardized ML pipeline infrastructure using MLflow, DVC, and structured JSON telemetry, lowering mean incident diagnosis time by ~40% across production models.</li>
+              <li>Embedded STRIDE threat modeling and automated SAST security analysis (Bandit, Semgrep) into GitHub Actions, reducing manual vulnerability review effort by ~60%.</li>
+            </ul>
+          </div>
+
+          <div class="timeline-node">
+            <h3 class="timeline-role">Research Data Scientist</h3>
+            <div class="timeline-meta">Pantech eLearning · Remote / India · Feb 2023 – Aug 2024</div>
+            <ul class="timeline-bullets">
+              <li>Built robust computer vision and deep learning pipelines subjected to distribution shift and adversarial stress-testing.</li>
+              <li>Engineered inference latency profiling and batch optimization to speed up end-to-end model response cycles.</li>
+            </ul>
+          </div>
+
+          <div class="timeline-node">
+            <h3 class="timeline-role">Machine Learning Research Intern</h3>
+            <div class="timeline-meta">C-DAC (Centre for Development of Advanced Computing, Govt. of India) · Hyderabad · Aug 2022 – Feb 2023</div>
+            <ul class="timeline-bullets">
+              <li>Processed 10,000+ student behavioral and academic log records; engineered predictive features for institutional outcome forecasting.</li>
+              <li>Trained and benchmarked Decision Trees, Random Forests, and SVMs against institutional baselines.</li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- EDUCATION & RECOGNITION -->
+      <section class="section" id="education">
+        <div class="section-title">
+          <span>Education &amp; Honors</span>
+        </div>
+
+        <div class="timeline">
+          <div class="edu-node">
+            <h3 class="timeline-role">Master of Technology (M.Tech) in Data Science &amp; Artificial Intelligence</h3>
+            <div class="timeline-meta">Indian Institute of Information Technology (IIIT), Ranchi · 2024 – 2026</div>
+            <ul class="timeline-bullets">
+              <li><strong>CGPA: 8.79 / 10</strong> · Institute of National Importance.</li>
+              <li>Thesis: <em>Cross-Domain Text Summarization Using Transformer Models</em> (Supervised by Dept. of CSE).</li>
+              <li>Awarded the prestigious <strong>IETE Postgraduate Scholarship (2024–2026)</strong> for academic excellence.</li>
+            </ul>
+          </div>
+
+          <div class="edu-node">
+            <h3 class="timeline-role">Bachelor of Technology (B.Tech) in Information Technology</h3>
+            <div class="timeline-meta">North-Eastern Hill University (NEHU), Shillong · 2018 – 2022</div>
+            <ul class="timeline-bullets">
+              <li><strong>CGPA: 7.85 / 10</strong> · Central University.</li>
+              <li>Thesis: <em>IoT-HITS: Edge Deep Learning Intrusion Detection for Border Perimeters</em>.</li>
+              <li>Awarded Associate Membership (AMIETE) of the Institution of Electronics and Telecommunication Engineers.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- RECENT NEWS & LOG -->
+      <section class="section" id="news">
+        <div class="section-title">
+          <span>Recent News</span>
+          <span class="pub-year">Updates</span>
+        </div>
+
+        <div class="news-feed">
+          <div class="news-row">
+            <span class="news-date">Jun 2026</span>
+            <span class="news-text">Appointed as Peer Reviewer for <strong>ICICST 2026</strong> (NIT Jalandhar) — view <a href="/files/Reviewer_Ravi_Prakash_Srivastava.pdf" target="_blank">Certificate ↗</a>.</span>
+          </div>
+          <div class="news-row">
+            <span class="news-date">Mar 2026</span>
+            <span class="news-text">Joined <strong>SS Software Solutions</strong> as Software Engineer focusing on ML pipeline governance.</span>
+          </div>
+          <div class="news-row">
+            <span class="news-date">Jan 2026</span>
+            <span class="news-text">Won <strong>🏆 Best Paper Award</strong> at ICACA 2026 for research on LLM cryptographic key leakage under prompt injection.</span>
+          </div>
+          <div class="news-row">
+            <span class="news-date">2026</span>
+            <span class="news-text">Paper on <em>AST-Enhanced Code Review Assistants</em> accepted in <strong>Springer Nature</strong> (LNNS).</span>
+          </div>
+          <div class="news-row">
+            <span class="news-date">Jul 2025</span>
+            <span class="news-text"><em>IoT-HITS</em> publication published in <strong>IETE Journal of Research</strong> (Taylor &amp; Francis).</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer>
+        <div>
+          &copy; 2026 Ravi Prakash Srivastava. Published with quiet editorial principles.
+        </div>
+        <div>
+          <a href="#">Back to top ↑</a>
+        </div>
+      </footer>
+
+    </main>
+
+  </div>
+
+  <!-- Smooth Active Nav & Theme Toggle Script -->
+  <script>
+    // Theme Switcher Logic
+    const themeBtn = document.getElementById('theme-btn');
+    const themeIcon = document.getElementById('theme-btn-icon');
+    const themeLabel = document.getElementById('theme-btn-label');
+
+    function syncThemeUI() {
+      const isDark = document.documentElement.classList.contains('dark-theme');
+      if (themeIcon && themeLabel) {
+        themeIcon.textContent = isDark ? '🌙' : '☀️';
+        themeLabel.textContent = isDark ? 'Dark Mode' : 'Light Mode';
+      }
+    }
+
+    if (themeBtn) {
+      themeBtn.addEventListener('click', () => {
+        const isDark = document.documentElement.classList.toggle('dark-theme');
+        localStorage.setItem('site-theme', isDark ? 'dark' : 'light');
+        syncThemeUI();
+      });
+      syncThemeUI();
+    }
+
+    // Scrollspy for Sidebar Nav
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.sidebar-nav a[href^="#"]');
+
+    window.addEventListener('scroll', () => {
+      let currentSection = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 120;
+        if (window.pageYOffset >= sectionTop) {
+          currentSection = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${currentSection}`) {
+          link.classList.add('active');
+        }
+      });
+    }, { passive: true });
+  </script>
+
+</body>
+</html>
