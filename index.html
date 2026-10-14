@@ -7,69 +7,136 @@ permalink: /
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ravi Prakash Srivastava — Software Engineer & AI Researcher</title>
-  <meta name="description" content="Ravi Prakash Srivastava — Software Engineer & AI Researcher specializing in Trustworthy AI, Adversarial Prompt Injection, and Production MLOps/DevSecOps.">
+  <title>Ravi Prakash Srivastava — Software Engineer &amp; AI Researcher</title>
+  <meta name="description" content="Ravi Prakash Srivastava — Software Engineer &amp; AI Researcher specializing in Trustworthy AI, Adversarial Prompt Injection Defense, and Production MLOps/DevSecOps.">
   <meta name="author" content="Ravi Prakash Srivastava">
   <link rel="canonical" href="https://er-ravi-srivastava.github.io/">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Ravi Prakash Srivastava — Software Engineer & AI Researcher">
-  <meta property="og:description" content="Researching foundation model security, adversarial robustness, and production MLOps at SS Software Solutions & IIIT Ranchi.">
+  <!-- ==========================================
+       SECURITY HEADERS & META POLICIES
+       ========================================== -->
+  <!-- Content Security Policy: Whitelists only trusted sources for styles, fonts, and images; prevents clickjacking and XSS -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self'; base-uri 'self'; form-action 'self';">
+  <!-- Referrer Policy: Never leak query parameters or private paths across origins -->
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <!-- Permissions Policy: Disables sensitive hardware APIs (camera, mic, geolocation, payment) -->
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()">
+  <!-- MIME Sniffing Protection -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+
+  <!-- Open Graph / Social Cards -->
+  <meta property="og:title" content="Ravi Prakash Srivastava — Software Engineer &amp; AI Researcher">
+  <meta property="og:description" content="Software Engineer &amp; AI Researcher specializing in Trustworthy AI, Adversarial Robustness, and Production MLOps at SS Software Solutions &amp; IIIT Ranchi.">
   <meta property="og:type" content="profile">
   <meta property="og:url" content="https://er-ravi-srivastava.github.io/">
-  <meta property="og:image" content="https://er-ravi-srivastava.github.io/images/picture_resized.png">
+  <meta property="og:image" content="https://er-ravi-srivastava.github.io/images/ravi.png">
 
-  <!-- Editorial Google Fonts: Newsreader (Serif Body) + Plus Jakarta Sans & Inter (Headings/Sans) + JetBrains Mono -->
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ravi Prakash Srivastava — Software Engineer &amp; AI Researcher">
+  <meta name="twitter:description" content="Trustworthy AI, LLM Security, Adversarial Prompt Injection Defense, and Production DevSecOps.">
+  <meta name="twitter:image" content="https://er-ravi-srivastava.github.io/images/ravi.png">
+
+  <!-- Structured Data (JSON-LD) for Search Engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ravi Prakash Srivastava",
+    "jobTitle": "Software Engineer & AI Researcher",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "SS Software Solutions LLC"
+    },
+    "alumniOf": [
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "Indian Institute of Information Technology (IIIT) Ranchi"
+      },
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "North-Eastern Hill University (NEHU) Shillong"
+      }
+    ],
+    "url": "https://er-ravi-srivastava.github.io/",
+    "sameAs": [
+      "https://scholar.google.com/citations?user=sElDRIMAAAAJ&hl=en",
+      "https://github.com/er-ravi-srivastava",
+      "https://www.linkedin.com/in/ravi-prakash-sri/"
+    ]
+  }
+  </script>
+
+  <!-- Editorial Google Fonts: Newsreader (Serif) + Plus Jakarta Sans / Inter + JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
 
   <style>
     /* ==========================================================================
        Design System Tokens (Editorial & Academic Minimalism)
-       Inspired by srijansaket.com, Stripe Press, & Substack
        ========================================================================== */
     :root {
       --bg: #FAFAF7;
       --bg-surface: #FFFFFF;
       --bg-subtle: #F2F2EC;
-      --text-primary: #1A1A1A;
-      --text-secondary: #52524E;
-      --text-muted: #787873;
-      --hairline: #E5E5DE;
-      --hairline-strong: #D6D6CE;
+      --bg-card: #FFFFFF;
+      --text-primary: #18181B;
+      --text-secondary: #4A4A46;
+      --text-muted: #71716D;
+      --hairline: #E4E4DC;
+      --hairline-strong: #D1D1C7;
       
       --accent: #0A5C38;            /* Academic Forest Emerald */
-      --accent-hover: #07452A;
+      --accent-hover: #064026;
       --accent-soft: rgba(10, 92, 56, 0.08);
       --accent-badge: #E8F3ED;
+      --accent-border: rgba(10, 92, 56, 0.22);
+
+      --gold: #B45309;
+      --gold-bg: #FEF3C7;
+      --gold-border: #FDE68A;
 
       --font-body: "Newsreader", Georgia, serif;
       --font-sans: "Plus Jakarta Sans", "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
       --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
 
-      --max-width: 1140px;
+      --max-width: 1160px;
       --sidebar-width: 270px;
       --radius-sm: 6px;
       --radius-md: 10px;
+      --radius-lg: 14px;
       --radius-full: 9999px;
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
+      --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.05);
+      --shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.08);
       --transition: 0.18s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     html.dark-theme {
-      --bg: #111215;
-      --bg-surface: #18191E;
-      --bg-subtle: #202228;
+      --bg: #0F1014;
+      --bg-surface: #17181F;
+      --bg-subtle: #1E2029;
+      --bg-card: #15161D;
       --text-primary: #EDEDEA;
-      --text-secondary: #A6A69F;
-      --text-muted: #74746E;
-      --hairline: #292A30;
-      --hairline-strong: #383A42;
+      --text-secondary: #A3A39B;
+      --text-muted: #73736D;
+      --hairline: #262732;
+      --hairline-strong: #363847;
 
-      --accent: #34D399;            /* Bright emerald for high dark-mode contrast */
+      --accent: #34D399;            /* Bright emerald for dark-mode contrast */
       --accent-hover: #6EE7B7;
       --accent-soft: rgba(52, 211, 153, 0.12);
       --accent-badge: rgba(52, 211, 153, 0.14);
+      --accent-border: rgba(52, 211, 153, 0.26);
+
+      --gold: #FCD34D;
+      --gold-bg: rgba(245, 158, 11, 0.15);
+      --gold-border: rgba(245, 158, 11, 0.35);
+
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+      --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.35);
+      --shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.5);
     }
 
     /* Reset & Base */
@@ -93,7 +160,39 @@ permalink: /
       font-feature-settings: "kern", "liga", "onum";
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      transition: background-color 0.25s ease, color 0.25s ease;
+      transition: background-color 0.22s ease, color 0.22s ease;
+      position: relative;
+    }
+
+    /* Accessibility Skip Link */
+    .skip-link {
+      position: absolute;
+      top: -60px;
+      left: 1rem;
+      background: var(--accent);
+      color: #fff !important;
+      padding: 0.5rem 1rem;
+      border-radius: var(--radius-sm);
+      z-index: 10000;
+      font-family: var(--font-sans);
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: top 0.2s ease;
+    }
+    .skip-link:focus {
+      top: 1rem;
+    }
+
+    /* Reading Progress Bar */
+    #reading-progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 3px;
+      background: var(--accent);
+      width: 0%;
+      z-index: 9999;
+      transition: width 0.1s linear;
     }
 
     /* Links */
@@ -114,37 +213,137 @@ permalink: /
       color: var(--accent);
     }
 
-    /* Layout Grid */
+    /* Layout Wrapper */
     .site-wrapper {
       max-width: var(--max-width);
       margin: 0 auto;
-      padding: 3.5rem 1.75rem 6rem;
+      padding: 2rem 1.5rem 6rem;
       display: grid;
       grid-template-columns: 1fr;
-      gap: 3rem;
+      gap: 2.5rem;
     }
 
     @media (min-width: 960px) {
       .site-wrapper {
         grid-template-columns: var(--sidebar-width) 1fr;
-        gap: 5rem;
-        padding: 4.5rem 2.25rem 7rem;
+        gap: 4.5rem;
+        padding: 4rem 2rem 7rem;
       }
     }
 
     /* ==========================================================================
-       Sticky Left Sidebar
+       Mobile Header & Horizontal Pill Navigation (Screen <= 960px)
+       Makes mobile browsing effortless and compact!
        ========================================================================== */
-    .sidebar {
-      font-family: var(--font-sans);
+    .mobile-header {
+      display: none;
     }
 
+    @media (max-width: 959px) {
+      .mobile-header {
+        display: block;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background: var(--bg);
+        border-bottom: 1px solid var(--hairline);
+        margin: -2rem -1.5rem 2rem;
+        padding: 0.85rem 1.25rem 0.65rem;
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+      }
+
+      .mobile-header-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 0.65rem;
+      }
+
+      .mobile-profile-brand {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+      }
+
+      .mobile-avatar {
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 1px solid var(--hairline-strong);
+      }
+
+      .mobile-name-role {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .mobile-name {
+        font-family: var(--font-sans);
+        font-size: 0.96rem;
+        font-weight: 700;
+        color: var(--text-primary);
+        line-height: 1.2;
+      }
+
+      .mobile-subtitle {
+        font-family: var(--font-sans);
+        font-size: 0.76rem;
+        color: var(--text-muted);
+        line-height: 1.2;
+      }
+
+      .mobile-nav-scroll {
+        display: flex;
+        gap: 0.45rem;
+        overflow-x: auto;
+        padding-bottom: 0.25rem;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+      }
+      .mobile-nav-scroll::-webkit-scrollbar {
+        display: none;
+      }
+
+      .mobile-nav-pill {
+        white-space: nowrap;
+        font-family: var(--font-sans);
+        font-size: 0.82rem;
+        font-weight: 600;
+        padding: 0.3rem 0.75rem;
+        border-radius: var(--radius-full);
+        background: var(--bg-subtle);
+        color: var(--text-secondary);
+        border: 1px solid var(--hairline);
+        text-decoration: none;
+        transition: all var(--transition);
+      }
+      .mobile-nav-pill:hover,
+      .mobile-nav-pill.active {
+        background: var(--accent);
+        color: #fff !important;
+        border-color: var(--accent);
+        text-decoration: none;
+      }
+
+      /* Hide redundant sidebar elements on small screens */
+      .sidebar {
+        display: none;
+      }
+    }
+
+    /* ==========================================================================
+       Sticky Left Sidebar (Desktop >= 960px)
+       ========================================================================== */
     @media (min-width: 960px) {
       .sidebar {
+        display: block;
+        font-family: var(--font-sans);
         position: sticky;
         top: 3.5rem;
         align-self: start;
-        max-height: calc(100vh - 5rem);
+        max-height: calc(100vh - 4.5rem);
         overflow-y: auto;
         padding-right: 0.5rem;
         scrollbar-width: none;
@@ -156,18 +355,19 @@ permalink: /
 
     .avatar-wrapper {
       display: inline-block;
-      width: 140px;
-      height: 140px;
+      width: 136px;
+      height: 136px;
       border-radius: 50%;
       overflow: hidden;
-      border: 1px solid var(--hairline-strong);
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
-      margin-bottom: 1.25rem;
+      border: 2px solid var(--hairline-strong);
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 1.15rem;
       background: var(--bg-subtle);
-      transition: transform var(--transition);
+      transition: transform var(--transition), box-shadow var(--transition);
     }
     .avatar-wrapper:hover {
       transform: scale(1.02);
+      box-shadow: var(--shadow-md);
     }
 
     .avatar-img {
@@ -178,8 +378,8 @@ permalink: /
     }
 
     .sidebar-name {
-      font-size: 1.4rem;
-      font-weight: 700;
+      font-size: 1.35rem;
+      font-weight: 800;
       letter-spacing: -0.025em;
       line-height: 1.2;
       color: var(--text-primary);
@@ -187,10 +387,10 @@ permalink: /
     }
 
     .sidebar-role {
-      font-size: 0.92rem;
+      font-size: 0.9rem;
       line-height: 1.45;
       color: var(--text-secondary);
-      margin-bottom: 0.3rem;
+      margin-bottom: 0.25rem;
     }
     .sidebar-role strong {
       color: var(--text-primary);
@@ -198,7 +398,7 @@ permalink: /
     }
 
     .sidebar-keywords {
-      font-size: 0.82rem;
+      font-size: 0.8rem;
       color: var(--text-muted);
       line-height: 1.45;
       margin-bottom: 0.75rem;
@@ -210,23 +410,25 @@ permalink: /
       display: flex;
       align-items: center;
       gap: 0.35rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.25rem;
     }
 
     /* Sidebar Navigation */
     .sidebar-nav {
       border-top: 1px solid var(--hairline);
-      padding-top: 1.25rem;
-      margin-bottom: 1.25rem;
+      padding-top: 1.1rem;
+      margin-bottom: 1.1rem;
       display: flex;
       flex-direction: column;
-      gap: 0.15rem;
+      gap: 0.2rem;
     }
 
     .sidebar-nav a {
-      display: block;
-      padding: 0.35rem 0.6rem;
-      font-size: 0.92rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.38rem 0.65rem;
+      font-size: 0.9rem;
       font-weight: 500;
       color: var(--text-secondary);
       border-radius: var(--radius-sm);
@@ -237,35 +439,52 @@ permalink: /
     .sidebar-nav a.active {
       background: var(--accent-soft);
       color: var(--accent);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .nav-count {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      opacity: 0.7;
     }
 
     /* Sidebar Social Links */
     .sidebar-links {
       border-top: 1px solid var(--hairline);
-      padding-top: 1.25rem;
+      padding-top: 1.1rem;
       display: flex;
       flex-direction: column;
       gap: 0.2rem;
     }
 
-    .sidebar-links a {
+    .sidebar-links a,
+    .sidebar-action-btn {
       display: inline-flex;
       align-items: center;
       gap: 0.65rem;
-      padding: 0.35rem 0.6rem;
-      font-size: 0.88rem;
+      padding: 0.38rem 0.65rem;
+      font-size: 0.86rem;
       color: var(--text-secondary);
       border-radius: var(--radius-sm);
       text-decoration: none;
       transition: color var(--transition), background var(--transition);
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      text-align: left;
+      width: 100%;
+      font-family: var(--font-sans);
     }
-    .sidebar-links a:hover {
+    .sidebar-links a:hover,
+    .sidebar-action-btn:hover {
       background: var(--bg-subtle);
       color: var(--text-primary);
       text-decoration: none;
     }
 
-    .sidebar-links svg {
+    .sidebar-links svg,
+    .sidebar-action-btn svg {
       width: 16px;
       height: 16px;
       fill: currentColor;
@@ -274,11 +493,10 @@ permalink: /
 
     /* Theme Switcher Button */
     .theme-toggle-btn {
-      margin-top: 1.5rem;
-      padding: 0.45rem 0.8rem;
+      padding: 0.42rem 0.75rem;
       font-family: var(--font-sans);
-      font-size: 0.82rem;
-      font-weight: 500;
+      font-size: 0.8rem;
+      font-weight: 600;
       color: var(--text-secondary);
       background: var(--bg-subtle);
       border: 1px solid var(--hairline);
@@ -286,12 +504,18 @@ permalink: /
       cursor: pointer;
       display: inline-flex;
       align-items: center;
-      gap: 0.5rem;
+      gap: 0.45rem;
       transition: all var(--transition);
     }
     .theme-toggle-btn:hover {
       background: var(--hairline);
       color: var(--text-primary);
+    }
+
+    .sidebar-theme-wrapper {
+      margin-top: 1.25rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--hairline);
     }
 
     /* ==========================================================================
@@ -303,20 +527,19 @@ permalink: /
 
     /* Section Spacing */
     .section {
-      margin-bottom: 4.5rem;
+      margin-bottom: 4.25rem;
+      scroll-margin-top: 5rem;
     }
 
     /* Section Headings */
     .section-title {
       font-family: var(--font-sans);
-      font-size: 1.15rem;
       font-weight: 700;
-      letter-spacing: -0.015em;
-      color: var(--text-primary);
       text-transform: uppercase;
-      font-size: 0.85rem;
-      letter-spacing: 0.08em;
-      margin-bottom: 1.75rem;
+      font-size: 0.82rem;
+      letter-spacing: 0.09em;
+      color: var(--text-primary);
+      margin-bottom: 1.65rem;
       padding-bottom: 0.65rem;
       border-bottom: 1px solid var(--hairline);
       display: flex;
@@ -324,7 +547,7 @@ permalink: /
       justify-content: space-between;
     }
 
-    /* Hero Lede / Thesis Statement */
+    /* Hero / Thesis Statement */
     .hero-thesis {
       font-family: var(--font-sans);
       font-size: 2.15rem;
@@ -332,25 +555,157 @@ permalink: /
       letter-spacing: -0.035em;
       line-height: 1.22;
       color: var(--text-primary);
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.35rem;
     }
 
     @media (min-width: 768px) {
       .hero-thesis {
-        font-size: 2.5rem;
+        font-size: 2.45rem;
       }
     }
 
     .hero-bio {
-      font-size: 1.12rem;
-      line-height: 1.75;
+      font-size: 1.1rem;
+      line-height: 1.72;
       color: var(--text-secondary);
-      margin-bottom: 1.35rem;
+      margin-bottom: 1.25rem;
     }
 
     .hero-bio strong {
       color: var(--text-primary);
       font-weight: 600;
+    }
+
+    /* ==========================================================================
+       Hero Quick Highlights & Snapshot Cards (Easier to evaluate at a glance!)
+       ========================================================================== */
+    .hero-snapshot-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.75rem;
+      margin: 1.75rem 0 1.5rem;
+    }
+
+    @media (min-width: 600px) {
+      .hero-snapshot-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1040px) {
+      .hero-snapshot-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .snapshot-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--hairline);
+      border-radius: var(--radius-md);
+      padding: 0.85rem 1rem;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      align-items: flex-start;
+      gap: 0.65rem;
+      transition: transform var(--transition), border-color var(--transition);
+    }
+    .snapshot-card:hover {
+      border-color: var(--accent-border);
+      transform: translateY(-2px);
+    }
+
+    .snapshot-icon {
+      font-size: 1.25rem;
+      line-height: 1;
+      margin-top: 2px;
+      flex-shrink: 0;
+    }
+
+    .snapshot-label {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      margin-bottom: 0.15rem;
+    }
+
+    .snapshot-value {
+      font-family: var(--font-sans);
+      font-size: 0.86rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      line-height: 1.3;
+    }
+
+    .snapshot-detail {
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      color: var(--text-secondary);
+      line-height: 1.25;
+    }
+
+    /* Hero Fast Actions (Download CV, Contact, Best Paper) */
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.75rem;
+      margin-top: 1.5rem;
+    }
+
+    .btn-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: var(--font-sans);
+      font-size: 0.86rem;
+      font-weight: 600;
+      padding: 0.55rem 1.1rem;
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      transition: all var(--transition);
+      cursor: pointer;
+    }
+
+    .btn-action--primary {
+      background: var(--accent);
+      color: #FFFFFF !important;
+      border: 1px solid var(--accent);
+    }
+    .btn-action--primary:hover {
+      background: var(--accent-hover);
+      text-decoration: none;
+      transform: translateY(-1px);
+    }
+
+    .btn-action--secondary {
+      background: var(--bg-surface);
+      color: var(--text-primary) !important;
+      border: 1px solid var(--hairline-strong);
+    }
+    .btn-action--secondary:hover {
+      border-color: var(--accent);
+      color: var(--accent) !important;
+      text-decoration: none;
+      transform: translateY(-1px);
+    }
+
+    .btn-action--award {
+      background: var(--gold-bg);
+      color: var(--gold) !important;
+      border: 1px solid var(--gold-border);
+    }
+    .btn-action--award:hover {
+      filter: brightness(0.95);
+      text-decoration: none;
+      transform: translateY(-1px);
+    }
+
+    .btn-action svg {
+      width: 15px;
+      height: 15px;
+      fill: currentColor;
     }
 
     /* Badges & Tags */
@@ -359,7 +714,7 @@ permalink: /
       align-items: center;
       gap: 0.35rem;
       font-family: var(--font-mono);
-      font-size: 0.76rem;
+      font-size: 0.74rem;
       font-weight: 600;
       padding: 0.18rem 0.55rem;
       border-radius: var(--radius-sm);
@@ -371,14 +726,10 @@ permalink: /
     }
 
     .badge--award {
-      background: #FEF3C7;
-      color: #92400E;
-      border-color: #FDE68A;
-    }
-    html.dark-theme .badge--award {
-      background: rgba(245, 158, 11, 0.16);
-      color: #FCD34D;
-      border-color: rgba(245, 158, 11, 0.3);
+      background: var(--gold-bg);
+      color: var(--gold);
+      border-color: var(--gold-border);
+      font-weight: 700;
     }
 
     .badge--venue {
@@ -394,26 +745,41 @@ permalink: /
     .pub-list {
       display: flex;
       flex-direction: column;
-      gap: 2.25rem;
+      gap: 2rem;
     }
 
     .pub-item {
       position: relative;
+      background: var(--bg-card);
+      border: 1px solid var(--hairline);
+      border-radius: var(--radius-md);
+      padding: 1.35rem 1.5rem;
+      box-shadow: var(--shadow-sm);
+      transition: border-color var(--transition), transform var(--transition);
+    }
+    .pub-item:hover {
+      border-color: var(--hairline-strong);
+      transform: translateY(-1px);
+    }
+
+    .pub-item--featured {
+      border-left: 4px solid var(--gold);
+      background: linear-gradient(to right, var(--gold-bg), var(--bg-card) 18%);
     }
 
     .pub-header {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      gap: 0.6rem;
-      margin-bottom: 0.45rem;
+      gap: 0.55rem;
+      margin-bottom: 0.5rem;
     }
 
     .pub-year {
       font-family: var(--font-mono);
       font-size: 0.82rem;
       color: var(--text-muted);
-      font-weight: 500;
+      font-weight: 600;
     }
 
     .pub-title {
@@ -423,7 +789,7 @@ permalink: /
       letter-spacing: -0.015em;
       line-height: 1.35;
       color: var(--text-primary);
-      margin-bottom: 0.4rem;
+      margin-bottom: 0.45rem;
     }
 
     .pub-title a {
@@ -436,9 +802,9 @@ permalink: /
     }
 
     .pub-authors {
-      font-size: 0.95rem;
+      font-size: 0.94rem;
       color: var(--text-secondary);
-      margin-bottom: 0.45rem;
+      margin-bottom: 0.5rem;
       line-height: 1.5;
     }
     .pub-authors strong {
@@ -447,35 +813,101 @@ permalink: /
     }
 
     .pub-summary {
-      font-size: 0.98rem;
+      font-size: 0.96rem;
       color: var(--text-secondary);
-      line-height: 1.65;
-      margin-bottom: 0.65rem;
+      line-height: 1.62;
+      margin-bottom: 0.85rem;
     }
 
     .pub-links {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.85rem;
+      align-items: center;
+      gap: 0.75rem;
       font-family: var(--font-sans);
-      font-size: 0.85rem;
+      font-size: 0.82rem;
       font-weight: 600;
+      padding-top: 0.65rem;
+      border-top: 1px dashed var(--hairline);
     }
 
-    .pub-links a {
+    .pub-links a,
+    .btn-bibtex {
       color: var(--accent);
       display: inline-flex;
       align-items: center;
-      gap: 0.25rem;
+      gap: 0.3rem;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      font-family: var(--font-sans);
+      font-size: 0.82rem;
+      font-weight: 600;
+    }
+    .pub-links a:hover,
+    .btn-bibtex:hover {
+      color: var(--accent-hover);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    /* BibTeX snippet container */
+    .bibtex-box {
+      display: none;
+      margin-top: 0.75rem;
+      padding: 0.85rem;
+      background: var(--bg-subtle);
+      border: 1px solid var(--hairline);
+      border-radius: var(--radius-sm);
+      font-family: var(--font-mono);
+      font-size: 0.76rem;
+      line-height: 1.5;
+      color: var(--text-secondary);
+      overflow-x: auto;
+      white-space: pre;
+      position: relative;
+    }
+    .bibtex-box.show {
+      display: block;
+      animation: fadeIn 0.2s ease;
     }
 
     /* ==========================================================================
-       Systems & Projects Grid
+       Interactive Project Category Filters & Systems Grid
        ========================================================================== */
+    .filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .filter-btn {
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 0.35rem 0.85rem;
+      border-radius: var(--radius-full);
+      background: var(--bg-surface);
+      color: var(--text-secondary);
+      border: 1px solid var(--hairline);
+      cursor: pointer;
+      transition: all var(--transition);
+    }
+    .filter-btn:hover {
+      border-color: var(--hairline-strong);
+      color: var(--text-primary);
+    }
+    .filter-btn.active {
+      background: var(--accent);
+      color: #FFFFFF;
+      border-color: var(--accent);
+    }
+
     .systems-grid {
       display: grid;
       grid-template-columns: 1fr;
-      gap: 1.75rem;
+      gap: 1.5rem;
     }
 
     @media (min-width: 680px) {
@@ -485,11 +917,12 @@ permalink: /
     }
 
     .system-card {
-      background: var(--bg-surface);
+      background: var(--bg-card);
       border: 1px solid var(--hairline);
       border-radius: var(--radius-md);
-      padding: 1.4rem;
-      transition: border-color var(--transition), transform var(--transition);
+      padding: 1.35rem 1.4rem;
+      box-shadow: var(--shadow-sm);
+      transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -497,6 +930,25 @@ permalink: /
     .system-card:hover {
       border-color: var(--hairline-strong);
       transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .system-card.hidden {
+      display: none;
+    }
+
+    .system-card-top {
+      margin-bottom: 1rem;
+    }
+
+    .system-category-tag {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.4rem;
+      font-weight: 600;
     }
 
     .system-card-title {
@@ -506,6 +958,7 @@ permalink: /
       letter-spacing: -0.015em;
       color: var(--text-primary);
       margin-bottom: 0.5rem;
+      line-height: 1.35;
     }
     .system-card-title a {
       color: inherit;
@@ -522,19 +975,18 @@ permalink: /
       font-size: 0.94rem;
       color: var(--text-secondary);
       line-height: 1.6;
-      margin-bottom: 1.2rem;
     }
 
     .system-tech-stack {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.4rem;
-      margin-top: auto;
+      gap: 0.35rem;
+      margin-top: 1.1rem;
     }
 
     .tech-pill {
       font-family: var(--font-mono);
-      font-size: 0.74rem;
+      font-size: 0.72rem;
       color: var(--text-muted);
       background: var(--bg-subtle);
       padding: 0.15rem 0.45rem;
@@ -566,7 +1018,7 @@ permalink: /
       text-decoration: underline;
       text-underline-offset: 3px;
     }
-    .system-links a svg {
+    .system-links svg {
       width: 14px;
       height: 14px;
       fill: currentColor;
@@ -579,7 +1031,7 @@ permalink: /
     .timeline {
       display: flex;
       flex-direction: column;
-      gap: 2rem;
+      gap: 1.75rem;
     }
 
     .timeline-node {
@@ -607,7 +1059,7 @@ permalink: /
 
     .timeline-meta {
       font-family: var(--font-sans);
-      font-size: 0.88rem;
+      font-size: 0.86rem;
       color: var(--accent);
       font-weight: 600;
       margin-bottom: 0.5rem;
@@ -615,7 +1067,7 @@ permalink: /
 
     .timeline-bullets {
       list-style: none;
-      font-size: 0.96rem;
+      font-size: 0.95rem;
       color: var(--text-secondary);
     }
     .timeline-bullets li {
@@ -630,14 +1082,15 @@ permalink: /
       color: var(--text-muted);
     }
 
-    /* ==========================================================================
-       Education & Honors
-       ========================================================================== */
+    /* Education Nodes */
     .edu-node {
       border-left: 2px solid var(--hairline);
       padding-left: 1.5rem;
       position: relative;
-      margin-bottom: 2rem;
+      margin-bottom: 1.75rem;
+    }
+    .edu-node:last-child {
+      margin-bottom: 0;
     }
     .edu-node::before {
       content: "";
@@ -656,22 +1109,28 @@ permalink: /
     .news-feed {
       display: flex;
       flex-direction: column;
-      gap: 0.9rem;
+      gap: 0.95rem;
     }
 
     .news-row {
       display: grid;
-      grid-template-columns: 88px 1fr;
+      grid-template-columns: 92px 1fr;
       gap: 1.2rem;
       font-size: 0.96rem;
       align-items: baseline;
+      padding: 0.5rem 0.65rem;
+      border-radius: var(--radius-sm);
+      transition: background var(--transition);
+    }
+    .news-row:hover {
+      background: var(--bg-subtle);
     }
 
     .news-date {
       font-family: var(--font-mono);
       font-size: 0.8rem;
       color: var(--text-muted);
-      font-weight: 500;
+      font-weight: 600;
     }
 
     .news-text {
@@ -683,12 +1142,12 @@ permalink: /
     }
 
     /* ==========================================================================
-       Footer
+       Footer & Floating Elements
        ========================================================================== */
     footer {
       border-top: 1px solid var(--hairline);
-      padding-top: 2.5rem;
-      margin-top: 5rem;
+      padding-top: 2.25rem;
+      margin-top: 4.5rem;
       font-family: var(--font-sans);
       font-size: 0.85rem;
       color: var(--text-muted);
@@ -702,12 +1161,76 @@ permalink: /
       color: var(--text-secondary);
     }
 
-    /* ==========================================================================
-       Mobile Responsive Adjustments
-       ========================================================================== */
+    /* Floating Back-To-Top Button */
+    #back-to-top {
+      position: fixed;
+      bottom: 1.75rem;
+      right: 1.75rem;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: var(--bg-surface);
+      border: 1px solid var(--hairline-strong);
+      color: var(--text-primary);
+      box-shadow: var(--shadow-md);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: all var(--transition);
+      z-index: 900;
+    }
+    #back-to-top.visible {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    #back-to-top:hover {
+      background: var(--accent);
+      color: #FFFFFF;
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+    #back-to-top svg {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+    }
+
+    /* Toast Notification for Clipboard Copy */
+    #toast-notification {
+      position: fixed;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%) translateY(20px);
+      background: var(--text-primary);
+      color: var(--bg);
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 0.55rem 1.25rem;
+      border-radius: var(--radius-full);
+      box-shadow: var(--shadow-hover);
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 10001;
+    }
+    #toast-notification.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Mobile adjustments */
     @media (max-width: 640px) {
       .hero-thesis {
-        font-size: 1.85rem;
+        font-size: 1.8rem;
       }
       .news-row {
         grid-template-columns: 1fr;
@@ -717,7 +1240,7 @@ permalink: /
   </style>
 
   <script>
-    // Theme toggle init before render to avoid flash
+    // Theme toggle init before render to avoid flash of light/dark theme
     (function() {
       const savedTheme = localStorage.getItem('site-theme');
       if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
@@ -728,7 +1251,13 @@ permalink: /
 </head>
 <body>
 
-  <!-- SVG Icon Library -->
+  <!-- Accessible Skip Link -->
+  <a href="#main-content-start" class="skip-link">Skip to main content</a>
+
+  <!-- Top Scroll Reading Progress -->
+  <div id="reading-progress" aria-hidden="true"></div>
+
+  <!-- SVG Icon Library (Zero External Dependencies) -->
   <svg xmlns="http://www.w3.org/2000/svg" style="display: none;" aria-hidden="true">
     <!-- Google Scholar -->
     <symbol id="icon-scholar" viewBox="0 0 24 24">
@@ -747,14 +1276,57 @@ permalink: /
       <path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z"/>
       <path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z"/>
     </symbol>
+    <!-- Copy -->
+    <symbol id="icon-copy" viewBox="0 0 24 24">
+      <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+    </symbol>
+    <!-- Arrow Up -->
+    <symbol id="icon-arrow-up" viewBox="0 0 24 24">
+      <path d="M12 4l-8 8h5v8h6v-8h5z"/>
+    </symbol>
+    <!-- Download -->
+    <symbol id="icon-download" viewBox="0 0 24 24">
+      <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+    </symbol>
   </svg>
 
   <div class="site-wrapper">
 
-    <!-- ==================== STICKY SIDEBAR ==================== -->
-    <aside class="sidebar">
+    <!-- ================================================================
+         MOBILE COMPACT HEADER (< 960px)
+         Allows mobile visitors to jump right into content without scrolling!
+         ================================================================ -->
+    <header class="mobile-header" role="banner">
+      <div class="mobile-header-top">
+        <div class="mobile-profile-brand">
+          <img class="mobile-avatar" src="/images/picture_resized.png?v=5" alt="Ravi Prakash Srivastava" onerror="this.src='/images/ravi.png'">
+          <div class="mobile-name-role">
+            <span class="mobile-name">Ravi Prakash Srivastava</span>
+            <span class="mobile-subtitle">Software Engineer &amp; AI Researcher</span>
+          </div>
+        </div>
+        <button class="theme-toggle-btn" id="mobile-theme-btn" aria-label="Toggle dark/light theme">
+          <span class="theme-icon">☀️</span>
+        </button>
+      </div>
+
+      <nav class="mobile-nav-scroll" aria-label="Mobile Sections">
+        <a href="#overview" class="mobile-nav-pill active">Overview</a>
+        <a href="#publications" class="mobile-nav-pill">Publications</a>
+        <a href="#systems" class="mobile-nav-pill">Applied Systems</a>
+        <a href="#experience" class="mobile-nav-pill">Experience</a>
+        <a href="#education" class="mobile-nav-pill">Education</a>
+        <a href="#news" class="mobile-nav-pill">News</a>
+        <a href="/files/Ravi_Prakash_Srivastava_CV.pdf" target="_blank" rel="noopener noreferrer" class="mobile-nav-pill">CV ↗</a>
+      </nav>
+    </header>
+
+    <!-- ================================================================
+         STICKY DESKTOP SIDEBAR (>= 960px)
+         ================================================================ -->
+    <aside class="sidebar" role="complementary" aria-label="Personal sidebar">
       <div class="avatar-wrapper">
-        <img class="avatar-img" src="/images/picture_resized.png?v=4" alt="Ravi Prakash Srivastava" onerror="this.src='/images/picture.png'">
+        <img class="avatar-img" src="/images/picture_resized.png?v=5" alt="Ravi Prakash Srivastava" onerror="this.src='/images/ravi.png'">
       </div>
 
       <h1 class="sidebar-name">Ravi Prakash Srivastava</h1>
@@ -764,48 +1336,70 @@ permalink: /
         <span>📍</span> Hyderabad, India
       </p>
 
-      <!-- Section Navigation -->
-      <nav class="sidebar-nav">
-        <a href="#overview" class="active">Overview</a>
-        <a href="#publications">Publications</a>
-        <a href="#systems">Applied Systems</a>
-        <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
-        <a href="#news">News</a>
-        <a href="/files/Ravi_Prakash_Srivastava_CV.pdf" target="_blank">CV (PDF) ↗</a>
+      <!-- Desktop Section Navigation -->
+      <nav class="sidebar-nav" aria-label="Desktop Sections">
+        <a href="#overview" class="active">
+          <span>Overview</span>
+        </a>
+        <a href="#publications">
+          <span>Publications</span>
+          <span class="nav-count">5</span>
+        </a>
+        <a href="#systems">
+          <span>Applied Systems</span>
+          <span class="nav-count">7</span>
+        </a>
+        <a href="#experience">
+          <span>Experience</span>
+        </a>
+        <a href="#education">
+          <span>Education &amp; Honors</span>
+        </a>
+        <a href="#news">
+          <span>Recent News</span>
+        </a>
+        <a href="/files/Ravi_Prakash_Srivastava_CV.pdf" target="_blank" rel="noopener noreferrer">
+          <span>Curriculum Vitae (PDF)</span>
+          <span class="nav-count">↗</span>
+        </a>
       </nav>
 
-      <!-- Social and Academic Links -->
-      <nav class="sidebar-links">
-        <a href="https://scholar.google.com/citations?user=sElDRIMAAAAJ&hl=en" target="_blank" rel="noopener">
+      <!-- Social and Professional Links (All protected with rel="noopener noreferrer") -->
+      <nav class="sidebar-links" aria-label="External Profiles">
+        <a href="https://scholar.google.com/citations?user=sElDRIMAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
           <svg><use href="#icon-scholar"/></svg>
           <span>Google Scholar</span>
         </a>
-        <a href="https://github.com/er-ravi-srivastava" target="_blank" rel="noopener">
+        <a href="https://github.com/er-ravi-srivastava" target="_blank" rel="noopener noreferrer">
           <svg><use href="#icon-github"/></svg>
           <span>GitHub</span>
         </a>
-        <a href="https://www.linkedin.com/in/ravi-prakash-sri/" target="_blank" rel="noopener">
+        <a href="https://www.linkedin.com/in/ravi-prakash-sri/" target="_blank" rel="noopener noreferrer">
           <svg><use href="#icon-linkedin"/></svg>
           <span>LinkedIn</span>
         </a>
-        <a href="mailto:raviprakashshrivastav7@gmail.com">
+        <!-- Secure Copy Email Action (Protects against spambots) -->
+        <button class="sidebar-action-btn copy-email-btn" data-email="raviprakashshrivastav7@gmail.com" aria-label="Copy email address to clipboard">
           <svg><use href="#icon-email"/></svg>
-          <span>Email</span>
-        </a>
+          <span>Copy Email Address</span>
+        </button>
       </nav>
 
-      <!-- Theme Switcher -->
-      <button class="theme-toggle-btn" id="theme-btn" aria-label="Toggle theme">
-        <span id="theme-btn-icon">☀️</span>
-        <span id="theme-btn-label">Toggle Mode</span>
-      </button>
+      <!-- Theme Switcher Button -->
+      <div class="sidebar-theme-wrapper">
+        <button class="theme-toggle-btn" id="theme-btn" aria-label="Toggle theme">
+          <span id="theme-btn-icon">☀️</span>
+          <span id="theme-btn-label">Toggle Mode</span>
+        </button>
+      </div>
     </aside>
 
-    <!-- ==================== MAIN CONTENT COLUMN ==================== -->
-    <main class="main-content">
+    <!-- ================================================================
+         MAIN CONTENT COLUMN
+         ================================================================ -->
+    <main class="main-content" id="main-content-start" role="main">
 
-      <!-- HERO / THESIS STATEMENT -->
+      <!-- HERO / THESIS & AT-A-GLANCE SUMMARY -->
       <section class="section" id="overview">
         <h2 class="hero-thesis">Securing foundation models against adversarial exploitation &amp; distributional shift.</h2>
         
@@ -814,21 +1408,72 @@ permalink: /
         </p>
 
         <p class="hero-bio">
-          I earned my Master of Technology in <strong>Data Science &amp; Artificial Intelligence</strong> from the <strong>Indian Institute of Information Technology (IIIT), Ranchi</strong> with an 8.79/10 CGPA, supported by the national <strong>IETE Postgraduate Fellowship</strong>. My research investigates how parameter-efficient adaptation (LoRA + EWC regularization) and threat-modeling frameworks (STRIDE) can insulate large language models and vision architectures from context hijacking, cryptographic leakage, and domain shifts.
+          I earned my Master of Technology in <strong>Data Science &amp; Artificial Intelligence</strong> from the <strong>Indian Institute of Information Technology (IIIT), Ranchi</strong> with an 8.79/10 CGPA, supported by the prestigious national <strong>IETE Postgraduate Fellowship</strong>. My research investigates how parameter-efficient adaptation (LoRA + EWC regularization) and threat-modeling frameworks (STRIDE) can insulate large language models and vision architectures from prompt injection, cryptographic key leakage, and domain shifts.
         </p>
+
+        <!-- AT-A-GLANCE STAT CARDS (Makes evaluating the portfolio effortless!) -->
+        <div class="hero-snapshot-grid">
+          <div class="snapshot-card">
+            <span class="snapshot-icon">🎓</span>
+            <div>
+              <div class="snapshot-label">Education</div>
+              <div class="snapshot-value">M.Tech AI · 8.79</div>
+              <div class="snapshot-detail">IIIT Ranchi (IETE Fellow)</div>
+            </div>
+          </div>
+          <div class="snapshot-card">
+            <span class="snapshot-icon">🏆</span>
+            <div>
+              <div class="snapshot-label">Award</div>
+              <div class="snapshot-value">Best Paper 2026</div>
+              <div class="snapshot-detail">ICACA 2026 · Springer</div>
+            </div>
+          </div>
+          <div class="snapshot-card">
+            <span class="snapshot-icon">💼</span>
+            <div>
+              <div class="snapshot-label">Current Role</div>
+              <div class="snapshot-value">Software Engineer</div>
+              <div class="snapshot-detail">SS Software Solutions</div>
+            </div>
+          </div>
+          <div class="snapshot-card">
+            <span class="snapshot-icon">🛡️</span>
+            <div>
+              <div class="snapshot-label">Focus Area</div>
+              <div class="snapshot-value">Trustworthy AI</div>
+              <div class="snapshot-detail">Adversarial ML &amp; DevSecOps</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- QUICK ACTION BUTTONS -->
+        <div class="hero-actions">
+          <a href="/files/Ravi_Prakash_Srivastava_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn-action btn-action--primary">
+            <svg><use href="#icon-download"/></svg>
+            <span>Download CV (PDF)</span>
+          </a>
+          <button class="btn-action btn-action--secondary copy-email-btn" data-email="raviprakashshrivastav7@gmail.com" aria-label="Copy email address">
+            <svg><use href="#icon-copy"/></svg>
+            <span>Copy Email</span>
+          </button>
+          <a href="#publications" class="btn-action btn-action--award">
+            <span>🏆 Best Paper Award ↗</span>
+          </a>
+        </div>
       </section>
 
       <!-- PUBLICATIONS & RESEARCH HIGHLIGHTS -->
       <section class="section" id="publications">
         <div class="section-title">
           <span>Selected Publications</span>
-          <a href="https://scholar.google.com/citations?user=sElDRIMAAAAJ&hl=en" target="_blank" class="badge">Google Scholar ↗</a>
+          <a href="https://scholar.google.com/citations?user=sElDRIMAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="badge">Google Scholar Profile ↗</a>
         </div>
 
         <div class="pub-list">
 
           <!-- Paper 1 (Best Paper) -->
-          <article class="pub-item">
+          <article class="pub-item pub-item--featured">
             <div class="pub-header">
               <span class="pub-year">2026</span>
               <span class="badge badge--venue">Springer Nature · ICACA 2026</span>
@@ -844,9 +1489,23 @@ permalink: /
               Demonstrates practical attack vectors exposing cryptographic secrets and system prompts via multi-turn context hijacking, proposing instruction hierarchy enforcement and input sanitization layers to mitigate exposure.
             </p>
             <div class="pub-links">
-              <a href="/files/Best_Paper_Award.pdf" target="_blank">Award Certificate ↗</a>
+              <a href="/files/Best_Paper_Award.pdf" target="_blank" rel="noopener noreferrer">
+                <span>Award Certificate ↗</span>
+              </a>
+              <button class="btn-bibtex" onclick="toggleBibtex('bib-icaca-2026')">
+                <svg width="13" height="13" viewBox="0 0 24 24"><use href="#icon-copy"/></svg>
+                <span>BibTeX</span>
+              </button>
               <span class="pub-year">Lecture Notes in Networks and Systems [In press]</span>
             </div>
+            <div class="bibtex-box" id="bib-icaca-2026">@inproceedings{srivastava2026adversarial,
+  title={Adversarial Prompt Injection Attacks on Large Language Models: Cryptographic Key Leakage and Defense Strategies},
+  author={Srivastava, Ravi Prakash and Sah, Sourabh and Kumari, Kirti and Vovveti, Pavan and Fahad, Md. Shah},
+  booktitle={Proceedings of ICACA 2026},
+  publisher={Springer Nature, Lecture Notes in Networks and Systems},
+  year={2026},
+  note={Best Paper Award}
+}</div>
           </article>
 
           <!-- Paper 2 -->
@@ -866,7 +1525,18 @@ permalink: /
             </p>
             <div class="pub-links">
               <span class="pub-year">Lecture Notes in Networks and Systems [In press]</span>
+              <button class="btn-bibtex" onclick="toggleBibtex('bib-deepfake-2026')">
+                <svg width="13" height="13" viewBox="0 0 24 24"><use href="#icon-copy"/></svg>
+                <span>BibTeX</span>
+              </button>
             </div>
+            <div class="bibtex-box" id="bib-deepfake-2026">@inproceedings{sah2026deepfake,
+  title={Deepfake Video Detection Using Face-Centric Processing and Frame Sampling},
+  author={Sah, Sourabh and Srivastava, Ravi Prakash and Kumari, Kirti and Fahad, Md. Shah},
+  booktitle={Proceedings of ICACA 2026},
+  publisher={Springer Nature, Lecture Notes in Networks and Systems},
+  year={2026}
+}</div>
           </article>
 
           <!-- Paper 3 -->
@@ -886,7 +1556,18 @@ permalink: /
             </p>
             <div class="pub-links">
               <span class="pub-year">Accepted for Publication</span>
+              <button class="btn-bibtex" onclick="toggleBibtex('bib-codereview-2026')">
+                <svg width="13" height="13" viewBox="0 0 24 24"><use href="#icon-copy"/></svg>
+                <span>BibTeX</span>
+              </button>
             </div>
+            <div class="bibtex-box" id="bib-codereview-2026">@inproceedings{karri2026aipowered,
+  title={AI-Powered Code Review Assistant: Eliminating LLM Pipeline using AST-Enhanced Hallucination to Analyze Pull Requests Automatically},
+  author={Karri, Sairamakrishna BuchiReddy and Srivastava, Ravi Prakash and Chenchu, Kiran Kumar Kadimi and Banze, Ravina Marilyn and Banze, Ryan},
+  booktitle={Proceedings of ICNSBT 2026},
+  publisher={Springer Nature, Lecture Notes in Networks and Systems},
+  year={2026}
+}</div>
           </article>
 
           <!-- Paper 4 (Journal) -->
@@ -896,7 +1577,7 @@ permalink: /
               <span class="badge badge--venue">Taylor &amp; Francis · IETE Journal of Research</span>
             </div>
             <h3 class="pub-title">
-              <a href="https://doi.org/10.1080/03772063.2025.2530182" target="_blank">IoT-HITS: An IoT Based Human Intrusion Detection System for Border Region Using Deep Learning</a>
+              <a href="https://doi.org/10.1080/03772063.2025.2530182" target="_blank" rel="noopener noreferrer">IoT-HITS: An IoT Based Human Intrusion Detection System for Border Region Using Deep Learning ↗</a>
             </h3>
             <p class="pub-authors">
               <strong>Ravi Prakash Srivastava</strong>, Sanjay Dahiya, Aashish Nehra
@@ -905,9 +1586,22 @@ permalink: /
               Engineered a multi-sensor perimeter intrusion system integrating real-time edge deep learning classification, evaluated against adversarial noise and environmental distribution shifts.
             </p>
             <div class="pub-links">
-              <a href="https://doi.org/10.1080/03772063.2025.2530182" target="_blank">DOI: 10.1080/03772063.2025.2530182 ↗</a>
-              <a href="/files/Ravi_Prakash_Srivastava_CV.pdf" target="_blank">Paper PDF ↗</a>
+              <a href="https://doi.org/10.1080/03772063.2025.2530182" target="_blank" rel="noopener noreferrer">DOI: 10.1080/03772063.2025.2530182 ↗</a>
+              <a href="/files/Ravi_Prakash_Srivastava_CV.pdf" target="_blank" rel="noopener noreferrer">Paper PDF ↗</a>
+              <button class="btn-bibtex" onclick="toggleBibtex('bib-iothits-2025')">
+                <svg width="13" height="13" viewBox="0 0 24 24"><use href="#icon-copy"/></svg>
+                <span>BibTeX</span>
+              </button>
             </div>
+            <div class="bibtex-box" id="bib-iothits-2025">@article{srivastava2025iothits,
+  title={IoT-HITS: An IoT Based Human Intrusion Detection System for Border Region Using Deep Learning},
+  author={Srivastava, Ravi Prakash and Dahiya, Sanjay and Nehra, Aashish},
+  journal={IETE Journal of Research},
+  volume={71},
+  year={2025},
+  publisher={Taylor \& Francis},
+  doi={10.1080/03772063.2025.2530182}
+}</div>
           </article>
 
           <!-- Paper 5 (Preprint) -->
@@ -917,7 +1611,7 @@ permalink: /
               <span class="badge badge--venue">arXiv Preprint</span>
             </div>
             <h3 class="pub-title">
-              <a href="https://arxiv.org/abs/2512.04967" target="_blank">Balanced Few-Shot Episodic Learning for Accurate Retinal Disease Diagnosis</a>
+              <a href="https://arxiv.org/abs/2512.04967" target="_blank" rel="noopener noreferrer">Balanced Few-Shot Episodic Learning for Accurate Retinal Disease Diagnosis ↗</a>
             </h3>
             <p class="pub-authors">
               Jasmaine Khale, <strong>Ravi Prakash Srivastava</strong>
@@ -926,202 +1620,241 @@ permalink: /
               Addresses extreme class imbalance in medical imaging with class-weighted episodic training, achieving high diagnostic sensitivity on rare retinal pathology subsets.
             </p>
             <div class="pub-links">
-              <a href="https://arxiv.org/abs/2512.04967" target="_blank">arXiv:2512.04967 ↗</a>
+              <a href="https://arxiv.org/abs/2512.04967" target="_blank" rel="noopener noreferrer">arXiv:2512.04967 ↗</a>
+              <button class="btn-bibtex" onclick="toggleBibtex('bib-retinal-2025')">
+                <svg width="13" height="13" viewBox="0 0 24 24"><use href="#icon-copy"/></svg>
+                <span>BibTeX</span>
+              </button>
             </div>
+            <div class="bibtex-box" id="bib-retinal-2025">@article{khale2025balanced,
+  title={Balanced Few-Shot Episodic Learning for Accurate Retinal Disease Diagnosis},
+  author={Khale, Jasmaine and Srivastava, Ravi Prakash},
+  journal={arXiv preprint arXiv:2512.04967},
+  year={2025}
+}</div>
           </article>
 
         </div>
       </section>
 
-      <!-- APPLIED SYSTEMS & PROJECTS -->
+      <!-- APPLIED SYSTEMS & PROJECTS WITH EASY CATEGORY FILTERING -->
       <section class="section" id="systems">
         <div class="section-title">
           <span>Engineering &amp; Systems</span>
           <span class="pub-year">Production &amp; Prototypes</span>
         </div>
 
+        <!-- Easy Category Filter Pills -->
+        <div class="filter-bar" role="group" aria-label="Project category filters">
+          <button class="filter-btn active" data-filter="all">All Systems (7)</button>
+          <button class="filter-btn" data-filter="security">🛡️ AI &amp; LLM Security</button>
+          <button class="filter-btn" data-filter="mlops">⚡ MLOps &amp; Infrastructure</button>
+          <button class="filter-btn" data-filter="cv">👁️ Computer Vision &amp; NLP</button>
+          <button class="filter-btn" data-filter="fintech">💳 FinTech ML</button>
+        </div>
+
         <div class="systems-grid">
 
           <!-- 1. LLM Semantic Cache & Latency Router -->
-          <div class="system-card">
-            <div>
+          <div class="system-card" data-category="security mlops">
+            <div class="system-card-top">
+              <div class="system-category-tag">LLM Security &amp; Inference</div>
               <h3 class="system-card-title">
-                <a href="https://llm-semantic-cache.streamlit.app/" target="_blank">LLM Semantic Cache &amp; Latency Router ↗</a>
+                <a href="https://llm-semantic-cache.streamlit.app/" target="_blank" rel="noopener noreferrer">LLM Semantic Cache &amp; Latency Router ↗</a>
               </h3>
               <p class="system-card-desc">
                 Designed a high-throughput semantic caching layer that routes incoming natural language requests via vector embeddings rather than rigid exact matches, trimming API inference cost and latency by ~40%.
               </p>
             </div>
-            <div class="system-tech-stack">
-              <span class="tech-pill">Python</span>
-              <span class="tech-pill">Vector Embeddings</span>
-              <span class="tech-pill">Redis</span>
-              <span class="tech-pill">FastAPI</span>
-              <span class="tech-pill">Streamlit</span>
-            </div>
-            <div class="system-links">
-              <a href="https://llm-semantic-cache.streamlit.app/" target="_blank">
-                <svg viewBox="0 0 24 24"><path d="M14 3h7v7h-2V6.414l-9.293 9.293-1.414-1.414L17.586 5H14V3zm5 16H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2v7z"/></svg>
-                Live Demo ↗
-              </a>
-              <a href="https://github.com/er-ravi-srivastava" target="_blank">
-                <svg viewBox="0 0 24 24"><use href="#icon-github"/></svg>
-                Check Code ↗
-              </a>
+            <div>
+              <div class="system-tech-stack">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Vector Embeddings</span>
+                <span class="tech-pill">Redis</span>
+                <span class="tech-pill">FastAPI</span>
+                <span class="tech-pill">Streamlit</span>
+              </div>
+              <div class="system-links">
+                <a href="https://llm-semantic-cache.streamlit.app/" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24"><path d="M14 3h7v7h-2V6.414l-9.293 9.293-1.414-1.414L17.586 5H14V3zm5 16H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2v7z"/></svg>
+                  <span>Live Demo ↗</span>
+                </a>
+                <a href="https://github.com/er-ravi-srivastava" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24"><use href="#icon-github"/></svg>
+                  <span>Check Code ↗</span>
+                </a>
+              </div>
             </div>
           </div>
 
           <!-- 2. AI-Powered Vulnerability Management Platform (SAST + DAST) -->
-          <div class="system-card">
-            <div>
+          <div class="system-card" data-category="security mlops">
+            <div class="system-card-top">
+              <div class="system-category-tag">DevSecOps &amp; Security</div>
               <h3 class="system-card-title">
-                <a href="https://github.com/er-ravi-srivastava/vulnerability-management" target="_blank">AI Vulnerability Management Platform (SAST + DAST) ↗</a>
+                <a href="https://github.com/er-ravi-srivastava/vulnerability-management" target="_blank" rel="noopener noreferrer">AI Vulnerability Management Platform (SAST + DAST) ↗</a>
               </h3>
               <p class="system-card-desc">
                 Interactive real-time vulnerability platform automating continuous code scans (Semgrep, Bandit) and synthetic dynamic exploits (SQLi, XSS, CSRF), presenting structured remediation playbooks for developers.
               </p>
             </div>
-            <div class="system-tech-stack">
-              <span class="tech-pill">Streamlit</span>
-              <span class="tech-pill">Docker</span>
-              <span class="tech-pill">Bandit</span>
-              <span class="tech-pill">Semgrep</span>
-              <span class="tech-pill">OWASP Top 10</span>
-            </div>
-            <div class="system-links">
-              <a href="https://github.com/er-ravi-srivastava/vulnerability-management" target="_blank">
-                <svg viewBox="0 0 24 24"><use href="#icon-github"/></svg>
-                View Code ↗
-              </a>
-              <a href="https://vulnerability-management-app.streamlit.app/" target="_blank">
-                <svg viewBox="0 0 24 24"><path d="M14 3h7v7h-2V6.414l-9.293 9.293-1.414-1.414L17.586 5H14V3zm5 16H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2v7z"/></svg>
-                Live Demo ↗
-              </a>
+            <div>
+              <div class="system-tech-stack">
+                <span class="tech-pill">Streamlit</span>
+                <span class="tech-pill">Docker</span>
+                <span class="tech-pill">Bandit</span>
+                <span class="tech-pill">Semgrep</span>
+                <span class="tech-pill">OWASP Top 10</span>
+              </div>
+              <div class="system-links">
+                <a href="https://vulnerability-management-app.streamlit.app/" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24"><path d="M14 3h7v7h-2V6.414l-9.293 9.293-1.414-1.414L17.586 5H14V3zm5 16H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2v7z"/></svg>
+                  <span>Live Demo ↗</span>
+                </a>
+                <a href="https://github.com/er-ravi-srivastava/vulnerability-management" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24"><use href="#icon-github"/></svg>
+                  <span>View Code ↗</span>
+                </a>
+              </div>
             </div>
           </div>
 
           <!-- 3. Production MLOps Pipeline & Governance -->
-          <div class="system-card">
-            <div>
+          <div class="system-card" data-category="mlops">
+            <div class="system-card-top">
+              <div class="system-category-tag">MLOps &amp; CI/CD</div>
               <h3 class="system-card-title">
-                <a href="https://github.com/er-ravi-srivastava/End-to-end-machine-learning-project-with-MLFlow" target="_blank">Production MLOps &amp; Governance Pipeline ↗</a>
+                <a href="https://github.com/er-ravi-srivastava/End-to-end-machine-learning-project-with-MLFlow" target="_blank" rel="noopener noreferrer">Production MLOps &amp; Governance Pipeline ↗</a>
               </h3>
               <p class="system-card-desc">
                 Standardized end-to-end machine learning infrastructure with MLflow experiment tracking, DVC model versioning, automated data schema validation, and GitHub Actions CI/CD containerized deployment.
               </p>
             </div>
-            <div class="system-tech-stack">
-              <span class="tech-pill">MLflow</span>
-              <span class="tech-pill">DVC</span>
-              <span class="tech-pill">Docker</span>
-              <span class="tech-pill">GitHub Actions</span>
-              <span class="tech-pill">Flask</span>
-            </div>
-            <div class="system-links">
-              <a href="https://github.com/er-ravi-srivastava/End-to-end-machine-learning-project-with-MLFlow" target="_blank">
-                <svg viewBox="0 0 24 24"><use href="#icon-github"/></svg>
-                View Code ↗
-              </a>
+            <div>
+              <div class="system-tech-stack">
+                <span class="tech-pill">MLflow</span>
+                <span class="tech-pill">DVC</span>
+                <span class="tech-pill">Docker</span>
+                <span class="tech-pill">GitHub Actions</span>
+                <span class="tech-pill">Flask</span>
+              </div>
+              <div class="system-links">
+                <a href="https://github.com/er-ravi-srivastava/End-to-end-machine-learning-project-with-MLFlow" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24"><use href="#icon-github"/></svg>
+                  <span>View Code ↗</span>
+                </a>
+              </div>
             </div>
           </div>
 
           <!-- 4. AI Clinical Chatbot & Rule Engine -->
-          <div class="system-card">
-            <div>
+          <div class="system-card" data-category="cv">
+            <div class="system-card-top">
+              <div class="system-category-tag">NLP &amp; Clinical Decision Support</div>
               <h3 class="system-card-title">
-                <a href="https://github.com/er-ravi-srivastava/ai-chat-app" target="_blank">Clinical AI Chatbot &amp; Diagnostic Parser ↗</a>
+                <a href="https://github.com/er-ravi-srivastava/ai-chat-app" target="_blank" rel="noopener noreferrer">Clinical AI Chatbot &amp; Diagnostic Parser ↗</a>
               </h3>
               <p class="system-card-desc">
                 Full-stack conversational clinical assistant built with modular symptom extraction rules, automated disease risk triage scoring, and a high-performance RESTful API architecture.
               </p>
             </div>
-            <div class="system-tech-stack">
-              <span class="tech-pill">Python</span>
-              <span class="tech-pill">FastAPI</span>
-              <span class="tech-pill">NLP</span>
-              <span class="tech-pill">YAML Rules</span>
-              <span class="tech-pill">Full-Stack</span>
-            </div>
-            <div class="system-links">
-              <a href="https://github.com/er-ravi-srivastava/ai-chat-app" target="_blank">
-                <svg viewBox="0 0 24 24"><use href="#icon-github"/></svg>
-                View Code ↗
-              </a>
+            <div>
+              <div class="system-tech-stack">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">FastAPI</span>
+                <span class="tech-pill">NLP</span>
+                <span class="tech-pill">YAML Rules</span>
+                <span class="tech-pill">Full-Stack</span>
+              </div>
+              <div class="system-links">
+                <a href="https://github.com/er-ravi-srivastava/ai-chat-app" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24"><use href="#icon-github"/></svg>
+                  <span>View Code ↗</span>
+                </a>
+              </div>
             </div>
           </div>
 
           <!-- 5. Cross-Domain PEFT Summarizer (Master's Thesis) -->
-          <div class="system-card">
-            <div>
+          <div class="system-card" data-category="cv security">
+            <div class="system-card-top">
+              <div class="system-category-tag">M.Tech Thesis · IIIT Ranchi</div>
               <h3 class="system-card-title">Cross-Domain PEFT Summarizer (BART + LoRA)</h3>
               <p class="system-card-desc">
                 Master’s thesis system adapting BART-large-CNN from news to legal corpora (BillSum) using LoRA combined with Elastic Weight Consolidation (EWC) to prevent catastrophic forgetting while fine-tuning only 1.2% of model parameters.
               </p>
             </div>
-            <div class="system-tech-stack">
-              <span class="tech-pill">PyTorch</span>
-              <span class="tech-pill">Transformers</span>
-              <span class="tech-pill">LoRA</span>
-              <span class="tech-pill">Hugging Face</span>
-              <span class="tech-pill">EWC</span>
-            </div>
-            <div class="system-links">
-              <span style="color: var(--text-muted); font-size: 0.8rem; font-family: var(--font-sans); font-weight: 500;">
-                Master’s Thesis Research · IIIT Ranchi
-              </span>
+            <div>
+              <div class="system-tech-stack">
+                <span class="tech-pill">PyTorch</span>
+                <span class="tech-pill">Transformers</span>
+                <span class="tech-pill">LoRA</span>
+                <span class="tech-pill">Hugging Face</span>
+                <span class="tech-pill">EWC</span>
+              </div>
+              <div class="system-links">
+                <span style="color: var(--text-muted); font-size: 0.8rem; font-family: var(--font-sans); font-weight: 500;">
+                  Master’s Thesis Research · IIIT Ranchi
+                </span>
+              </div>
             </div>
           </div>
 
           <!-- 6. Credit Card Fraud Detection -->
-          <div class="system-card">
-            <div>
+          <div class="system-card" data-category="fintech">
+            <div class="system-card-top">
+              <div class="system-category-tag">Financial Machine Learning</div>
               <h3 class="system-card-title">
-                <a href="https://github.com/er-ravi-srivastava/Credit-Card-Fraud-Detection" target="_blank">Credit Card Fraud Detection Engine ↗</a>
+                <a href="https://github.com/er-ravi-srivastava/Credit-Card-Fraud-Detection" target="_blank" rel="noopener noreferrer">Credit Card Fraud Detection Engine ↗</a>
               </h3>
               <p class="system-card-desc">
                 Financial anomaly detection pipeline benchmarked across ensemble classifiers handling extreme class imbalance via SMOTE, optimizing precision-recall trade-offs and cost-sensitive loss.
               </p>
             </div>
-            <div class="system-tech-stack">
-              <span class="tech-pill">Python</span>
-              <span class="tech-pill">Scikit-learn</span>
-              <span class="tech-pill">SMOTE</span>
-              <span class="tech-pill">Random Forest</span>
-              <span class="tech-pill">Jupyter</span>
-            </div>
-            <div class="system-links">
-              <a href="https://github.com/er-ravi-srivastava/Credit-Card-Fraud-Detection" target="_blank">
-                <svg viewBox="0 0 24 24"><use href="#icon-github"/></svg>
-                View Code ↗
-              </a>
+            <div>
+              <div class="system-tech-stack">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Scikit-learn</span>
+                <span class="tech-pill">SMOTE</span>
+                <span class="tech-pill">Random Forest</span>
+                <span class="tech-pill">Jupyter</span>
+              </div>
+              <div class="system-links">
+                <a href="https://github.com/er-ravi-srivastava/Credit-Card-Fraud-Detection" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24"><use href="#icon-github"/></svg>
+                  <span>View Code ↗</span>
+                </a>
+              </div>
             </div>
           </div>
 
           <!-- 7. Facial Biometrics & Recognition CNN -->
-          <div class="system-card">
-            <div>
+          <div class="system-card" data-category="cv">
+            <div class="system-card-top">
+              <div class="system-category-tag">Computer Vision</div>
               <h3 class="system-card-title">
-                <a href="https://github.com/er-ravi-srivastava/Facial-Recognition-Using-CNN" target="_blank">Facial Biometrics &amp; Recognition CNN ↗</a>
+                <a href="https://github.com/er-ravi-srivastava/Facial-Recognition-Using-CNN" target="_blank" rel="noopener noreferrer">Facial Biometrics &amp; Recognition CNN ↗</a>
               </h3>
               <p class="system-card-desc">
                 Deep convolutional neural network architecture trained for spatial feature extraction, facial landmark alignment, and real-time biometric verification under variable lighting conditions.
               </p>
             </div>
-            <div class="system-tech-stack">
-              <span class="tech-pill">Python</span>
-              <span class="tech-pill">TensorFlow</span>
-              <span class="tech-pill">Keras</span>
-              <span class="tech-pill">OpenCV</span>
-              <span class="tech-pill">Deep CNNs</span>
-            </div>
-            <div class="system-links">
-              <a href="https://github.com/er-ravi-srivastava/Facial-Recognition-Using-CNN" target="_blank">
-                <svg viewBox="0 0 24 24"><use href="#icon-github"/></svg>
-                View Code ↗
-              </a>
+            <div>
+              <div class="system-tech-stack">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">TensorFlow</span>
+                <span class="tech-pill">Keras</span>
+                <span class="tech-pill">OpenCV</span>
+                <span class="tech-pill">Deep CNNs</span>
+              </div>
+              <div class="system-links">
+                <a href="https://github.com/er-ravi-srivastava/Facial-Recognition-Using-CNN" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24"><use href="#icon-github"/></svg>
+                  <span>View Code ↗</span>
+                </a>
+              </div>
             </div>
           </div>
-
 
         </div>
       </section>
@@ -1141,6 +1874,7 @@ permalink: /
             <ul class="timeline-bullets">
               <li>Architected and standardized ML pipeline infrastructure using MLflow, DVC, and structured JSON telemetry, lowering mean incident diagnosis time by ~40% across production models.</li>
               <li>Embedded STRIDE threat modeling and automated SAST security analysis (Bandit, Semgrep) into GitHub Actions, reducing manual vulnerability review effort by ~60%.</li>
+            </ul>
           </div>
 
           <div class="timeline-node">
@@ -1194,7 +1928,7 @@ permalink: /
         <div class="news-feed">
           <div class="news-row">
             <span class="news-date">Jun 2026</span>
-            <span class="news-text">Appointed as Peer Reviewer for <strong>ICICST 2026</strong> (NIT Jalandhar) — view <a href="/files/Reviewer_Ravi_Prakash_Srivastava.pdf" target="_blank">Certificate ↗</a>.</span>
+            <span class="news-text">Appointed as Peer Reviewer for <strong>ICICST 2026</strong> (NIT Jalandhar) — view <a href="/files/Reviewer_Ravi_Prakash_Srivastava.pdf" target="_blank" rel="noopener noreferrer">Certificate ↗</a>.</span>
           </div>
           <div class="news-row">
             <span class="news-date">Mar 2026</span>
@@ -1218,7 +1952,7 @@ permalink: /
       <!-- FOOTER -->
       <footer>
         <div>
-          &copy; 2026 Ravi Prakash Srivastava. Published with quiet editorial principles.
+          &copy; 2026 Ravi Prakash Srivastava. Published with quiet editorial principles and strict security standards.
         </div>
         <div>
           <a href="#">Back to top ↑</a>
@@ -1229,50 +1963,168 @@ permalink: /
 
   </div>
 
-  <!-- Smooth Active Nav & Theme Toggle Script -->
+  <!-- Floating Back to Top Button -->
+  <button id="back-to-top" aria-label="Back to top">
+    <svg><use href="#icon-arrow-up"/></svg>
+  </button>
+
+  <!-- Toast Notification element -->
+  <div id="toast-notification" role="status" aria-live="polite"></div>
+
+  <!-- Client-Side Scripts (Pure Vanilla JavaScript, Zero External CDNs, Zero Dependencies) -->
   <script>
-    // Theme Switcher Logic
+    // 1. Theme Switcher Logic
     const themeBtn = document.getElementById('theme-btn');
+    const mobileThemeBtn = document.getElementById('mobile-theme-btn');
     const themeIcon = document.getElementById('theme-btn-icon');
     const themeLabel = document.getElementById('theme-btn-label');
 
     function syncThemeUI() {
       const isDark = document.documentElement.classList.contains('dark-theme');
-      if (themeIcon && themeLabel) {
-        themeIcon.textContent = isDark ? '🌙' : '☀️';
-        themeLabel.textContent = isDark ? 'Dark Mode' : 'Light Mode';
+      if (themeIcon) themeIcon.textContent = isDark ? '🌙' : '☀️';
+      if (themeLabel) themeLabel.textContent = isDark ? 'Dark Mode' : 'Light Mode';
+      if (mobileThemeBtn) {
+        const mobileIcon = mobileThemeBtn.querySelector('.theme-icon');
+        if (mobileIcon) mobileIcon.textContent = isDark ? '🌙' : '☀️';
       }
     }
 
-    if (themeBtn) {
-      themeBtn.addEventListener('click', () => {
-        const isDark = document.documentElement.classList.toggle('dark-theme');
-        localStorage.setItem('site-theme', isDark ? 'dark' : 'light');
-        syncThemeUI();
-      });
+    function toggleTheme() {
+      const isDark = document.documentElement.classList.toggle('dark-theme');
+      localStorage.setItem('site-theme', isDark ? 'dark' : 'light');
       syncThemeUI();
     }
 
-    // Scrollspy for Sidebar Nav
+    if (themeBtn) themeBtn.addEventListener('click', toggleTheme);
+    if (mobileThemeBtn) mobileThemeBtn.addEventListener('click', toggleTheme);
+    syncThemeUI();
+
+    // 2. Reading Progress Indicator & Back to Top visibility
+    const progressBar = document.getElementById('reading-progress');
+    const backToTopBtn = document.getElementById('back-to-top');
+
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+      
+      if (progressBar) progressBar.style.width = scrolled + '%';
+
+      if (backToTopBtn) {
+        if (scrollTop > 450) {
+          backToTopBtn.classList.add('visible');
+        } else {
+          backToTopBtn.classList.remove('visible');
+        }
+      }
+    }, { passive: true });
+
+    if (backToTopBtn) {
+      backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    }
+
+    // 3. Scrollspy for Active Navigation Highlight (Desktop & Mobile)
     const sections = document.querySelectorAll('section[id]');
-    const navLinks = document.querySelectorAll('.sidebar-nav a[href^="#"]');
+    const desktopLinks = document.querySelectorAll('.sidebar-nav a[href^="#"]');
+    const mobileLinks = document.querySelectorAll('.mobile-nav-scroll a[href^="#"]');
 
     window.addEventListener('scroll', () => {
       let currentSection = '';
+      const offsetThreshold = window.innerWidth < 960 ? 160 : 130;
+      
       sections.forEach(section => {
-        const sectionTop = section.offsetTop - 120;
+        const sectionTop = section.offsetTop - offsetThreshold;
         if (window.pageYOffset >= sectionTop) {
           currentSection = section.getAttribute('id');
         }
       });
 
-      navLinks.forEach(link => {
+      desktopLinks.forEach(link => {
         link.classList.remove('active');
-        if (link.getAttribute('href') === `#${currentSection}`) {
+        if (link.getAttribute('href') === '#' + currentSection) {
+          link.classList.add('active');
+        }
+      });
+
+      mobileLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + currentSection) {
           link.classList.add('active');
         }
       });
     }, { passive: true });
+
+    // 4. Secure Copy Email Handler with Toast Feedback
+    const toast = document.getElementById('toast-notification');
+    let toastTimeout = null;
+
+    function showToast(message) {
+      if (!toast) return;
+      toast.textContent = message;
+      toast.classList.add('show');
+      if (toastTimeout) clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(() => {
+        toast.classList.remove('show');
+      }, 2600);
+    }
+
+    document.querySelectorAll('.copy-email-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const email = btn.getAttribute('data-email') || 'raviprakashshrivastav7@gmail.com';
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(email).then(() => {
+            showToast('✓ Email copied to clipboard: ' + email);
+          }).catch(() => {
+            window.location.href = 'mailto:' + email;
+          });
+        } else {
+          window.location.href = 'mailto:' + email;
+        }
+      });
+    });
+
+    // 5. Applied Systems Category Filtering
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const systemCards = document.querySelectorAll('.system-card');
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        
+        const filter = btn.getAttribute('data-filter');
+        systemCards.forEach(card => {
+          if (filter === 'all') {
+            card.classList.remove('hidden');
+          } else {
+            const categories = card.getAttribute('data-category') || '';
+            if (categories.includes(filter)) {
+              card.classList.remove('hidden');
+            } else {
+              card.classList.add('hidden');
+            }
+          }
+        });
+      });
+    });
+
+    // 6. BibTeX Toggle
+    function toggleBibtex(id) {
+      const box = document.getElementById(id);
+      if (!box) return;
+      const isOpen = box.classList.contains('show');
+      document.querySelectorAll('.bibtex-box').forEach(b => b.classList.remove('show'));
+      if (!isOpen) {
+        box.classList.add('show');
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(box.innerText).then(() => {
+            showToast('✓ BibTeX citation copied to clipboard!');
+          });
+        }
+      }
+    }
   </script>
 
 </body>
