@@ -233,7 +233,6 @@ permalink: /
 
     /* ==========================================================================
        Mobile Header & Horizontal Pill Navigation (Screen <= 960px)
-       Makes mobile browsing effortless and compact!
        ========================================================================== */
     .mobile-header {
       display: none;
@@ -576,9 +575,7 @@ permalink: /
       font-weight: 600;
     }
 
-    /* ==========================================================================
-       Hero Quick Highlights & Snapshot Cards (Easier to evaluate at a glance!)
-       ========================================================================== */
+    /* Hero Quick Highlights & Snapshot Cards */
     .hero-snapshot-grid {
       display: grid;
       grid-template-columns: 1fr;
@@ -741,7 +738,7 @@ permalink: /
 
     /* ==========================================================================
        Publications & Research Items
-       ========================================================================== */
+       ========================================================================= */
     .pub-list {
       display: flex;
       flex-direction: column;
@@ -873,7 +870,7 @@ permalink: /
     }
 
     /* ==========================================================================
-       Interactive Project Category Filters & Systems Grid
+       Project Category Filters & Systems Grid
        ========================================================================== */
     .filter-bar {
       display: flex;
@@ -1023,6 +1020,66 @@ permalink: /
       height: 14px;
       fill: currentColor;
       flex-shrink: 0;
+    }
+
+    /* ==========================================================================
+       Technical Skills Matrix
+       ========================================================================== */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.35rem;
+    }
+
+    @media (min-width: 680px) {
+      .skills-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .skill-group {
+      background: var(--bg-card);
+      border: 1px solid var(--hairline);
+      border-radius: var(--radius-md);
+      padding: 1.35rem 1.4rem;
+      box-shadow: var(--shadow-sm);
+      transition: border-color var(--transition), transform var(--transition);
+      display: flex;
+      flex-direction: column;
+    }
+    .skill-group:hover {
+      border-color: var(--hairline-strong);
+      transform: translateY(-2px);
+    }
+
+    .skill-heading {
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+      margin-bottom: 0.5rem;
+    }
+    .skill-heading h3 {
+      font-family: var(--font-sans);
+      font-size: 1.02rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+    .skill-icon {
+      font-size: 1.2rem;
+    }
+
+    .skill-desc {
+      font-size: 0.92rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .skill-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      margin-top: auto;
     }
 
     /* ==========================================================================
@@ -1294,7 +1351,6 @@ permalink: /
 
     <!-- ================================================================
          MOBILE COMPACT HEADER (< 960px)
-         Allows mobile visitors to jump right into content without scrolling!
          ================================================================ -->
     <header class="mobile-header" role="banner">
       <div class="mobile-header-top">
@@ -1302,7 +1358,7 @@ permalink: /
           <img class="mobile-avatar" src="/images/picture_resized.png?v=5" alt="Ravi Prakash Srivastava" onerror="this.src='/images/ravi.png'">
           <div class="mobile-name-role">
             <span class="mobile-name">Ravi Prakash Srivastava</span>
-            <span class="mobile-subtitle">Software Engineer &amp; AI Researcher</span>
+            <span class="mobile-subtitle">Software Engineer · ML &amp; AI</span>
           </div>
         </div>
         <button class="theme-toggle-btn" id="mobile-theme-btn" aria-label="Toggle dark/light theme">
@@ -1312,12 +1368,13 @@ permalink: /
 
       <nav class="mobile-nav-scroll" aria-label="Mobile Sections">
         <a href="#overview" class="mobile-nav-pill active">Overview</a>
-        <a href="#publications" class="mobile-nav-pill">Publications</a>
+        <a href="#publications" class="mobile-nav-pill">Publications (6)</a>
         <a href="#systems" class="mobile-nav-pill">Applied Systems</a>
+        <a href="#skills" class="mobile-nav-pill">Skills</a>
         <a href="#experience" class="mobile-nav-pill">Experience</a>
         <a href="#education" class="mobile-nav-pill">Education</a>
         <a href="#news" class="mobile-nav-pill">News</a>
-        <a href="/files/Ravi_Prakash_Srivastava_CV.pdf" target="_blank" rel="noopener noreferrer" class="mobile-nav-pill">CV ↗</a>
+        <a href="/files/Ravi_Prakash_Srivastava_CV.pdf?v=2" target="_blank" rel="noopener noreferrer" class="mobile-nav-pill">CV ↗</a>
       </nav>
     </header>
 
@@ -1343,11 +1400,14 @@ permalink: /
         </a>
         <a href="#publications">
           <span>Publications</span>
-          <span class="nav-count">5</span>
+          <span class="nav-count">6</span>
         </a>
         <a href="#systems">
           <span>Applied Systems</span>
           <span class="nav-count">7</span>
+        </a>
+        <a href="#skills">
+          <span>Technical Skills</span>
         </a>
         <a href="#experience">
           <span>Experience</span>
@@ -1358,7 +1418,7 @@ permalink: /
         <a href="#news">
           <span>Recent News</span>
         </a>
-        <a href="/files/Ravi_Prakash_Srivastava_CV.pdf" target="_blank" rel="noopener noreferrer">
+        <a href="/files/Ravi_Prakash_Srivastava_CV.pdf?v=2" target="_blank" rel="noopener noreferrer">
           <span>Curriculum Vitae (PDF)</span>
           <span class="nav-count">↗</span>
         </a>
@@ -1404,14 +1464,14 @@ permalink: /
         <h2 class="hero-thesis">Securing foundation models against adversarial exploitation &amp; distributional shift.</h2>
         
         <p class="hero-bio">
-          I am a Software Engineer and AI Researcher working at the confluence of <strong>Trustworthy AI</strong>, <strong>Adversarial Machine Learning</strong>, and <strong>Production DevSecOps</strong>. Currently, I engineer ML infrastructure, model governance, and threat-modeling pipelines at <strong>SS Software Solutions</strong>.
+          I am a Software Engineer and AI Researcher working at the confluence of <strong>Trustworthy AI</strong>, <strong>Adversarial Machine Learning</strong>, and <strong>Production DevSecOps</strong>. Currently, I engineer ML infrastructure, model governance, and threat-modeling pipelines at <strong>SS Software Solutions</strong>. I have authored research published in the <strong>IETE Journal of Research (Taylor &amp; Francis)</strong> and <strong>Springer Nature</strong>, and was awarded the <strong>Best Paper Award at ICACA 2026</strong>.
         </p>
 
         <p class="hero-bio">
-          I earned my Master of Technology in <strong>Data Science &amp; Artificial Intelligence</strong> from the <strong>Indian Institute of Information Technology (IIIT), Ranchi</strong> with an 8.79/10 CGPA, supported by the prestigious national <strong>IETE Postgraduate Fellowship</strong>. My research investigates how parameter-efficient adaptation (LoRA + EWC regularization) and threat-modeling frameworks (STRIDE) can insulate large language models and vision architectures from prompt injection, cryptographic key leakage, and domain shifts.
+          I earned my Master of Technology in <strong>Data Science &amp; Artificial Intelligence</strong> from the <strong>Indian Institute of Information Technology (IIIT), Ranchi</strong> with an 8.79/10 CGPA, supported by the prestigious national <strong>IETE Postgraduate Fellowship</strong>. My research investigates parameter-efficient fine-tuning (LoRA + EWC continual learning) and threat-modeling frameworks (STRIDE) to insulate large language models and vision architectures from context hijacking, cryptographic key leakage, and cross-domain distribution shifts.
         </p>
 
-        <!-- AT-A-GLANCE STAT CARDS (Makes evaluating the portfolio effortless!) -->
+        <!-- AT-A-GLANCE STAT CARDS -->
         <div class="hero-snapshot-grid">
           <div class="snapshot-card">
             <span class="snapshot-icon">🎓</span>
@@ -1424,7 +1484,7 @@ permalink: /
           <div class="snapshot-card">
             <span class="snapshot-icon">🏆</span>
             <div>
-              <div class="snapshot-label">Award</div>
+              <div class="snapshot-label">Recognition</div>
               <div class="snapshot-value">Best Paper 2026</div>
               <div class="snapshot-detail">ICACA 2026 · Springer</div>
             </div>
@@ -1438,20 +1498,20 @@ permalink: /
             </div>
           </div>
           <div class="snapshot-card">
-            <span class="snapshot-icon">🛡️</span>
+            <span class="snapshot-icon">📄</span>
             <div>
-              <div class="snapshot-label">Focus Area</div>
-              <div class="snapshot-value">Trustworthy AI</div>
-              <div class="snapshot-detail">Adversarial ML &amp; DevSecOps</div>
+              <div class="snapshot-label">Publications</div>
+              <div class="snapshot-value">6 Published / In Press</div>
+              <div class="snapshot-detail">2 Journals · 3 LNNS · 1 arXiv</div>
             </div>
           </div>
         </div>
 
         <!-- QUICK ACTION BUTTONS -->
         <div class="hero-actions">
-          <a href="/files/Ravi_Prakash_Srivastava_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn-action btn-action--primary">
+          <a href="/files/Ravi_Prakash_Srivastava_CV.pdf?v=2" target="_blank" rel="noopener noreferrer" class="btn-action btn-action--primary">
             <svg><use href="#icon-download"/></svg>
-            <span>Download CV (PDF)</span>
+            <span>Download Updated CV (PDF)</span>
           </a>
           <button class="btn-action btn-action--secondary copy-email-btn" data-email="raviprakashshrivastav7@gmail.com" aria-label="Copy email address">
             <svg><use href="#icon-copy"/></svg>
@@ -1466,7 +1526,7 @@ permalink: /
       <!-- PUBLICATIONS & RESEARCH HIGHLIGHTS -->
       <section class="section" id="publications">
         <div class="section-title">
-          <span>Selected Publications</span>
+          <span>Selected Publications (6)</span>
           <a href="https://scholar.google.com/citations?user=sElDRIMAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="badge">Google Scholar Profile ↗</a>
         </div>
 
@@ -1501,8 +1561,9 @@ permalink: /
             <div class="bibtex-box" id="bib-icaca-2026">@inproceedings{srivastava2026adversarial,
   title={Adversarial Prompt Injection Attacks on Large Language Models: Cryptographic Key Leakage and Defense Strategies},
   author={Srivastava, Ravi Prakash and Sah, Sourabh and Kumari, Kirti and Vovveti, Pavan and Fahad, Md. Shah},
-  booktitle={Proceedings of ICACA 2026},
+  booktitle={Proceedings of the International Conference on Advances in Computing and Applications (ICACA 2026)},
   publisher={Springer Nature, Lecture Notes in Networks and Systems},
+  address={Ranchi, India},
   year={2026},
   note={Best Paper Award}
 }</div>
@@ -1533,8 +1594,9 @@ permalink: /
             <div class="bibtex-box" id="bib-deepfake-2026">@inproceedings{sah2026deepfake,
   title={Deepfake Video Detection Using Face-Centric Processing and Frame Sampling},
   author={Sah, Sourabh and Srivastava, Ravi Prakash and Kumari, Kirti and Fahad, Md. Shah},
-  booktitle={Proceedings of ICACA 2026},
+  booktitle={Proceedings of the International Conference on Advances in Computing and Applications (ICACA 2026)},
   publisher={Springer Nature, Lecture Notes in Networks and Systems},
+  address={Ranchi, India},
   year={2026}
 }</div>
           </article>
@@ -1564,13 +1626,14 @@ permalink: /
             <div class="bibtex-box" id="bib-codereview-2026">@inproceedings{karri2026aipowered,
   title={AI-Powered Code Review Assistant: Eliminating LLM Pipeline using AST-Enhanced Hallucination to Analyze Pull Requests Automatically},
   author={Karri, Sairamakrishna BuchiReddy and Srivastava, Ravi Prakash and Chenchu, Kiran Kumar Kadimi and Banze, Ravina Marilyn and Banze, Ryan},
-  booktitle={Proceedings of ICNSBT 2026},
+  booktitle={Proceedings of the International Conference on Network Security and Blockchain Technology (ICNSBT 2026)},
   publisher={Springer Nature, Lecture Notes in Networks and Systems},
+  address={Kolkata, India},
   year={2026}
 }</div>
           </article>
 
-          <!-- Paper 4 (Journal) -->
+          <!-- Paper 4 (Refereed Journal Article - 2025) -->
           <article class="pub-item">
             <div class="pub-header">
               <span class="pub-year">2025</span>
@@ -1587,24 +1650,62 @@ permalink: /
             </p>
             <div class="pub-links">
               <a href="https://doi.org/10.1080/03772063.2025.2530182" target="_blank" rel="noopener noreferrer">DOI: 10.1080/03772063.2025.2530182 ↗</a>
-              <a href="/files/Ravi_Prakash_Srivastava_CV.pdf" target="_blank" rel="noopener noreferrer">Paper PDF ↗</a>
+              <a href="/files/Ravi_Prakash_Srivastava_CV.pdf?v=2" target="_blank" rel="noopener noreferrer">Paper PDF ↗</a>
               <button class="btn-bibtex" onclick="toggleBibtex('bib-iothits-2025')">
                 <svg width="13" height="13" viewBox="0 0 24 24"><use href="#icon-copy"/></svg>
                 <span>BibTeX</span>
               </button>
+              <span class="pub-year">Vol. 71, Issue 11</span>
             </div>
             <div class="bibtex-box" id="bib-iothits-2025">@article{srivastava2025iothits,
   title={IoT-HITS: An IoT Based Human Intrusion Detection System for Border Region Using Deep Learning},
   author={Srivastava, Ravi Prakash and Dahiya, Sanjay and Nehra, Aashish},
   journal={IETE Journal of Research},
   volume={71},
+  number={11},
   year={2025},
   publisher={Taylor \& Francis},
   doi={10.1080/03772063.2025.2530182}
 }</div>
           </article>
 
-          <!-- Paper 5 (Preprint) -->
+          <!-- Paper 5 (Refereed Journal Article - 2022) -->
+          <article class="pub-item">
+            <div class="pub-header">
+              <span class="pub-year">2022</span>
+              <span class="badge badge--venue">Taylor &amp; Francis · IETE Journal of Research</span>
+            </div>
+            <h3 class="pub-title">
+              <a href="https://doi.org/10.1080/03772063.2022.2043787" target="_blank" rel="noopener noreferrer">Smart City Vehicle Accident Monitoring and Detection System Using (MEMS, GSM, GPS) Raspberry Pi 4 ↗</a>
+            </h3>
+            <p class="pub-authors">
+              Ajay Kumar, Mohammad Amir Khusru Akhtar, Abhishek Pandey, <strong>Ravi Prakash Srivastava</strong>
+            </p>
+            <p class="pub-summary">
+              Engineered an IoT edge telematics and vehicle accident alert system integrating MEMS accelerometer dynamics, GPS coordinates, and GSM transmission on Raspberry Pi 4 for automated vehicular collision severity classification and rapid emergency response.
+            </p>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1080/03772063.2022.2043787" target="_blank" rel="noopener noreferrer">DOI: 10.1080/03772063.2022.2043787 ↗</a>
+              <button class="btn-bibtex" onclick="toggleBibtex('bib-accident-2022')">
+                <svg width="13" height="13" viewBox="0 0 24 24"><use href="#icon-copy"/></svg>
+                <span>BibTeX</span>
+              </button>
+              <span class="pub-year">Vol. 69, Issue 11, pp. 8121–8129</span>
+            </div>
+            <div class="bibtex-box" id="bib-accident-2022">@article{kumar2022smartcity,
+  title={Smart City Vehicle Accident Monitoring and Detection System Using (MEMS, GSM, GPS) Raspberry Pi 4},
+  author={Kumar, Ajay and Akhtar, Mohammad Amir Khusru and Pandey, Abhishek and Srivastava, Ravi Prakash},
+  journal={IETE Journal of Research},
+  volume={69},
+  number={11},
+  pages={8121--8129},
+  year={2022},
+  publisher={Taylor \& Francis},
+  doi={10.1080/03772063.2022.2043787}
+}</div>
+          </article>
+
+          <!-- Paper 6 (Preprint) -->
           <article class="pub-item">
             <div class="pub-header">
               <span class="pub-year">2025</span>
@@ -1781,7 +1882,7 @@ permalink: /
               <div class="system-category-tag">M.Tech Thesis · IIIT Ranchi</div>
               <h3 class="system-card-title">Cross-Domain PEFT Summarizer (BART + LoRA)</h3>
               <p class="system-card-desc">
-                Master’s thesis system adapting BART-large-CNN from news to legal corpora (BillSum) using LoRA combined with Elastic Weight Consolidation (EWC) to prevent catastrophic forgetting while fine-tuning only 1.2% of model parameters.
+                Master’s thesis system adapting BART-large-CNN from news to legal documents (BillSum) using LoRA combined with Elastic Weight Consolidation (EWC) to preserve pre-trained knowledge during domain adaptation, training only ~2M parameters (under 1% of the 406M total) and sharply reducing GPU memory use.
               </p>
             </div>
             <div>
@@ -1859,6 +1960,120 @@ permalink: /
         </div>
       </section>
 
+      <!-- ================================================================
+           TECHNICAL SKILLS MATRIX (Directly mirrored from updated CV)
+           ================================================================ -->
+      <section class="section" id="skills">
+        <div class="section-title">
+          <span>Technical Skills</span>
+          <span class="pub-year">Core Competencies</span>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-group">
+            <div class="skill-heading">
+              <span class="skill-icon">🧠</span>
+              <h3>LLMs &amp; NLP</h3>
+            </div>
+            <p class="skill-desc">
+              Foundation Models, Large Language Models (LLMs), Transformers, Parameter-Efficient Fine-Tuning (PEFT / LoRA), Continual Learning (EWC), Text Summarization, Context Hijacking Mitigation.
+            </p>
+            <div class="skill-pills">
+              <span class="tech-pill">LLMs</span>
+              <span class="tech-pill">Transformers</span>
+              <span class="tech-pill">LoRA</span>
+              <span class="tech-pill">EWC</span>
+              <span class="tech-pill">Hugging Face</span>
+              <span class="tech-pill">BART</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <div class="skill-heading">
+              <span class="skill-icon">🛡️</span>
+              <h3>ML Security &amp; DevSecOps</h3>
+            </div>
+            <p class="skill-desc">
+              STRIDE Threat Modeling, Adversarial Prompt Injection Defense, Cryptographic Key Leakage Prevention, SAST (Bandit, Semgrep), Dependency Scanning, OWASP Top 10 for LLMs.
+            </p>
+            <div class="skill-pills">
+              <span class="tech-pill">STRIDE</span>
+              <span class="tech-pill">Semgrep</span>
+              <span class="tech-pill">Bandit</span>
+              <span class="tech-pill">Prompt Defense</span>
+              <span class="tech-pill">OWASP LLM</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <div class="skill-heading">
+              <span class="skill-icon">⚡</span>
+              <h3>Production MLOps</h3>
+            </div>
+            <p class="skill-desc">
+              MLflow Experiment Tracking, DVC Model Versioning, GitHub Actions CI/CD Pipelines, Model Observability, Drift Detection, Docker Containerization, Structured JSON Telemetry.
+            </p>
+            <div class="skill-pills">
+              <span class="tech-pill">MLflow</span>
+              <span class="tech-pill">DVC</span>
+              <span class="tech-pill">Docker</span>
+              <span class="tech-pill">GitHub Actions</span>
+              <span class="tech-pill">Drift Detection</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <div class="skill-heading">
+              <span class="skill-icon">👁️</span>
+              <h3>Machine Learning &amp; Computer Vision</h3>
+            </div>
+            <p class="skill-desc">
+              Deep Learning, Deepfake Video Detection, Frame Sampling, Facial Biometrics (CNNs), Medical Imaging Classification (Few-Shot Episodic Learning), Classical ML (Random Forest, SVM, Decision Trees).
+            </p>
+            <div class="skill-pills">
+              <span class="tech-pill">PyTorch</span>
+              <span class="tech-pill">TensorFlow</span>
+              <span class="tech-pill">OpenCV</span>
+              <span class="tech-pill">Scikit-learn</span>
+              <span class="tech-pill">Deepfake Detection</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <div class="skill-heading">
+              <span class="skill-icon">💻</span>
+              <h3>Programming &amp; Systems</h3>
+            </div>
+            <p class="skill-desc">
+              Python, C++, C, Java, JavaScript, FastAPI, Flask, Linux / Unix, High-Performance Computing (HPC), Redis Vector Embeddings, Git Version Control.
+            </p>
+            <div class="skill-pills">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">C++</span>
+              <span class="tech-pill">FastAPI</span>
+              <span class="tech-pill">Linux / HPC</span>
+              <span class="tech-pill">Redis</span>
+              <span class="tech-pill">Git</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <div class="skill-heading">
+              <span class="skill-icon">🌐</span>
+              <h3>Memberships &amp; Languages</h3>
+            </div>
+            <p class="skill-desc">
+              Associate Member (AMIETE) of the Institution of Electronics and Telecommunication Engineers (Since 2022). Fluent in English and Hindi.
+            </p>
+            <div class="skill-pills">
+              <span class="tech-pill">AMIETE (IETE)</span>
+              <span class="tech-pill">English</span>
+              <span class="tech-pill">Hindi</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- EXPERIENCE & TRAJECTORY -->
       <section class="section" id="experience">
         <div class="section-title">
@@ -1882,7 +2097,7 @@ permalink: /
             <div class="timeline-meta">C-DAC (Centre for Development of Advanced Computing, Govt. of India) · Hyderabad · Aug 2022 – Feb 2023</div>
             <ul class="timeline-bullets">
               <li>Processed 10,000+ student behavioral and academic log records; engineered predictive features for institutional outcome forecasting.</li>
-              <li>Trained and benchmarked Decision Trees, Random Forests, and SVMs against institutional baselines.</li>
+              <li>Trained and benchmarked Decision Trees, Random Forests, and Support Vector Machine models for academic performance prediction.</li>
             </ul>
           </div>
 
@@ -1902,7 +2117,7 @@ permalink: /
             <ul class="timeline-bullets">
               <li><strong>CGPA: 8.79 / 10</strong> · Institute of National Importance.</li>
               <li>Thesis: <em>Cross-Domain Text Summarization Using Transformer Models</em> (Supervised by Dept. of CSE).</li>
-              <li>Awarded the prestigious <strong>IETE Postgraduate Scholarship (2024–2026)</strong> for academic excellence.</li>
+              <li>Awarded the prestigious <strong>IETE Postgraduate Scholarship (2024–2026)</strong> for academic excellence throughout the two-year M.Tech. program.</li>
             </ul>
           </div>
 
@@ -1912,7 +2127,7 @@ permalink: /
             <ul class="timeline-bullets">
               <li><strong>CGPA: 7.85 / 10</strong> · Central University.</li>
               <li>Thesis: <em>IoT-HITS: Edge Deep Learning Intrusion Detection for Border Perimeters</em>.</li>
-              <li>Awarded Associate Membership (AMIETE) of the Institution of Electronics and Telecommunication Engineers.</li>
+              <li>Awarded Associate Membership (AMIETE) of the Institution of Electronics and Telecommunication Engineers (IETE), India (Since 2022).</li>
             </ul>
           </div>
         </div>
@@ -1945,6 +2160,10 @@ permalink: /
           <div class="news-row">
             <span class="news-date">Jul 2025</span>
             <span class="news-text"><em>IoT-HITS</em> publication published in <strong>IETE Journal of Research</strong> (Taylor &amp; Francis).</span>
+          </div>
+          <div class="news-row">
+            <span class="news-date">Mar 2022</span>
+            <span class="news-text"><em>Smart City Vehicle Accident Monitoring</em> published in <strong>IETE Journal of Research</strong> (Taylor &amp; Francis).</span>
           </div>
         </div>
       </section>
